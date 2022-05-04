@@ -1,0 +1,218 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Apr 23 14:11:54 2022
+# Process ID: 39288
+# Current directory: E:/Project/plus_compress/Plus_Compress_Wave_Out_chipscope
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent27796 E:\Project\plus_compress\Plus_Compress_Wave_Out_chipscope\Plus_Compress_Wave_Out.xpr
+# Log file: E:/Project/plus_compress/Plus_Compress_Wave_Out_chipscope/vivado.log
+# Journal file: E:/Project/plus_compress/Plus_Compress_Wave_Out_chipscope\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Project/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/install_location/vivado18_3/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 820.984 ; gain = 164.312
+update_compile_order -fileset sources_1
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 2729 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7k325tfbg676-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2427.422 ; gain = 58.484
+Restored from archive | CPU: 6.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2427.422 ; gain = 58.484
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 2427.422 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 398 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 376 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 6 instances
+  SRLC32E => SRL16E: 16 instances
+
+open_run: Time (s): cpu = 00:00:46 ; elapsed = 00:00:36 . Memory (MB): peak = 2596.254 ; gain = 1120.211
+open_report: Time (s): cpu = 00:00:23 ; elapsed = 00:00:11 . Memory (MB): peak = 2960.996 ; gain = 306.871
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7k325tfbg676-2
+INFO: [Project 1-454] Reading design checkpoint 'e:/Project/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/cordic_0/cordic_0.dcp' for cell 'result_out_abs_inst/cordic_0_inst'
+INFO: [Project 1-454] Reading design checkpoint 'e:/Project/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/ROM_320x16_S_I/ROM_320x16_S_I.dcp' for cell 'rom_fir_connect_inst/ROM_Control_inst/ROM_320x16_S_I_inst'
+INFO: [Project 1-454] Reading design checkpoint 'e:/Project/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/ROM_320x16_S_Q/ROM_320x16_S_Q.dcp' for cell 'rom_fir_connect_inst/ROM_Control_inst/ROM_320x16_S_Q_inst'
+INFO: [Project 1-454] Reading design checkpoint 'e:/Project/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Si_Hi/Conv_Si_Hi.dcp' for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Si_Hi_inst'
+INFO: [Project 1-454] Reading design checkpoint 'e:/Project/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Si_Hq/Conv_Si_Hq.dcp' for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Si_Hq_inst'
+INFO: [Project 1-454] Reading design checkpoint 'e:/Project/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hi/Conv_Sq_Hi.dcp' for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Sq_Hi_inst'
+INFO: [Project 1-454] Reading design checkpoint 'e:/Project/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hq/Conv_Sq_Hq.dcp' for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Sq_Hq_inst'
+INFO: [Netlist 29-17] Analyzing 2082 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [e:/Project/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hq/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Sq_Hq_inst/U0'
+Finished Parsing XDC File [e:/Project/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hq/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Sq_Hq_inst/U0'
+Parsing XDC File [e:/Project/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hi/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Sq_Hi_inst/U0'
+Finished Parsing XDC File [e:/Project/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hi/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Sq_Hi_inst/U0'
+Parsing XDC File [e:/Project/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Si_Hi/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Si_Hi_inst/U0'
+Finished Parsing XDC File [e:/Project/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Si_Hi/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Si_Hi_inst/U0'
+Parsing XDC File [e:/Project/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Si_Hq/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Si_Hq_inst/U0'
+Finished Parsing XDC File [e:/Project/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Si_Hq/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Si_Hq_inst/U0'
+Parsing XDC File [E:/Project/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/constrs_1/new/plus_compress_constrains.xdc]
+Finished Parsing XDC File [E:/Project/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/constrs_1/new/plus_compress_constrains.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.063 . Memory (MB): peak = 3251.422 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:48 ; elapsed = 00:00:40 . Memory (MB): peak = 3412.594 ; gain = 418.727
+write_schematic -format pdf -orientation portrait C:/Users/WYHAIRCAS/Desktop/schematic.pdf
+C:/Users/WYHAIRCAS/Desktop/schematic.pdf
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/Project/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hq/Conv_Sq_Hq.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/Project/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hi/Conv_Sq_Hi.xci' is already up-to-date
+[Sat Apr 23 14:41:54 2022] Launched impl_1...
+Run output will be captured here: E:/Project/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+reset_run impl_1
+launch_runs impl_1 -jobs 16
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/Project/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hq/Conv_Sq_Hq.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/Project/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hi/Conv_Sq_Hi.xci' is already up-to-date
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 3524.430 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.196 . Memory (MB): peak = 3538.859 ; gain = 14.430
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 3572.777 ; gain = 0.000
+[Sat Apr 23 14:42:19 2022] Launched impl_1...
+Run output will be captured here: E:/Project/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:21 ; elapsed = 00:00:11 . Memory (MB): peak = 3573.949 ; gain = 49.520
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/Project/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hq/Conv_Sq_Hq.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/Project/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hi/Conv_Sq_Hi.xci' is already up-to-date
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.039 . Memory (MB): peak = 3573.949 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.185 . Memory (MB): peak = 3576.293 ; gain = 2.344
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 3585.512 ; gain = 0.000
+[Sat Apr 23 14:42:57 2022] Launched impl_1...
+Run output will be captured here: E:/Project/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:21 ; elapsed = 00:00:11 . Memory (MB): peak = 3600.922 ; gain = 26.973
+current_design impl_1
+refresh_design
+INFO: [Netlist 29-17] Analyzing 2729 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3664.992 ; gain = 0.000
+Restored from archive | CPU: 5.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3664.992 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:24 . Memory (MB): peak = 3664.992 ; gain = 64.070
+open_report: Time (s): cpu = 00:00:23 ; elapsed = 00:00:11 . Memory (MB): peak = 3709.711 ; gain = 44.719
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210299492397
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210299492397.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/Project/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hq/Conv_Sq_Hq.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/Project/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hi/Conv_Sq_Hi.xci' is already up-to-date
+[Sat Apr 23 15:05:48 2022] Launched impl_1...
+Run output will be captured here: E:/Project/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/Project/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hq/Conv_Sq_Hq.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/Project/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hi/Conv_Sq_Hi.xci' is already up-to-date
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 4641.023 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.201 . Memory (MB): peak = 4667.320 ; gain = 26.297
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.046 . Memory (MB): peak = 4742.516 ; gain = 0.000
+[Sat Apr 23 15:07:16 2022] Launched impl_1...
+Run output will be captured here: E:/Project/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:22 ; elapsed = 00:00:12 . Memory (MB): peak = 4759.371 ; gain = 118.348
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210299492397
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210299492397
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210299492397.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+INFO: [Labtools 27-1435] Device xc7k325t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/Project/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hq/Conv_Sq_Hq.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/Project/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hi/Conv_Sq_Hi.xci' is already up-to-date
+[Sat Apr 23 15:17:20 2022] Launched impl_1...
+Run output will be captured here: E:/Project/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.runs/impl_1/runme.log
+set_property PROBES.FILE {E:/Project/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.runs/impl_1/compress_result_top.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {E:/Project/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.runs/impl_1/compress_result_top.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {E:/Project/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.runs/impl_1/compress_result_top.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 4759.371 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-2302] Device xc7k325t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Apr-23 15:25:23
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-Apr-23 15:25:23
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Project/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Apr-23 15:27:06
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-Apr-23 15:27:06
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Project/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210299492397
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 23 15:36:38 2022...

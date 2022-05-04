@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Fixed-Point Report for Distance_Plus_Compress</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+	body { font-family: monospace; }
+	h2 { font-family: Arial, Helvetica, sans-serif; color: #990000; margin-top: 50px; }
+	table,th,td { border: 1px solid black; }
+	table { margin-top: 30px; }
+	th { align: center; font-weight: bold; }
+	tr.h { background-color: #99CCFF; }
+	tr.a { background-color: #EEEEFF; }
+	tr.b { background-color: #FFFFFF; }
+	tr.c { background-color: #FFA500; }
+	tr.a td, tr.b td { border-style: none; }
+	td.left { text-align: left; }
+	td.right { text-align: right; }
+	td.center { text-align: center; }
+	td.bold { font-weight: bold; }
+	pre { padding: 0px; margin: 0px; }
+	span { font-style: italic; }
+	.code, .code tr, .code th, .code td { border: none; border-collapse: collapse; }
+	.padd { padding-left: 5px; }
+	td.cov, th.cov { width: 50px; height: 20px; text-align: center; font-weight: bold; border-right: 2px solid black; cell-spacing: 0px; }
+	td.cov { vertical-align: top; }
+	td.black { color: #000000; font-weight: bold; padding-top: 4px; }
+	td.white { color: #FFFFFF; font-weight: bold; padding-top: 4px; }
+	.code th { font-weight: bold; border-bottom: 2px solid black; }
+</style>
+</head>
+<body>
+<h3>Generated on  2022-03-12 16:07:31</h3>
+<p>The following table shows fixed point instrumentation results</p>
+<h2>Fixed-Point Report <span>Distance_Plus_Compress<span></h2>
+<TABLE class="code">
+<TR>
+<TH class="cov padd">Simulation Coverage</TH>
+<TH>Code</TH>
+</TR>
+<TR>
+<TD class="cov white" style="background-color: rgb(157,38,35);">0%</TD>
+<TD class="padd"><pre>function [s_rc,S_range_c ] = Distance_Plus_Compress(s_echo,Nr,Naz,Nrg,Fr,Kr)
+
+
+NFFT_r = Nrg;           % 距离向FFT长度
+S_range = fft(s_echo,NFFT_r,2);     % 进行距离向傅里叶变换，零频在两端。
+t_ref = ( -Nr/2 : (Nr/2-1) )/Fr;    % 用来生成距离MF的距离时间轴
+t_ref_mtx = ones(Naz,1)*t_ref;      % 矩阵形式
+% w_ref = kaiser(Nr,2.5);             % 距离向，构建Kaiser窗，此为列向量。
+% w_ref = ones(Naz,1)*(w_ref.');      % 构成矩阵形式，每一行都相同的加窗。
+
+
+  s_ref = exp((1j*pi*Kr).*((t_ref_mtx).^2)); % 复制（发射）脉冲，未加窗。
+%   s_ref = w_ref.*exp((1j*pi*Kr).*((t_ref_mtx).^2)); % 复制（发射）脉冲，加了窗。
+%上述为复制的基带信号，书本P49 公式3.26
+
+s_ref = [s_ref,zeros(Naz,floor(Nrg-Nr))];      % 对复制脉冲，后端补零。
+ %时域补零相当于频域插值，补零操作增加频域的插值点数。使得曲线看起来更光滑,有更好的分辨率
+ 
+S_ref = fft(s_ref,NFFT_r,2);            % 复制脉冲的距离傅里叶变换，零频在两端。
+H_range = conj(S_ref);                  % 距离向匹配滤波器，零频在两端。%conj函数用于求共轭值，此处生成距离向匹配滤波器
+S_range_c = S_range.*H_range;           % 乘以匹配滤波器，零频在两端。    距离压缩就是乘以其匹配滤波器
+s_rc = ifft(S_range_c,[],2);            % 完成距离压缩，回到二维时域
+end</pre></TD>
+</TR>
+</TABLE>
+<TABLE><TR class="h"><th>Variable Name</th><th>Type</th><th>Sim Min</th><th>Sim Max</th><th>Static Min</th><th>Static Max</th><th>Whole Number</th><th>ProposedType <BR /> (Best For WL = 14)</th></TR><TR class="a">
+<TD class="left">Fr</TD><TD class="left">double</TD><TD class="right">60000000</TD><TD class="right">60000000</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(0, 26, 0)</TD></TR>
+<TR class="b">
+<TD class="left">H_range</TD><TD class="left">double :Inf x Inf complex </TD><TD class="right">-15.634368588480552</TD><TD class="right">15.888069034147026</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 14, 9)</TD></TR>
+<TR class="a">
+<TD class="left">Kr</TD><TD class="left">double</TD><TD class="right">20000000000000</TD><TD class="right">20000000000000</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(0, 45, 0)</TD></TR>
+<TR class="b">
+<TD class="left">NFFT_r</TD><TD class="left">double</TD><TD class="right">320</TD><TD class="right">320</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(0, 9, 0)</TD></TR>
+<TR class="a">
+<TD class="left">Naz</TD><TD class="left">double</TD><TD class="right">256</TD><TD class="right">256</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(0, 9, 0)</TD></TR>
+<TR class="b">
+<TD class="left">Nr</TD><TD class="left">double</TD><TD class="right">150</TD><TD class="right">150</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(0, 8, 0)</TD></TR>
+<TR class="a">
+<TD class="left">Nrg</TD><TD class="left">double</TD><TD class="right">320</TD><TD class="right">320</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(0, 9, 0)</TD></TR>
+<TR class="b">
+<TD class="left">S_range</TD><TD class="left">double 256 x Inf complex </TD><TD class="right">-16.454891424247</TD><TD class="right">16.47123636886186</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 14, 8)</TD></TR>
+<TR class="a">
+<TD class="left">S_range_c</TD><TD class="left">double 256 x Inf complex </TD><TD class="right">-262.76997819078287</TD><TD class="right">262.6337933858574</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 14, 4)</TD></TR>
+<TR class="b">
+<TD class="left">S_ref</TD><TD class="left">double :Inf x Inf complex </TD><TD class="right">-15.888069034147026</TD><TD class="right">15.226055425876492</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 14, 9)</TD></TR>
+<TR class="a">
+<TD class="left">s_echo</TD><TD class="left">double 256 x 320 complex </TD><TD class="right">-1</TD><TD class="right">1</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 14, 12)</TD></TR>
+<TR class="b">
+<TD class="left">s_rc</TD><TD class="left">double 256 x Inf complex </TD><TD class="right">-148.75761001284368</TD><TD class="right">148.97834075333793</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 14, 5)</TD></TR>
+<TR class="a">
+<TD class="left">s_ref</TD><TD class="left">double :Inf x Inf complex </TD><TD class="right">-1</TD><TD class="right">1</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 14, 12)</TD></TR>
+<TR class="b">
+<TD class="left">t_ref</TD><TD class="left">double 1 x Inf </TD><TD class="right">-1.25e-06</TD><TD class="right">1.2333333333333333e-06</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 14, 32)</TD></TR>
+<TR class="a">
+<TD class="left">t_ref_mtx</TD><TD class="left">double :Inf x Inf </TD><TD class="right">-1.25e-06</TD><TD class="right">1.2333333333333333e-06</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 14, 32)</TD></TR>
+</TABLE>
+
+</body>
+</html>

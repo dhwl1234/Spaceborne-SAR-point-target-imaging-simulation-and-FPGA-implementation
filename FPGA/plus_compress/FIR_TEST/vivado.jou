@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Apr  6 10:29:30 2022
+# Process ID: 26788
+# Current directory: C:/Users/WYHAIRCAS/Desktop/plus_compress/FIR_TEST
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10524 C:\Users\WYHAIRCAS\Desktop\plus_compress\FIR_TEST\FIR_TEST.xpr
+# Log file: C:/Users/WYHAIRCAS/Desktop/plus_compress/FIR_TEST/vivado.log
+# Journal file: C:/Users/WYHAIRCAS/Desktop/plus_compress/FIR_TEST\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/WYHAIRCAS/Desktop/plus_compress/FIR_TEST/FIR_TEST.xpr
+update_compile_order -fileset sources_1

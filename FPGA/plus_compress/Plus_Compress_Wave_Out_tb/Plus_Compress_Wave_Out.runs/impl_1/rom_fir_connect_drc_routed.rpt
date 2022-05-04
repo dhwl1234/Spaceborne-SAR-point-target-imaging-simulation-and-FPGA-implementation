@@ -1,0 +1,103 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Apr  7 22:22:31 2022
+| Host         : LAPTOP-50M5PQTT running 64-bit major release  (build 9200)
+| Command      : report_drc -file rom_fir_connect_drc_routed.rpt -pb rom_fir_connect_drc_routed.pb -rpx rom_fir_connect_drc_routed.rpx
+| Design       : rom_fir_connect
+| Device       : xc7k325tfbg676-2
+| Speed File   : -2
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 11
++----------+------------------+-----------------------------------------------------+------------+
+| Rule     | Severity         | Description                                         | Violations |
++----------+------------------+-----------------------------------------------------+------------+
+| NSTD-1   | Critical Warning | Unspecified I/O Standard                            | 1          |
+| UCIO-1   | Critical Warning | Unconstrained Logical Port                          | 1          |
+| CFGBVS-1 | Warning          | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
+| REQP-28  | Advisory         | enum_USE_MULT_NONE_connects_CEM_GND                 | 4          |
+| REQP-30  | Advisory         | enum_MREG_0_connects_CEM_GND                        | 4          |
++----------+------------------+-----------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+NSTD-1#1 Critical Warning
+Unspecified I/O Standard  
+182 out of 182 logical ports use I/O standard (IOSTANDARD) value 'DEFAULT', instead of a user assigned specific value. This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all I/O standards. This design will fail to generate a bitstream unless all logical ports have a user specified I/O standard value defined. To allow bitstream creation with unspecified I/O standard values (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks NSTD-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run. Problem ports: sys_clk, s_axis_data_tready_sq_hq, s_axis_data_tvalid_sq_hq, s_axis_data_tready_si_hq, s_axis_data_tvalid_si_hq, s_axis_data_tready_sq_hi, s_axis_data_tvalid_sq_hi, s_axis_data_tready_si_hi, s_axis_data_tvalid_si_hi, m_axis_data_tdata_sq_hi[39:0], m_axis_data_tvalid_sq_hi, m_axis_data_tdata_si_hq[39:0], m_axis_data_tvalid_si_hq, m_axis_data_tdata_si_hi[39:0], m_axis_data_tvalid_si_hi (the first 15 of 18 listed).
+Related violations: <none>
+
+UCIO-1#1 Critical Warning
+Unconstrained Logical Port  
+182 out of 182 logical ports have no user assigned specific location constraint (LOC). This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all pin locations. This design will fail to generate a bitstream unless all logical ports have a user specified site LOC constraint defined.  To allow bitstream creation with unspecified pin locations (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks UCIO-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run.  Problem ports: sys_clk, s_axis_data_tready_sq_hq, s_axis_data_tvalid_sq_hq, s_axis_data_tready_si_hq, s_axis_data_tvalid_si_hq, s_axis_data_tready_sq_hi, s_axis_data_tvalid_sq_hi, s_axis_data_tready_si_hi, s_axis_data_tvalid_si_hi, m_axis_data_tdata_sq_hi[39:0], m_axis_data_tvalid_sq_hi, m_axis_data_tdata_si_hq[39:0], m_axis_data_tvalid_si_hq, m_axis_data_tdata_si_hi[39:0], m_axis_data_tvalid_si_hi (the first 15 of 18 listed).
+Related violations: <none>
+
+CFGBVS-1#1 Warning
+Missing CFGBVS and CONFIG_VOLTAGE Design Properties  
+Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+Related violations: <none>
+
+REQP-28#1 Advisory
+enum_USE_MULT_NONE_connects_CEM_GND  
+four_way_out_inst/Conv_Si_Hi_inst/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_madd_array_and_accum.g_accum.i_accum/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1: When the DSP48E1 USE_MULT attribute is set to NONE, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-28#2 Advisory
+enum_USE_MULT_NONE_connects_CEM_GND  
+four_way_out_inst/Conv_Si_Hq_inst/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_madd_array_and_accum.g_accum.i_accum/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1: When the DSP48E1 USE_MULT attribute is set to NONE, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-28#3 Advisory
+enum_USE_MULT_NONE_connects_CEM_GND  
+four_way_out_inst/Conv_Sq_Hi_inst/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_madd_array_and_accum.g_accum.i_accum/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1: When the DSP48E1 USE_MULT attribute is set to NONE, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-28#4 Advisory
+enum_USE_MULT_NONE_connects_CEM_GND  
+four_way_out_inst/Conv_Sq_Hq_inst/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_madd_array_and_accum.g_accum.i_accum/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1: When the DSP48E1 USE_MULT attribute is set to NONE, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-30#1 Advisory
+enum_MREG_0_connects_CEM_GND  
+four_way_out_inst/Conv_Si_Hi_inst/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_madd_array_and_accum.g_accum.i_accum/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1: When the DSP48E1 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-30#2 Advisory
+enum_MREG_0_connects_CEM_GND  
+four_way_out_inst/Conv_Si_Hq_inst/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_madd_array_and_accum.g_accum.i_accum/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1: When the DSP48E1 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-30#3 Advisory
+enum_MREG_0_connects_CEM_GND  
+four_way_out_inst/Conv_Sq_Hi_inst/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_madd_array_and_accum.g_accum.i_accum/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1: When the DSP48E1 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-30#4 Advisory
+enum_MREG_0_connects_CEM_GND  
+four_way_out_inst/Conv_Sq_Hq_inst/U0/i_synth/g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_madd_array_and_accum.g_accum.i_accum/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1: When the DSP48E1 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+

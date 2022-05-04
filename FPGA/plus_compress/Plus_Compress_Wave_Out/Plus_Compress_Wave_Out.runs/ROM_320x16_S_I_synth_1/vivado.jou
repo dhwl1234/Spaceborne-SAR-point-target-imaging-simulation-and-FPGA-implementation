@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Mar 30 20:54:33 2022
+# Process ID: 6216
+# Current directory: C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.runs/ROM_320x16_S_I_synth_1
+# Command line: vivado.exe -log ROM_320x16_S_I.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ROM_320x16_S_I.tcl
+# Log file: C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.runs/ROM_320x16_S_I_synth_1/ROM_320x16_S_I.vds
+# Journal file: C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.runs/ROM_320x16_S_I_synth_1\vivado.jou
+#-----------------------------------------------------------
+source ROM_320x16_S_I.tcl -notrace

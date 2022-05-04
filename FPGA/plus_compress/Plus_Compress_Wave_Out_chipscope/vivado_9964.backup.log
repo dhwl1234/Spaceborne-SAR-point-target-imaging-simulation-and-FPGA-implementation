@@ -1,0 +1,584 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Apr  2 15:27:36 2022
+# Process ID: 9964
+# Current directory: C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13712 C:\Users\WYHAIRCAS\Desktop\plus_compress\Plus_Compress_Wave_Out\Plus_Compress_Wave_Out.xpr
+# Log file: C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/vivado.log
+# Journal file: C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/install_location/vivado18_3/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 833.184 ; gain = 146.641
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7k325tfbg676-2
+Top: compress_result_top
+WARNING: [Synth 8-2611] redeclaration of ansi port compress_result is not allowed [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/new/compress_result_top.v:37]
+WARNING: [Synth 8-976] compress_result has already been declared [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/new/compress_result_top.v:37]
+WARNING: [Synth 8-2654] second declaration of compress_result ignored [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/new/compress_result_top.v:37]
+INFO: [Synth 8-994] compress_result is declared here [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/new/compress_result_top.v:26]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1055.098 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'compress_result_top' [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/new/compress_result_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'rom_fir_connect' [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/imports/new/rom_fir_connect.v:23]
+INFO: [Synth 8-6157] synthesizing module 'four_way_out' [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/imports/new/four_way_out.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Conv_Si_Hi' [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/.Xil/Vivado-9964-LAPTOP-50M5PQTT/realtime/Conv_Si_Hi_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Conv_Si_Hi' (1#1) [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/.Xil/Vivado-9964-LAPTOP-50M5PQTT/realtime/Conv_Si_Hi_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Conv_Si_Hq' [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/.Xil/Vivado-9964-LAPTOP-50M5PQTT/realtime/Conv_Si_Hq_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Conv_Si_Hq' (2#1) [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/.Xil/Vivado-9964-LAPTOP-50M5PQTT/realtime/Conv_Si_Hq_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Conv_Sq_Hi' [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/.Xil/Vivado-9964-LAPTOP-50M5PQTT/realtime/Conv_Sq_Hi_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Conv_Sq_Hi' (3#1) [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/.Xil/Vivado-9964-LAPTOP-50M5PQTT/realtime/Conv_Sq_Hi_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Conv_Sq_Hq' [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/.Xil/Vivado-9964-LAPTOP-50M5PQTT/realtime/Conv_Sq_Hq_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Conv_Sq_Hq' (4#1) [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/.Xil/Vivado-9964-LAPTOP-50M5PQTT/realtime/Conv_Sq_Hq_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'four_way_out' (5#1) [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/imports/new/four_way_out.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ROM_Control' [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/imports/new/ROM_Control.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ROM_320x16_S_I' [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/.Xil/Vivado-9964-LAPTOP-50M5PQTT/realtime/ROM_320x16_S_I_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ROM_320x16_S_I' (6#1) [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/.Xil/Vivado-9964-LAPTOP-50M5PQTT/realtime/ROM_320x16_S_I_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ROM_320x16_S_Q' [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/.Xil/Vivado-9964-LAPTOP-50M5PQTT/realtime/ROM_320x16_S_Q_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ROM_320x16_S_Q' (7#1) [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/.Xil/Vivado-9964-LAPTOP-50M5PQTT/realtime/ROM_320x16_S_Q_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ROM_Control' (8#1) [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/imports/new/ROM_Control.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'rom_fir_connect' (9#1) [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/imports/new/rom_fir_connect.v:23]
+INFO: [Synth 8-6157] synthesizing module 'result_out_abs' [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/new/result_out_abs.v:23]
+INFO: [Synth 8-6157] synthesizing module 'cordic_0' [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/.Xil/Vivado-9964-LAPTOP-50M5PQTT/realtime/cordic_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cordic_0' (10#1) [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/.Xil/Vivado-9964-LAPTOP-50M5PQTT/realtime/cordic_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'result_out_abs' (11#1) [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/new/result_out_abs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'compress_result_top' (12#1) [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/new/compress_result_top.v:23]
+WARNING: [Synth 8-3917] design compress_result_top has port compress_result[79] driven by constant 0
+WARNING: [Synth 8-3917] design compress_result_top has port compress_result[78] driven by constant 0
+WARNING: [Synth 8-3917] design compress_result_top has port compress_result[77] driven by constant 0
+WARNING: [Synth 8-3917] design compress_result_top has port compress_result[76] driven by constant 0
+WARNING: [Synth 8-3917] design compress_result_top has port compress_result[75] driven by constant 0
+WARNING: [Synth 8-3917] design compress_result_top has port compress_result[74] driven by constant 0
+WARNING: [Synth 8-3917] design compress_result_top has port compress_result[73] driven by constant 0
+WARNING: [Synth 8-3917] design compress_result_top has port compress_result[72] driven by constant 0
+WARNING: [Synth 8-3917] design compress_result_top has port compress_result[71] driven by constant 0
+WARNING: [Synth 8-3917] design compress_result_top has port compress_result[70] driven by constant 0
+WARNING: [Synth 8-3917] design compress_result_top has port compress_result[69] driven by constant 0
+WARNING: [Synth 8-3917] design compress_result_top has port compress_result[68] driven by constant 0
+WARNING: [Synth 8-3917] design compress_result_top has port compress_result[67] driven by constant 0
+WARNING: [Synth 8-3917] design compress_result_top has port compress_result[66] driven by constant 0
+WARNING: [Synth 8-3917] design compress_result_top has port compress_result[65] driven by constant 0
+WARNING: [Synth 8-3917] design compress_result_top has port compress_result[64] driven by constant 0
+WARNING: [Synth 8-3917] design compress_result_top has port compress_result[63] driven by constant 0
+WARNING: [Synth 8-3917] design compress_result_top has port compress_result[62] driven by constant 0
+WARNING: [Synth 8-3917] design compress_result_top has port compress_result[61] driven by constant 0
+WARNING: [Synth 8-3917] design compress_result_top has port compress_result[60] driven by constant 0
+WARNING: [Synth 8-3917] design compress_result_top has port compress_result[59] driven by constant 0
+WARNING: [Synth 8-3917] design compress_result_top has port compress_result[58] driven by constant 0
+WARNING: [Synth 8-3917] design compress_result_top has port compress_result[57] driven by constant 0
+WARNING: [Synth 8-3917] design compress_result_top has port compress_result[56] driven by constant 0
+WARNING: [Synth 8-3917] design compress_result_top has port compress_result[55] driven by constant 0
+WARNING: [Synth 8-3917] design compress_result_top has port compress_result[54] driven by constant 0
+WARNING: [Synth 8-3917] design compress_result_top has port compress_result[53] driven by constant 0
+WARNING: [Synth 8-3917] design compress_result_top has port compress_result[52] driven by constant 0
+WARNING: [Synth 8-3917] design compress_result_top has port compress_result[51] driven by constant 0
+WARNING: [Synth 8-3917] design compress_result_top has port compress_result[50] driven by constant 0
+WARNING: [Synth 8-3917] design compress_result_top has port compress_result[49] driven by constant 0
+WARNING: [Synth 8-3917] design compress_result_top has port compress_result[48] driven by constant 0
+WARNING: [Synth 8-3917] design compress_result_top has port compress_result[47] driven by constant 0
+WARNING: [Synth 8-3917] design compress_result_top has port compress_result[46] driven by constant 0
+WARNING: [Synth 8-3917] design compress_result_top has port compress_result[45] driven by constant 0
+WARNING: [Synth 8-3917] design compress_result_top has port compress_result[44] driven by constant 0
+WARNING: [Synth 8-3917] design compress_result_top has port compress_result[43] driven by constant 0
+WARNING: [Synth 8-3917] design compress_result_top has port compress_result[42] driven by constant 0
+WARNING: [Synth 8-3917] design compress_result_top has port compress_result[41] driven by constant 0
+WARNING: [Synth 8-3917] design compress_result_top has port compress_result[40] driven by constant 0
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1097.742 ; gain = 42.645
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1097.742 ; gain = 42.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1097.742 ; gain = 42.645
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Si_Hi/Conv_Si_Hi.dcp' for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Si_Hi_inst'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Si_Hq/Conv_Si_Hq.dcp' for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Si_Hq_inst'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hi/Conv_Sq_Hi.dcp' for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Sq_Hi_inst'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hq/Conv_Sq_Hq.dcp' for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Sq_Hq_inst'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/ip/ROM_320x16_S_I/ROM_320x16_S_I.dcp' for cell 'rom_fir_connect_inst/ROM_Control_inst/ROM_320x16_S_I_inst'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/ip/ROM_320x16_S_Q/ROM_320x16_S_Q.dcp' for cell 'rom_fir_connect_inst/ROM_Control_inst/ROM_320x16_S_Q_inst'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/ip/cordic_0/cordic_0.dcp' for cell 'result_out_abs_inst/cordic_0_inst'
+INFO: [Netlist 29-17] Analyzing 2062 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7k325tfbg676-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 80 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hq/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Sq_Hq_inst/U0'
+Finished Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hq/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Sq_Hq_inst/U0'
+Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hi/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Sq_Hi_inst/U0'
+Finished Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hi/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Sq_Hi_inst/U0'
+Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Si_Hi/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Si_Hi_inst/U0'
+Finished Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Si_Hi/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Si_Hi_inst/U0'
+Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Si_Hq/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Si_Hq_inst/U0'
+Finished Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Si_Hq/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Si_Hq_inst/U0'
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 1784.129 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:53 ; elapsed = 00:00:43 . Memory (MB): peak = 1885.227 ; gain = 830.129
+41 Infos, 43 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:53 ; elapsed = 00:00:43 . Memory (MB): peak = 1885.227 ; gain = 830.129
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/install_location/vivado18_3/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'four_conv_out' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.sim/sim_1/behav/xsim/Conv_Si_Hi.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.sim/sim_1/behav/xsim/hi.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.sim/sim_1/behav/xsim/Conv_Si_Hq.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.sim/sim_1/behav/xsim/hq.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.sim/sim_1/behav/xsim/Conv_Sq_Hi.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.sim/sim_1/behav/xsim/Conv_Sq_Hq.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.sim/sim_1/behav/xsim/ROM_320x16_S_I.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.sim/sim_1/behav/xsim/si.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.sim/sim_1/behav/xsim/ROM_320x16_S_Q.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.sim/sim_1/behav/xsim/sq.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj four_conv_out_vlog.prj"
+"xvhdl --incr --relax -prj four_conv_out_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/install_location/vivado18_3/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 31f80bbe232349b998b8b6f3d5a4e5f2 --incr --debug typical --relax --mt 2 -L xbip_utils_v3_0_9 -L c_reg_fd_v12_0_5 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_pipe_v3_0_5 -L xbip_dsp48_addsub_v3_0_5 -L xbip_addsub_v3_0_5 -L c_addsub_v12_0_12 -L xbip_bram18k_v3_0_5 -L mult_gen_v12_0_14 -L axi_utils_v2_0_5 -L cordic_v6_0_14 -L xil_defaultlib -L blk_mem_gen_v8_4_2 -L fir_compiler_v7_2_11 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot four_conv_out_behav xil_defaultlib.four_conv_out xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2056]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2057]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2058]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2059]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2045]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2046]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2047]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2048]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2049]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2056]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2057]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2058]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2059]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2045]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2046]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2047]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2048]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2049]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2056]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2057]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2058]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2059]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2045]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2046]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2047]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2048]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2049]
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:26 . Memory (MB): peak = 1896.418 ; gain = 0.000
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-5357] 'elaborate' step aborted
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:31 . Memory (MB): peak = 1896.418 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hq/Conv_Sq_Hq.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hi/Conv_Sq_Hi.xci' is already up-to-date
+[Sat Apr  2 16:25:45 2022] Launched synth_1...
+Run output will be captured here: C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.runs/synth_1/runme.log
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7k325tfbg676-2
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/ip/cordic_0/cordic_0.dcp' for cell 'result_out_abs_inst/cordic_0_inst'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/ip/ROM_320x16_S_I/ROM_320x16_S_I.dcp' for cell 'rom_fir_connect_inst/ROM_Control_inst/ROM_320x16_S_I_inst'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/ip/ROM_320x16_S_Q/ROM_320x16_S_Q.dcp' for cell 'rom_fir_connect_inst/ROM_Control_inst/ROM_320x16_S_Q_inst'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Si_Hi/Conv_Si_Hi.dcp' for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Si_Hi_inst'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Si_Hq/Conv_Si_Hq.dcp' for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Si_Hq_inst'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hi/Conv_Sq_Hi.dcp' for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Sq_Hi_inst'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hq/Conv_Sq_Hq.dcp' for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Sq_Hq_inst'
+INFO: [Netlist 29-17] Analyzing 2082 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hq/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Sq_Hq_inst/U0'
+Finished Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hq/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Sq_Hq_inst/U0'
+Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hi/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Sq_Hi_inst/U0'
+Finished Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hi/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Sq_Hi_inst/U0'
+Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Si_Hi/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Si_Hi_inst/U0'
+Finished Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Si_Hi/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Si_Hi_inst/U0'
+Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Si_Hq/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Si_Hq_inst/U0'
+Finished Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Si_Hq/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Si_Hq_inst/U0'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 1896.418 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:32 ; elapsed = 00:00:29 . Memory (MB): peak = 1906.418 ; gain = 10.000
+close_design
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7k325tfbg676-2
+Top: compress_result_top
+WARNING: [Synth 8-2611] redeclaration of ansi port compress_result is not allowed [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/new/compress_result_top.v:37]
+WARNING: [Synth 8-976] compress_result has already been declared [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/new/compress_result_top.v:37]
+WARNING: [Synth 8-2654] second declaration of compress_result ignored [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/new/compress_result_top.v:37]
+INFO: [Synth 8-994] compress_result is declared here [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/new/compress_result_top.v:26]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2404.656 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'compress_result_top' [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/new/compress_result_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'rom_fir_connect' [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/imports/new/rom_fir_connect.v:23]
+INFO: [Synth 8-6157] synthesizing module 'four_way_out' [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/imports/new/four_way_out.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Conv_Si_Hi' [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/.Xil/Vivado-9964-LAPTOP-50M5PQTT/realtime/Conv_Si_Hi_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Conv_Si_Hi' (1#1) [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/.Xil/Vivado-9964-LAPTOP-50M5PQTT/realtime/Conv_Si_Hi_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Conv_Si_Hq' [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/.Xil/Vivado-9964-LAPTOP-50M5PQTT/realtime/Conv_Si_Hq_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Conv_Si_Hq' (2#1) [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/.Xil/Vivado-9964-LAPTOP-50M5PQTT/realtime/Conv_Si_Hq_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Conv_Sq_Hi' [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/.Xil/Vivado-9964-LAPTOP-50M5PQTT/realtime/Conv_Sq_Hi_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Conv_Sq_Hi' (3#1) [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/.Xil/Vivado-9964-LAPTOP-50M5PQTT/realtime/Conv_Sq_Hi_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Conv_Sq_Hq' [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/.Xil/Vivado-9964-LAPTOP-50M5PQTT/realtime/Conv_Sq_Hq_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Conv_Sq_Hq' (4#1) [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/.Xil/Vivado-9964-LAPTOP-50M5PQTT/realtime/Conv_Sq_Hq_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'four_way_out' (5#1) [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/imports/new/four_way_out.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ROM_Control' [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/imports/new/ROM_Control.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ROM_320x16_S_I' [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/.Xil/Vivado-9964-LAPTOP-50M5PQTT/realtime/ROM_320x16_S_I_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ROM_320x16_S_I' (6#1) [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/.Xil/Vivado-9964-LAPTOP-50M5PQTT/realtime/ROM_320x16_S_I_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ROM_320x16_S_Q' [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/.Xil/Vivado-9964-LAPTOP-50M5PQTT/realtime/ROM_320x16_S_Q_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ROM_320x16_S_Q' (7#1) [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/.Xil/Vivado-9964-LAPTOP-50M5PQTT/realtime/ROM_320x16_S_Q_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ROM_Control' (8#1) [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/imports/new/ROM_Control.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'rom_fir_connect' (9#1) [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/imports/new/rom_fir_connect.v:23]
+INFO: [Synth 8-6157] synthesizing module 'result_out_abs' [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/new/result_out_abs.v:23]
+INFO: [Synth 8-6157] synthesizing module 'cordic_0' [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/.Xil/Vivado-9964-LAPTOP-50M5PQTT/realtime/cordic_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cordic_0' (10#1) [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/.Xil/Vivado-9964-LAPTOP-50M5PQTT/realtime/cordic_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'result_out_abs' (11#1) [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/new/result_out_abs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'compress_result_top' (12#1) [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/new/compress_result_top.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2404.656 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2404.656 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2404.656 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Si_Hi/Conv_Si_Hi.dcp' for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Si_Hi_inst'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Si_Hq/Conv_Si_Hq.dcp' for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Si_Hq_inst'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hi/Conv_Sq_Hi.dcp' for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Sq_Hi_inst'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hq/Conv_Sq_Hq.dcp' for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Sq_Hq_inst'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/ip/ROM_320x16_S_I/ROM_320x16_S_I.dcp' for cell 'rom_fir_connect_inst/ROM_Control_inst/ROM_320x16_S_I_inst'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/ip/ROM_320x16_S_Q/ROM_320x16_S_Q.dcp' for cell 'rom_fir_connect_inst/ROM_Control_inst/ROM_320x16_S_Q_inst'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/ip/cordic_0/cordic_0.dcp' for cell 'result_out_abs_inst/cordic_0_inst'
+INFO: [Netlist 29-17] Analyzing 2062 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 40 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hq/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Sq_Hq_inst/U0'
+Finished Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hq/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Sq_Hq_inst/U0'
+Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hi/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Sq_Hi_inst/U0'
+Finished Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hi/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Sq_Hi_inst/U0'
+Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Si_Hi/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Si_Hi_inst/U0'
+Finished Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Si_Hi/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Si_Hi_inst/U0'
+Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Si_Hq/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Si_Hq_inst/U0'
+Finished Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Si_Hq/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Si_Hq_inst/U0'
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 2521.012 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:44 ; elapsed = 00:00:39 . Memory (MB): peak = 2521.012 ; gain = 116.355
+40 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:39 . Memory (MB): peak = 2521.012 ; gain = 116.355
+place_ports sys_clk F22
+set_property IOSTANDARD LVCMOS33 [get_ports [list sys_clk]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list sys_clk]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list sys_clk]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list sys_clk]]
+place_ports sys_rst_n AB22
+set_property IOSTANDARD LVCMOS33 [get_ports [list sys_rst_n]]
+set_property package_pin "" [get_ports [list  {compress_result[1]}]]
+set_property package_pin "" [get_ports [list  {compress_result[24]}]]
+place_ports {compress_result[1]} B14
+place_ports {compress_result[1]} F23
+place_ports {compress_result[1]} B26
+set_property package_pin "" [get_ports [list  {compress_result[17]}]]
+set_property package_pin "" [get_ports [list  {compress_result[1]}]]
+place_ports {compress_result[0]} B26
+place_ports {compress_result[1]} D25
+place_ports {compress_result[2]} C26
+place_ports {compress_result[3]} E26
+set_property package_pin "" [get_ports [list  {compress_result[9]}]]
+place_ports {compress_result[4]} F24
+place_ports {compress_result[5]} J25
+place_ports {compress_result[6]} D24
+place_ports {compress_result[7]} E22
+place_ports {compress_result[8]} K22
+place_ports {compress_result[9]} H24
+set_property package_pin "" [get_ports [list  {compress_result[30]}]]
+place_ports {compress_result[10]} H22
+place_ports {compress_result[11]} H26
+place_ports {compress_result[12]} G21
+place_ports {compress_result[13]} F23
+place_ports {compress_result[14]} J23
+place_ports {compress_result[15]} K23
+place_ports {compress_result[16]} G22
+place_ports {compress_result[17]} H21
+place_ports {compress_result[18]} J26
+place_ports {compress_result[19]} J21
+place_ports {compress_result[20]} H23
+place_ports {compress_result[21]} L22
+place_ports {compress_result[22]} E21
+place_ports {compress_result[23]} D23
+place_ports {compress_result[24]} J24
+place_ports {compress_result[25]} G24
+place_ports {compress_result[26]} E25
+place_ports {compress_result[27]} D26
+place_ports {compress_result[26]} F25
+place_ports {compress_result[28]} E25
+set_property package_pin "" [get_ports [list  {compress_result[31]}]]
+set_property package_pin "" [get_ports [list  {compress_result[35]}]]
+set_property package_pin "" [get_ports [list  {compress_result[34]}]]
+set_property package_pin "" [get_ports [list  {compress_result[32]}]]
+set_property package_pin "" [get_ports [list  {compress_result[38]}]]
+place_ports {compress_result[29]} B25
+set_property package_pin "" [get_ports [list  {compress_result[30]}]]
+place_ports {compress_result[30]} U6
+place_ports {compress_result[31]} U2
+place_ports {compress_result[32]} U7
+place_ports {compress_result[33]} V4
+place_ports {compress_result[34]} W6
+place_ports {compress_result[35]} V2
+place_ports {compress_result[36]} Y3
+place_ports {compress_result[37]} V3
+place_ports {compress_result[38]} Y6
+place_ports {compress_result[39]} AE6
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[13]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[19]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[23]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[26]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[0]}]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list {compress_result[39]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[35]}]]
+set_property IOSTANDARD LVDCI_18 [get_ports [list {compress_result[35]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[4]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[12]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[18]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[7]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[20]}]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list {compress_result[34]}]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list {compress_result[35]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[21]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[24]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[1]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[17]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[27]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[33]}]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list {compress_result[33]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[5]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[8]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[11]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[16]}]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list {compress_result[32]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[15]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[22]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[2]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[10]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[25]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[28]}]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list {compress_result[31]}]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list {compress_result[38]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[6]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[14]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[29]}]]
+set_property IOSTANDARD LVCMOS25 [get_ports [list {compress_result[37]}]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list {compress_result[31]}]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list {compress_result[37]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[3]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[9]}]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list {compress_result[30]}]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list {compress_result[36]}]]
+file mkdir C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/constrs_1/new
+close [ open C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/constrs_1/new/plus_compress_constrains.xdc w ]
+add_files -fileset constrs_1 C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/constrs_1/new/plus_compress_constrains.xdc
+set_property target_constrs_file C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/constrs_1/new/plus_compress_constrains.xdc [current_fileset -constrset]
+save_constraints -force
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 2527.676 ; gain = 0.000
+set_property SLEW SLOW [get_ports [list {compress_result[22]}]]
+save_constraints
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 2528.383 ; gain = 0.000
+reset_run synth_1
+set_param general.maxThreads 32
+32
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hq/Conv_Sq_Hq.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hi/Conv_Sq_Hi.xci' is already up-to-date
+[Sat Apr  2 19:16:21 2022] Launched synth_1...
+Run output will be captured here: C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.runs/synth_1/runme.log
+[Sat Apr  2 19:16:21 2022] Launched impl_1...
+Run output will be captured here: C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.runs/impl_1/runme.log
+close_design
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 2056 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Constraints 18-5170] The checkpoint was created with non-default parameter values which do not match the current Vivado settings.  Mismatching parameters are:
+  general.maxThreads
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2783.176 ; gain = 48.281
+Restored from archive | CPU: 5.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2783.176 ; gain = 48.281
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 2783.176 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 16 instances were transformed.
+  SRLC32E => SRL16E: 16 instances
+
+open_run: Time (s): cpu = 00:00:22 ; elapsed = 00:00:20 . Memory (MB): peak = 2812.336 ; gain = 281.500
+open_report: Time (s): cpu = 00:00:28 ; elapsed = 00:00:11 . Memory (MB): peak = 3156.961 ; gain = 336.215
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210299492397
+set_property PROGRAM.FILE {C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.runs/impl_1/compress_result_top.bit} [get_hw_devices xc7k325t_0]
+current_hw_device [get_hw_devices xc7k325t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.runs/impl_1/compress_result_top.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 4137.617 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210299492397
+set_property STEPS.WRITE_BITSTREAM.ARGS.BIN_FILE true [get_runs impl_1]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hq/Conv_Sq_Hq.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hi/Conv_Sq_Hi.xci' is already up-to-date
+[Sat Apr  2 19:36:20 2022] Launched synth_1...
+Run output will be captured here: C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.runs/synth_1/runme.log
+[Sat Apr  2 19:36:20 2022] Launched impl_1...
+Run output will be captured here: C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.runs/impl_1/runme.log
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210299492397
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210299492397.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1435] Device xc7k325t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.runs/impl_1/compress_result_top.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 4243.578 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+create_hw_cfgmem -hw_device [lindex [get_hw_devices xc7k325t_0] 0] [lindex [get_cfgmem_parts {mt25ql256-spi-x1_x2_x4}] 0]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k325t_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k325t_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k325t_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k325t_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k325t_0] 0]]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k325t_0] 0]]
+set_property PROGRAM.FILES [list "C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.runs/impl_1/compress_result_top.bin" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k325t_0] 0]]
+set_property PROGRAM.PRM_FILE {} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k325t_0] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k325t_0] 0]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k325t_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k325t_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k325t_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k325t_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k325t_0] 0]]
+startgroup 
+create_hw_bitstream -hw_device [lindex [get_hw_devices xc7k325t_0] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices xc7k325t_0] 0]]; program_hw_devices [lindex [get_hw_devices xc7k325t_0] 0]; refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0];
+INFO: [Labtools 27-3164] End of startup status: HIGH
+INFO: [Labtools 27-2302] Device xc7k325t (JTAG device index = 0) is programmed with a design that has 1 SPI core(s).
+program_hw_cfgmem -hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k325t_0] 0]]
+Mfg ID : 20   Memory Type : ba   Memory Capacity : 19   Device ID 1 : 0   Device ID 2 : 0
+Performing Erase Operation...
+Erase Operation successful.
+Performing Program and Verify Operations...
+Program/Verify Operation successful.
+INFO: [Labtoolstcl 44-377] Flash programming completed successfully
+program_hw_cfgmem: Time (s): cpu = 00:00:04 ; elapsed = 00:05:38 . Memory (MB): peak = 4253.020 ; gain = 9.441
+endgroup
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210299492397
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210299492397
+INFO: [Labtools 27-1435] Device xc7k325t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210299492397

@@ -1,0 +1,188 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Apr  2 15:27:36 2022
+# Process ID: 9964
+# Current directory: C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13712 C:\Users\WYHAIRCAS\Desktop\plus_compress\Plus_Compress_Wave_Out\Plus_Compress_Wave_Out.xpr
+# Log file: C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/vivado.log
+# Journal file: C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.xpr
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+launch_simulation
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+close_design
+synth_design -rtl -name rtl_1
+place_ports sys_clk F22
+set_property IOSTANDARD LVCMOS33 [get_ports [list sys_clk]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list sys_clk]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list sys_clk]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list sys_clk]]
+place_ports sys_rst_n AB22
+set_property IOSTANDARD LVCMOS33 [get_ports [list sys_rst_n]]
+set_property package_pin "" [get_ports [list  {compress_result[1]}]]
+set_property package_pin "" [get_ports [list  {compress_result[24]}]]
+place_ports {compress_result[1]} B14
+place_ports {compress_result[1]} F23
+place_ports {compress_result[1]} B26
+set_property package_pin "" [get_ports [list  {compress_result[17]}]]
+set_property package_pin "" [get_ports [list  {compress_result[1]}]]
+place_ports {compress_result[0]} B26
+place_ports {compress_result[1]} D25
+place_ports {compress_result[2]} C26
+place_ports {compress_result[3]} E26
+set_property package_pin "" [get_ports [list  {compress_result[9]}]]
+place_ports {compress_result[4]} F24
+place_ports {compress_result[5]} J25
+place_ports {compress_result[6]} D24
+place_ports {compress_result[7]} E22
+place_ports {compress_result[8]} K22
+place_ports {compress_result[9]} H24
+set_property package_pin "" [get_ports [list  {compress_result[30]}]]
+place_ports {compress_result[10]} H22
+place_ports {compress_result[11]} H26
+place_ports {compress_result[12]} G21
+place_ports {compress_result[13]} F23
+place_ports {compress_result[14]} J23
+place_ports {compress_result[15]} K23
+place_ports {compress_result[16]} G22
+place_ports {compress_result[17]} H21
+place_ports {compress_result[18]} J26
+place_ports {compress_result[19]} J21
+place_ports {compress_result[20]} H23
+place_ports {compress_result[21]} L22
+place_ports {compress_result[22]} E21
+place_ports {compress_result[23]} D23
+place_ports {compress_result[24]} J24
+place_ports {compress_result[25]} G24
+place_ports {compress_result[26]} E25
+place_ports {compress_result[27]} D26
+place_ports {compress_result[26]} F25
+place_ports {compress_result[28]} E25
+set_property package_pin "" [get_ports [list  {compress_result[31]}]]
+set_property package_pin "" [get_ports [list  {compress_result[35]}]]
+set_property package_pin "" [get_ports [list  {compress_result[34]}]]
+set_property package_pin "" [get_ports [list  {compress_result[32]}]]
+set_property package_pin "" [get_ports [list  {compress_result[38]}]]
+place_ports {compress_result[29]} B25
+set_property package_pin "" [get_ports [list  {compress_result[30]}]]
+place_ports {compress_result[30]} U6
+place_ports {compress_result[31]} U2
+place_ports {compress_result[32]} U7
+place_ports {compress_result[33]} V4
+place_ports {compress_result[34]} W6
+place_ports {compress_result[35]} V2
+place_ports {compress_result[36]} Y3
+place_ports {compress_result[37]} V3
+place_ports {compress_result[38]} Y6
+place_ports {compress_result[39]} AE6
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[13]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[19]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[23]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[26]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[0]}]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list {compress_result[39]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[35]}]]
+set_property IOSTANDARD LVDCI_18 [get_ports [list {compress_result[35]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[4]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[12]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[18]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[7]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[20]}]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list {compress_result[34]}]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list {compress_result[35]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[21]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[24]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[1]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[17]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[27]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[33]}]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list {compress_result[33]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[5]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[8]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[11]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[16]}]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list {compress_result[32]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[15]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[22]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[2]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[10]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[25]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[28]}]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list {compress_result[31]}]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list {compress_result[38]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[6]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[14]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[29]}]]
+set_property IOSTANDARD LVCMOS25 [get_ports [list {compress_result[37]}]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list {compress_result[31]}]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list {compress_result[37]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[3]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {compress_result[9]}]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list {compress_result[30]}]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list {compress_result[36]}]]
+file mkdir C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/constrs_1/new
+close [ open C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/constrs_1/new/plus_compress_constrains.xdc w ]
+add_files -fileset constrs_1 C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/constrs_1/new/plus_compress_constrains.xdc
+set_property target_constrs_file C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/constrs_1/new/plus_compress_constrains.xdc [current_fileset -constrset]
+save_constraints -force
+set_property SLEW SLOW [get_ports [list {compress_result[22]}]]
+save_constraints
+reset_run synth_1
+set_param general.maxThreads 32
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+close_design
+open_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.runs/impl_1/compress_result_top.bit} [get_hw_devices xc7k325t_0]
+current_hw_device [get_hw_devices xc7k325t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k325t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.runs/impl_1/compress_result_top.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+set_property STEPS.WRITE_BITSTREAM.ARGS.BIN_FILE true [get_runs impl_1]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.runs/impl_1/compress_result_top.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+create_hw_cfgmem -hw_device [lindex [get_hw_devices xc7k325t_0] 0] [lindex [get_cfgmem_parts {mt25ql256-spi-x1_x2_x4}] 0]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k325t_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k325t_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k325t_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k325t_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k325t_0] 0]]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k325t_0] 0]]
+set_property PROGRAM.FILES [list "C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.runs/impl_1/compress_result_top.bin" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k325t_0] 0]]
+set_property PROGRAM.PRM_FILE {} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k325t_0] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k325t_0] 0]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k325t_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k325t_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k325t_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k325t_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k325t_0] 0]]
+startgroup 
+create_hw_bitstream -hw_device [lindex [get_hw_devices xc7k325t_0] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices xc7k325t_0] 0]]; program_hw_devices [lindex [get_hw_devices xc7k325t_0] 0]; refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0];
+program_hw_cfgmem -hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k325t_0] 0]]
+endgroup

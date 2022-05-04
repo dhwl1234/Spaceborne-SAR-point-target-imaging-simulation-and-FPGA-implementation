@@ -1,0 +1,1205 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Apr  2 20:19:05 2022
+# Process ID: 24852
+# Current directory: C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18952 C:\Users\WYHAIRCAS\Desktop\plus_compress\Plus_Compress_Wave_Out_chipscope\Plus_Compress_Wave_Out.xpr
+# Log file: C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/vivado.log
+# Journal file: C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/install_location/vivado18_3/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 810.258 ; gain = 140.801
+update_compile_order -fileset sources_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hq/Conv_Sq_Hq.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hi/Conv_Sq_Hi.xci' is already up-to-date
+[Sat Apr  2 20:20:19 2022] Launched impl_1...
+Run output will be captured here: C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.runs/impl_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7k325tfbg676-2
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/cordic_0/cordic_0.dcp' for cell 'result_out_abs_inst/cordic_0_inst'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/ROM_320x16_S_I/ROM_320x16_S_I.dcp' for cell 'rom_fir_connect_inst/ROM_Control_inst/ROM_320x16_S_I_inst'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/ROM_320x16_S_Q/ROM_320x16_S_Q.dcp' for cell 'rom_fir_connect_inst/ROM_Control_inst/ROM_320x16_S_Q_inst'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Si_Hi/Conv_Si_Hi.dcp' for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Si_Hi_inst'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Si_Hq/Conv_Si_Hq.dcp' for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Si_Hq_inst'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hi/Conv_Sq_Hi.dcp' for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Sq_Hi_inst'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hq/Conv_Sq_Hq.dcp' for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Sq_Hq_inst'
+INFO: [Netlist 29-17] Analyzing 2082 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7k325tfbg676-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hq/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Sq_Hq_inst/U0'
+Finished Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hq/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Sq_Hq_inst/U0'
+Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hi/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Sq_Hi_inst/U0'
+Finished Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hi/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Sq_Hi_inst/U0'
+Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Si_Hi/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Si_Hi_inst/U0'
+Finished Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Si_Hi/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Si_Hi_inst/U0'
+Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Si_Hq/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Si_Hq_inst/U0'
+Finished Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Si_Hq/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Si_Hq_inst/U0'
+Parsing XDC File [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/constrs_1/new/plus_compress_constrains.xdc]
+CRITICAL WARNING: [Designutils 20-1307] Command '//spi' is not supported in the xdc constraint file. [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/constrs_1/new/plus_compress_constrains.xdc:1]
+Finished Parsing XDC File [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/constrs_1/new/plus_compress_constrains.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1530.402 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:47 ; elapsed = 00:00:38 . Memory (MB): peak = 1782.012 ; gain = 583.641
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hq/Conv_Sq_Hq.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hi/Conv_Sq_Hi.xci' is already up-to-date
+[Sat Apr  2 20:29:11 2022] Launched synth_1...
+Run output will be captured here: C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.runs/synth_1/runme.log
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[0]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[1]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[2]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[3]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[4]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[5]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[6]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[7]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[8]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[9]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[10]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[11]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[12]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[13]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[14]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[15]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[16]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[17]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[18]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[19]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[20]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[21]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[22]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[23]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[24]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[25]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[26]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[27]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[28]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[29]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[30]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[31]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[32]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[33]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[34]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[35]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[36]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[37]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[38]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[39]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[0]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[1]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[2]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[3]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[4]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[5]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[6]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[7]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[8]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[9]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[10]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[11]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[12]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[13]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[14]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[15]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[16]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[17]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[18]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[19]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[20]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[21]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[22]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[23]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[24]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[25]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[26]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[27]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[28]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[29]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[30]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[31]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[32]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[33]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[34]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[35]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[36]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[37]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[38]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'compress_result[39]'; it is not accessible from the fabric routing.
+refresh_design
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/cordic_0/cordic_0.dcp' for cell 'result_out_abs_inst/cordic_0_inst'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/ROM_320x16_S_I/ROM_320x16_S_I.dcp' for cell 'rom_fir_connect_inst/ROM_Control_inst/ROM_320x16_S_I_inst'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/ROM_320x16_S_Q/ROM_320x16_S_Q.dcp' for cell 'rom_fir_connect_inst/ROM_Control_inst/ROM_320x16_S_Q_inst'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Si_Hi/Conv_Si_Hi.dcp' for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Si_Hi_inst'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Si_Hq/Conv_Si_Hq.dcp' for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Si_Hq_inst'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hi/Conv_Sq_Hi.dcp' for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Sq_Hi_inst'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hq/Conv_Sq_Hq.dcp' for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Sq_Hq_inst'
+INFO: [Netlist 29-17] Analyzing 2082 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hq/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Sq_Hq_inst/U0'
+Finished Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hq/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Sq_Hq_inst/U0'
+Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hi/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Sq_Hi_inst/U0'
+Finished Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hi/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Sq_Hi_inst/U0'
+Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Si_Hi/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Si_Hi_inst/U0'
+Finished Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Si_Hi/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Si_Hi_inst/U0'
+Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Si_Hq/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Si_Hq_inst/U0'
+Finished Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Si_Hq/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Si_Hq_inst/U0'
+Parsing XDC File [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/constrs_1/new/plus_compress_constrains.xdc]
+CRITICAL WARNING: [Designutils 20-1307] Command '//spi' is not supported in the xdc constraint file. [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/constrs_1/new/plus_compress_constrains.xdc:1]
+Finished Parsing XDC File [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/constrs_1/new/plus_compress_constrains.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:33 . Memory (MB): peak = 2434.777 ; gain = 146.594
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hq/Conv_Sq_Hq.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hi/Conv_Sq_Hi.xci' is already up-to-date
+[Sat Apr  2 20:32:37 2022] Launched synth_1...
+Run output will be captured here: C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hq/Conv_Sq_Hq.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hi/Conv_Sq_Hi.xci' is already up-to-date
+[Sat Apr  2 20:33:38 2022] Launched synth_1...
+Run output will be captured here: C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.runs/synth_1/runme.log
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+startgroup 
+set_property C_EN_STRG_QUAL true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU_CNT 2 [get_debug_cores u_ila_0 ]
+endgroup
+set_property port_width 1 [get_debug_ports u_ila_0/clk]
+connect_debug_port u_ila_0/clk [get_nets [list sys_clk_IBUF_BUFG ]]
+set_property port_width 16 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {rom_fir_connect_inst/ROM_Control_inst/SI[0]} {rom_fir_connect_inst/ROM_Control_inst/SI[1]} {rom_fir_connect_inst/ROM_Control_inst/SI[2]} {rom_fir_connect_inst/ROM_Control_inst/SI[3]} {rom_fir_connect_inst/ROM_Control_inst/SI[4]} {rom_fir_connect_inst/ROM_Control_inst/SI[5]} {rom_fir_connect_inst/ROM_Control_inst/SI[6]} {rom_fir_connect_inst/ROM_Control_inst/SI[7]} {rom_fir_connect_inst/ROM_Control_inst/SI[8]} {rom_fir_connect_inst/ROM_Control_inst/SI[9]} {rom_fir_connect_inst/ROM_Control_inst/SI[10]} {rom_fir_connect_inst/ROM_Control_inst/SI[11]} {rom_fir_connect_inst/ROM_Control_inst/SI[12]} {rom_fir_connect_inst/ROM_Control_inst/SI[13]} {rom_fir_connect_inst/ROM_Control_inst/SI[14]} {rom_fir_connect_inst/ROM_Control_inst/SI[15]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {compress_result_OBUF[0]} {compress_result_OBUF[1]} {compress_result_OBUF[2]} {compress_result_OBUF[3]} {compress_result_OBUF[4]} {compress_result_OBUF[5]} {compress_result_OBUF[6]} {compress_result_OBUF[7]} {compress_result_OBUF[8]} {compress_result_OBUF[9]} {compress_result_OBUF[10]} {compress_result_OBUF[11]} {compress_result_OBUF[12]} {compress_result_OBUF[13]} {compress_result_OBUF[14]} {compress_result_OBUF[15]} {compress_result_OBUF[16]} {compress_result_OBUF[17]} {compress_result_OBUF[18]} {compress_result_OBUF[19]} {compress_result_OBUF[20]} {compress_result_OBUF[21]} {compress_result_OBUF[22]} {compress_result_OBUF[23]} {compress_result_OBUF[24]} {compress_result_OBUF[25]} {compress_result_OBUF[26]} {compress_result_OBUF[27]} {compress_result_OBUF[28]} {compress_result_OBUF[29]} {compress_result_OBUF[30]} {compress_result_OBUF[31]} {compress_result_OBUF[32]} {compress_result_OBUF[33]} {compress_result_OBUF[34]} {compress_result_OBUF[35]} {compress_result_OBUF[36]} {compress_result_OBUF[37]} {compress_result_OBUF[38]} {compress_result_OBUF[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {m_axis_data_tdata_sihi[0]} {m_axis_data_tdata_sihi[1]} {m_axis_data_tdata_sihi[2]} {m_axis_data_tdata_sihi[3]} {m_axis_data_tdata_sihi[4]} {m_axis_data_tdata_sihi[5]} {m_axis_data_tdata_sihi[6]} {m_axis_data_tdata_sihi[7]} {m_axis_data_tdata_sihi[8]} {m_axis_data_tdata_sihi[9]} {m_axis_data_tdata_sihi[10]} {m_axis_data_tdata_sihi[11]} {m_axis_data_tdata_sihi[12]} {m_axis_data_tdata_sihi[13]} {m_axis_data_tdata_sihi[14]} {m_axis_data_tdata_sihi[15]} {m_axis_data_tdata_sihi[16]} {m_axis_data_tdata_sihi[17]} {m_axis_data_tdata_sihi[18]} {m_axis_data_tdata_sihi[19]} {m_axis_data_tdata_sihi[20]} {m_axis_data_tdata_sihi[21]} {m_axis_data_tdata_sihi[22]} {m_axis_data_tdata_sihi[23]} {m_axis_data_tdata_sihi[24]} {m_axis_data_tdata_sihi[25]} {m_axis_data_tdata_sihi[26]} {m_axis_data_tdata_sihi[27]} {m_axis_data_tdata_sihi[28]} {m_axis_data_tdata_sihi[29]} {m_axis_data_tdata_sihi[30]} {m_axis_data_tdata_sihi[31]} {m_axis_data_tdata_sihi[32]} {m_axis_data_tdata_sihi[33]} {m_axis_data_tdata_sihi[34]} {m_axis_data_tdata_sihi[35]} {m_axis_data_tdata_sihi[36]} {m_axis_data_tdata_sihi[37]} {m_axis_data_tdata_sihi[38]} {m_axis_data_tdata_sihi[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list {m_axis_data_tdata_sihq[0]} {m_axis_data_tdata_sihq[1]} {m_axis_data_tdata_sihq[2]} {m_axis_data_tdata_sihq[3]} {m_axis_data_tdata_sihq[4]} {m_axis_data_tdata_sihq[5]} {m_axis_data_tdata_sihq[6]} {m_axis_data_tdata_sihq[7]} {m_axis_data_tdata_sihq[8]} {m_axis_data_tdata_sihq[9]} {m_axis_data_tdata_sihq[10]} {m_axis_data_tdata_sihq[11]} {m_axis_data_tdata_sihq[12]} {m_axis_data_tdata_sihq[13]} {m_axis_data_tdata_sihq[14]} {m_axis_data_tdata_sihq[15]} {m_axis_data_tdata_sihq[16]} {m_axis_data_tdata_sihq[17]} {m_axis_data_tdata_sihq[18]} {m_axis_data_tdata_sihq[19]} {m_axis_data_tdata_sihq[20]} {m_axis_data_tdata_sihq[21]} {m_axis_data_tdata_sihq[22]} {m_axis_data_tdata_sihq[23]} {m_axis_data_tdata_sihq[24]} {m_axis_data_tdata_sihq[25]} {m_axis_data_tdata_sihq[26]} {m_axis_data_tdata_sihq[27]} {m_axis_data_tdata_sihq[28]} {m_axis_data_tdata_sihq[29]} {m_axis_data_tdata_sihq[30]} {m_axis_data_tdata_sihq[31]} {m_axis_data_tdata_sihq[32]} {m_axis_data_tdata_sihq[33]} {m_axis_data_tdata_sihq[34]} {m_axis_data_tdata_sihq[35]} {m_axis_data_tdata_sihq[36]} {m_axis_data_tdata_sihq[37]} {m_axis_data_tdata_sihq[38]} {m_axis_data_tdata_sihq[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list {m_axis_data_tdata_sqhi[0]} {m_axis_data_tdata_sqhi[1]} {m_axis_data_tdata_sqhi[2]} {m_axis_data_tdata_sqhi[3]} {m_axis_data_tdata_sqhi[4]} {m_axis_data_tdata_sqhi[5]} {m_axis_data_tdata_sqhi[6]} {m_axis_data_tdata_sqhi[7]} {m_axis_data_tdata_sqhi[8]} {m_axis_data_tdata_sqhi[9]} {m_axis_data_tdata_sqhi[10]} {m_axis_data_tdata_sqhi[11]} {m_axis_data_tdata_sqhi[12]} {m_axis_data_tdata_sqhi[13]} {m_axis_data_tdata_sqhi[14]} {m_axis_data_tdata_sqhi[15]} {m_axis_data_tdata_sqhi[16]} {m_axis_data_tdata_sqhi[17]} {m_axis_data_tdata_sqhi[18]} {m_axis_data_tdata_sqhi[19]} {m_axis_data_tdata_sqhi[20]} {m_axis_data_tdata_sqhi[21]} {m_axis_data_tdata_sqhi[22]} {m_axis_data_tdata_sqhi[23]} {m_axis_data_tdata_sqhi[24]} {m_axis_data_tdata_sqhi[25]} {m_axis_data_tdata_sqhi[26]} {m_axis_data_tdata_sqhi[27]} {m_axis_data_tdata_sqhi[28]} {m_axis_data_tdata_sqhi[29]} {m_axis_data_tdata_sqhi[30]} {m_axis_data_tdata_sqhi[31]} {m_axis_data_tdata_sqhi[32]} {m_axis_data_tdata_sqhi[33]} {m_axis_data_tdata_sqhi[34]} {m_axis_data_tdata_sqhi[35]} {m_axis_data_tdata_sqhi[36]} {m_axis_data_tdata_sqhi[37]} {m_axis_data_tdata_sqhi[38]} {m_axis_data_tdata_sqhi[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 16 [get_debug_ports u_ila_0/probe5]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list {rom_fir_connect_inst/ROM_Control_inst/SQ[0]} {rom_fir_connect_inst/ROM_Control_inst/SQ[1]} {rom_fir_connect_inst/ROM_Control_inst/SQ[2]} {rom_fir_connect_inst/ROM_Control_inst/SQ[3]} {rom_fir_connect_inst/ROM_Control_inst/SQ[4]} {rom_fir_connect_inst/ROM_Control_inst/SQ[5]} {rom_fir_connect_inst/ROM_Control_inst/SQ[6]} {rom_fir_connect_inst/ROM_Control_inst/SQ[7]} {rom_fir_connect_inst/ROM_Control_inst/SQ[8]} {rom_fir_connect_inst/ROM_Control_inst/SQ[9]} {rom_fir_connect_inst/ROM_Control_inst/SQ[10]} {rom_fir_connect_inst/ROM_Control_inst/SQ[11]} {rom_fir_connect_inst/ROM_Control_inst/SQ[12]} {rom_fir_connect_inst/ROM_Control_inst/SQ[13]} {rom_fir_connect_inst/ROM_Control_inst/SQ[14]} {rom_fir_connect_inst/ROM_Control_inst/SQ[15]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe6]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe6]
+connect_debug_port u_ila_0/probe6 [get_nets [list {m_axis_data_tdata_sqhq[0]} {m_axis_data_tdata_sqhq[1]} {m_axis_data_tdata_sqhq[2]} {m_axis_data_tdata_sqhq[3]} {m_axis_data_tdata_sqhq[4]} {m_axis_data_tdata_sqhq[5]} {m_axis_data_tdata_sqhq[6]} {m_axis_data_tdata_sqhq[7]} {m_axis_data_tdata_sqhq[8]} {m_axis_data_tdata_sqhq[9]} {m_axis_data_tdata_sqhq[10]} {m_axis_data_tdata_sqhq[11]} {m_axis_data_tdata_sqhq[12]} {m_axis_data_tdata_sqhq[13]} {m_axis_data_tdata_sqhq[14]} {m_axis_data_tdata_sqhq[15]} {m_axis_data_tdata_sqhq[16]} {m_axis_data_tdata_sqhq[17]} {m_axis_data_tdata_sqhq[18]} {m_axis_data_tdata_sqhq[19]} {m_axis_data_tdata_sqhq[20]} {m_axis_data_tdata_sqhq[21]} {m_axis_data_tdata_sqhq[22]} {m_axis_data_tdata_sqhq[23]} {m_axis_data_tdata_sqhq[24]} {m_axis_data_tdata_sqhq[25]} {m_axis_data_tdata_sqhq[26]} {m_axis_data_tdata_sqhq[27]} {m_axis_data_tdata_sqhq[28]} {m_axis_data_tdata_sqhq[29]} {m_axis_data_tdata_sqhq[30]} {m_axis_data_tdata_sqhq[31]} {m_axis_data_tdata_sqhq[32]} {m_axis_data_tdata_sqhq[33]} {m_axis_data_tdata_sqhq[34]} {m_axis_data_tdata_sqhq[35]} {m_axis_data_tdata_sqhq[36]} {m_axis_data_tdata_sqhq[37]} {m_axis_data_tdata_sqhq[38]} {m_axis_data_tdata_sqhq[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe7]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe7]
+connect_debug_port u_ila_0/probe7 [get_nets [list {result_compress_i[0]} {result_compress_i[1]} {result_compress_i[2]} {result_compress_i[3]} {result_compress_i[4]} {result_compress_i[5]} {result_compress_i[6]} {result_compress_i[7]} {result_compress_i[8]} {result_compress_i[9]} {result_compress_i[10]} {result_compress_i[11]} {result_compress_i[12]} {result_compress_i[13]} {result_compress_i[14]} {result_compress_i[15]} {result_compress_i[16]} {result_compress_i[17]} {result_compress_i[18]} {result_compress_i[19]} {result_compress_i[20]} {result_compress_i[21]} {result_compress_i[22]} {result_compress_i[23]} {result_compress_i[24]} {result_compress_i[25]} {result_compress_i[26]} {result_compress_i[27]} {result_compress_i[28]} {result_compress_i[29]} {result_compress_i[30]} {result_compress_i[31]} {result_compress_i[32]} {result_compress_i[33]} {result_compress_i[34]} {result_compress_i[35]} {result_compress_i[36]} {result_compress_i[37]} {result_compress_i[38]} {result_compress_i[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe8]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe8]
+connect_debug_port u_ila_0/probe8 [get_nets [list {result_compress_q[0]} {result_compress_q[1]} {result_compress_q[2]} {result_compress_q[3]} {result_compress_q[4]} {result_compress_q[5]} {result_compress_q[6]} {result_compress_q[7]} {result_compress_q[8]} {result_compress_q[9]} {result_compress_q[10]} {result_compress_q[11]} {result_compress_q[12]} {result_compress_q[13]} {result_compress_q[14]} {result_compress_q[15]} {result_compress_q[16]} {result_compress_q[17]} {result_compress_q[18]} {result_compress_q[19]} {result_compress_q[20]} {result_compress_q[21]} {result_compress_q[22]} {result_compress_q[23]} {result_compress_q[24]} {result_compress_q[25]} {result_compress_q[26]} {result_compress_q[27]} {result_compress_q[28]} {result_compress_q[29]} {result_compress_q[30]} {result_compress_q[31]} {result_compress_q[32]} {result_compress_q[33]} {result_compress_q[34]} {result_compress_q[35]} {result_compress_q[36]} {result_compress_q[37]} {result_compress_q[38]} {result_compress_q[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe9]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe9]
+connect_debug_port u_ila_0/probe9 [get_nets [list sys_clk_IBUF_BUFG ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe10]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe10]
+connect_debug_port u_ila_0/probe10 [get_nets [list sys_rst_n_IBUF ]]
+refresh_design
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/cordic_0/cordic_0.dcp' for cell 'result_out_abs_inst/cordic_0_inst'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/ROM_320x16_S_I/ROM_320x16_S_I.dcp' for cell 'rom_fir_connect_inst/ROM_Control_inst/ROM_320x16_S_I_inst'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/ROM_320x16_S_Q/ROM_320x16_S_Q.dcp' for cell 'rom_fir_connect_inst/ROM_Control_inst/ROM_320x16_S_Q_inst'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Si_Hi/Conv_Si_Hi.dcp' for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Si_Hi_inst'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Si_Hq/Conv_Si_Hq.dcp' for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Si_Hq_inst'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hi/Conv_Sq_Hi.dcp' for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Sq_Hi_inst'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hq/Conv_Sq_Hq.dcp' for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Sq_Hq_inst'
+INFO: [Netlist 29-17] Analyzing 2082 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hq/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Sq_Hq_inst/U0'
+Finished Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hq/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Sq_Hq_inst/U0'
+Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hi/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Sq_Hi_inst/U0'
+Finished Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hi/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Sq_Hi_inst/U0'
+Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Si_Hi/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Si_Hi_inst/U0'
+Finished Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Si_Hi/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Si_Hi_inst/U0'
+Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Si_Hq/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Si_Hq_inst/U0'
+Finished Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Si_Hq/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Si_Hq_inst/U0'
+Parsing XDC File [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/constrs_1/new/plus_compress_constrains.xdc]
+Finished Parsing XDC File [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/constrs_1/new/plus_compress_constrains.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:32 . Memory (MB): peak = 2572.641 ; gain = 109.762
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hq/Conv_Sq_Hq.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hi/Conv_Sq_Hi.xci' is already up-to-date
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.043 . Memory (MB): peak = 2572.641 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.189 . Memory (MB): peak = 2572.641 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 2619.145 ; gain = 0.000
+[Sat Apr  2 20:37:18 2022] Launched impl_1...
+Run output will be captured here: C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:23 ; elapsed = 00:00:13 . Memory (MB): peak = 2619.531 ; gain = 46.891
+(*mark_debug = "true"*) set_param general.maxThreads 32
+extra characters after close-quote
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210299492397
+set_property PROGRAM.FILE {C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.runs/impl_1/compress_result_top.bit} [get_hw_devices xc7k325t_0]
+current_hw_device [get_hw_devices xc7k325t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+create_hw_cfgmem -hw_device [get_hw_devices xc7k325t_0] -mem_dev [lindex [get_cfgmem_parts {mt25ql256-spi-x1_x2_x4}] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.runs/impl_1/compress_result_top.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 3434.375 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_param general.maxThreads 32
+32
+set_property PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.runs/impl_1/compress_result_top.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 3438.172 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+startgroup 
+set_property C_EN_STRG_QUAL true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU_CNT 2 [get_debug_cores u_ila_0 ]
+endgroup
+set_property port_width 1 [get_debug_ports u_ila_0/clk]
+connect_debug_port u_ila_0/clk [get_nets [list sys_clk_IBUF_BUFG ]]
+set_property port_width 16 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {rom_fir_connect_inst/ROM_Control_inst/SI[0]} {rom_fir_connect_inst/ROM_Control_inst/SI[1]} {rom_fir_connect_inst/ROM_Control_inst/SI[2]} {rom_fir_connect_inst/ROM_Control_inst/SI[3]} {rom_fir_connect_inst/ROM_Control_inst/SI[4]} {rom_fir_connect_inst/ROM_Control_inst/SI[5]} {rom_fir_connect_inst/ROM_Control_inst/SI[6]} {rom_fir_connect_inst/ROM_Control_inst/SI[7]} {rom_fir_connect_inst/ROM_Control_inst/SI[8]} {rom_fir_connect_inst/ROM_Control_inst/SI[9]} {rom_fir_connect_inst/ROM_Control_inst/SI[10]} {rom_fir_connect_inst/ROM_Control_inst/SI[11]} {rom_fir_connect_inst/ROM_Control_inst/SI[12]} {rom_fir_connect_inst/ROM_Control_inst/SI[13]} {rom_fir_connect_inst/ROM_Control_inst/SI[14]} {rom_fir_connect_inst/ROM_Control_inst/SI[15]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 16 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {rom_fir_connect_inst/ROM_Control_inst/SQ[0]} {rom_fir_connect_inst/ROM_Control_inst/SQ[1]} {rom_fir_connect_inst/ROM_Control_inst/SQ[2]} {rom_fir_connect_inst/ROM_Control_inst/SQ[3]} {rom_fir_connect_inst/ROM_Control_inst/SQ[4]} {rom_fir_connect_inst/ROM_Control_inst/SQ[5]} {rom_fir_connect_inst/ROM_Control_inst/SQ[6]} {rom_fir_connect_inst/ROM_Control_inst/SQ[7]} {rom_fir_connect_inst/ROM_Control_inst/SQ[8]} {rom_fir_connect_inst/ROM_Control_inst/SQ[9]} {rom_fir_connect_inst/ROM_Control_inst/SQ[10]} {rom_fir_connect_inst/ROM_Control_inst/SQ[11]} {rom_fir_connect_inst/ROM_Control_inst/SQ[12]} {rom_fir_connect_inst/ROM_Control_inst/SQ[13]} {rom_fir_connect_inst/ROM_Control_inst/SQ[14]} {rom_fir_connect_inst/ROM_Control_inst/SQ[15]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {compress_result_OBUF[0]} {compress_result_OBUF[1]} {compress_result_OBUF[2]} {compress_result_OBUF[3]} {compress_result_OBUF[4]} {compress_result_OBUF[5]} {compress_result_OBUF[6]} {compress_result_OBUF[7]} {compress_result_OBUF[8]} {compress_result_OBUF[9]} {compress_result_OBUF[10]} {compress_result_OBUF[11]} {compress_result_OBUF[12]} {compress_result_OBUF[13]} {compress_result_OBUF[14]} {compress_result_OBUF[15]} {compress_result_OBUF[16]} {compress_result_OBUF[17]} {compress_result_OBUF[18]} {compress_result_OBUF[19]} {compress_result_OBUF[20]} {compress_result_OBUF[21]} {compress_result_OBUF[22]} {compress_result_OBUF[23]} {compress_result_OBUF[24]} {compress_result_OBUF[25]} {compress_result_OBUF[26]} {compress_result_OBUF[27]} {compress_result_OBUF[28]} {compress_result_OBUF[29]} {compress_result_OBUF[30]} {compress_result_OBUF[31]} {compress_result_OBUF[32]} {compress_result_OBUF[33]} {compress_result_OBUF[34]} {compress_result_OBUF[35]} {compress_result_OBUF[36]} {compress_result_OBUF[37]} {compress_result_OBUF[38]} {compress_result_OBUF[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list {m_axis_data_tdata_sihi[0]} {m_axis_data_tdata_sihi[1]} {m_axis_data_tdata_sihi[2]} {m_axis_data_tdata_sihi[3]} {m_axis_data_tdata_sihi[4]} {m_axis_data_tdata_sihi[5]} {m_axis_data_tdata_sihi[6]} {m_axis_data_tdata_sihi[7]} {m_axis_data_tdata_sihi[8]} {m_axis_data_tdata_sihi[9]} {m_axis_data_tdata_sihi[10]} {m_axis_data_tdata_sihi[11]} {m_axis_data_tdata_sihi[12]} {m_axis_data_tdata_sihi[13]} {m_axis_data_tdata_sihi[14]} {m_axis_data_tdata_sihi[15]} {m_axis_data_tdata_sihi[16]} {m_axis_data_tdata_sihi[17]} {m_axis_data_tdata_sihi[18]} {m_axis_data_tdata_sihi[19]} {m_axis_data_tdata_sihi[20]} {m_axis_data_tdata_sihi[21]} {m_axis_data_tdata_sihi[22]} {m_axis_data_tdata_sihi[23]} {m_axis_data_tdata_sihi[24]} {m_axis_data_tdata_sihi[25]} {m_axis_data_tdata_sihi[26]} {m_axis_data_tdata_sihi[27]} {m_axis_data_tdata_sihi[28]} {m_axis_data_tdata_sihi[29]} {m_axis_data_tdata_sihi[30]} {m_axis_data_tdata_sihi[31]} {m_axis_data_tdata_sihi[32]} {m_axis_data_tdata_sihi[33]} {m_axis_data_tdata_sihi[34]} {m_axis_data_tdata_sihi[35]} {m_axis_data_tdata_sihi[36]} {m_axis_data_tdata_sihi[37]} {m_axis_data_tdata_sihi[38]} {m_axis_data_tdata_sihi[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list {m_axis_data_tdata_sihq[0]} {m_axis_data_tdata_sihq[1]} {m_axis_data_tdata_sihq[2]} {m_axis_data_tdata_sihq[3]} {m_axis_data_tdata_sihq[4]} {m_axis_data_tdata_sihq[5]} {m_axis_data_tdata_sihq[6]} {m_axis_data_tdata_sihq[7]} {m_axis_data_tdata_sihq[8]} {m_axis_data_tdata_sihq[9]} {m_axis_data_tdata_sihq[10]} {m_axis_data_tdata_sihq[11]} {m_axis_data_tdata_sihq[12]} {m_axis_data_tdata_sihq[13]} {m_axis_data_tdata_sihq[14]} {m_axis_data_tdata_sihq[15]} {m_axis_data_tdata_sihq[16]} {m_axis_data_tdata_sihq[17]} {m_axis_data_tdata_sihq[18]} {m_axis_data_tdata_sihq[19]} {m_axis_data_tdata_sihq[20]} {m_axis_data_tdata_sihq[21]} {m_axis_data_tdata_sihq[22]} {m_axis_data_tdata_sihq[23]} {m_axis_data_tdata_sihq[24]} {m_axis_data_tdata_sihq[25]} {m_axis_data_tdata_sihq[26]} {m_axis_data_tdata_sihq[27]} {m_axis_data_tdata_sihq[28]} {m_axis_data_tdata_sihq[29]} {m_axis_data_tdata_sihq[30]} {m_axis_data_tdata_sihq[31]} {m_axis_data_tdata_sihq[32]} {m_axis_data_tdata_sihq[33]} {m_axis_data_tdata_sihq[34]} {m_axis_data_tdata_sihq[35]} {m_axis_data_tdata_sihq[36]} {m_axis_data_tdata_sihq[37]} {m_axis_data_tdata_sihq[38]} {m_axis_data_tdata_sihq[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe5]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list {m_axis_data_tdata_sqhi[0]} {m_axis_data_tdata_sqhi[1]} {m_axis_data_tdata_sqhi[2]} {m_axis_data_tdata_sqhi[3]} {m_axis_data_tdata_sqhi[4]} {m_axis_data_tdata_sqhi[5]} {m_axis_data_tdata_sqhi[6]} {m_axis_data_tdata_sqhi[7]} {m_axis_data_tdata_sqhi[8]} {m_axis_data_tdata_sqhi[9]} {m_axis_data_tdata_sqhi[10]} {m_axis_data_tdata_sqhi[11]} {m_axis_data_tdata_sqhi[12]} {m_axis_data_tdata_sqhi[13]} {m_axis_data_tdata_sqhi[14]} {m_axis_data_tdata_sqhi[15]} {m_axis_data_tdata_sqhi[16]} {m_axis_data_tdata_sqhi[17]} {m_axis_data_tdata_sqhi[18]} {m_axis_data_tdata_sqhi[19]} {m_axis_data_tdata_sqhi[20]} {m_axis_data_tdata_sqhi[21]} {m_axis_data_tdata_sqhi[22]} {m_axis_data_tdata_sqhi[23]} {m_axis_data_tdata_sqhi[24]} {m_axis_data_tdata_sqhi[25]} {m_axis_data_tdata_sqhi[26]} {m_axis_data_tdata_sqhi[27]} {m_axis_data_tdata_sqhi[28]} {m_axis_data_tdata_sqhi[29]} {m_axis_data_tdata_sqhi[30]} {m_axis_data_tdata_sqhi[31]} {m_axis_data_tdata_sqhi[32]} {m_axis_data_tdata_sqhi[33]} {m_axis_data_tdata_sqhi[34]} {m_axis_data_tdata_sqhi[35]} {m_axis_data_tdata_sqhi[36]} {m_axis_data_tdata_sqhi[37]} {m_axis_data_tdata_sqhi[38]} {m_axis_data_tdata_sqhi[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe6]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe6]
+connect_debug_port u_ila_0/probe6 [get_nets [list {m_axis_data_tdata_sqhq[0]} {m_axis_data_tdata_sqhq[1]} {m_axis_data_tdata_sqhq[2]} {m_axis_data_tdata_sqhq[3]} {m_axis_data_tdata_sqhq[4]} {m_axis_data_tdata_sqhq[5]} {m_axis_data_tdata_sqhq[6]} {m_axis_data_tdata_sqhq[7]} {m_axis_data_tdata_sqhq[8]} {m_axis_data_tdata_sqhq[9]} {m_axis_data_tdata_sqhq[10]} {m_axis_data_tdata_sqhq[11]} {m_axis_data_tdata_sqhq[12]} {m_axis_data_tdata_sqhq[13]} {m_axis_data_tdata_sqhq[14]} {m_axis_data_tdata_sqhq[15]} {m_axis_data_tdata_sqhq[16]} {m_axis_data_tdata_sqhq[17]} {m_axis_data_tdata_sqhq[18]} {m_axis_data_tdata_sqhq[19]} {m_axis_data_tdata_sqhq[20]} {m_axis_data_tdata_sqhq[21]} {m_axis_data_tdata_sqhq[22]} {m_axis_data_tdata_sqhq[23]} {m_axis_data_tdata_sqhq[24]} {m_axis_data_tdata_sqhq[25]} {m_axis_data_tdata_sqhq[26]} {m_axis_data_tdata_sqhq[27]} {m_axis_data_tdata_sqhq[28]} {m_axis_data_tdata_sqhq[29]} {m_axis_data_tdata_sqhq[30]} {m_axis_data_tdata_sqhq[31]} {m_axis_data_tdata_sqhq[32]} {m_axis_data_tdata_sqhq[33]} {m_axis_data_tdata_sqhq[34]} {m_axis_data_tdata_sqhq[35]} {m_axis_data_tdata_sqhq[36]} {m_axis_data_tdata_sqhq[37]} {m_axis_data_tdata_sqhq[38]} {m_axis_data_tdata_sqhq[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe7]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe7]
+connect_debug_port u_ila_0/probe7 [get_nets [list {result_compress_i[0]} {result_compress_i[1]} {result_compress_i[2]} {result_compress_i[3]} {result_compress_i[4]} {result_compress_i[5]} {result_compress_i[6]} {result_compress_i[7]} {result_compress_i[8]} {result_compress_i[9]} {result_compress_i[10]} {result_compress_i[11]} {result_compress_i[12]} {result_compress_i[13]} {result_compress_i[14]} {result_compress_i[15]} {result_compress_i[16]} {result_compress_i[17]} {result_compress_i[18]} {result_compress_i[19]} {result_compress_i[20]} {result_compress_i[21]} {result_compress_i[22]} {result_compress_i[23]} {result_compress_i[24]} {result_compress_i[25]} {result_compress_i[26]} {result_compress_i[27]} {result_compress_i[28]} {result_compress_i[29]} {result_compress_i[30]} {result_compress_i[31]} {result_compress_i[32]} {result_compress_i[33]} {result_compress_i[34]} {result_compress_i[35]} {result_compress_i[36]} {result_compress_i[37]} {result_compress_i[38]} {result_compress_i[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe8]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe8]
+connect_debug_port u_ila_0/probe8 [get_nets [list {result_compress_q[0]} {result_compress_q[1]} {result_compress_q[2]} {result_compress_q[3]} {result_compress_q[4]} {result_compress_q[5]} {result_compress_q[6]} {result_compress_q[7]} {result_compress_q[8]} {result_compress_q[9]} {result_compress_q[10]} {result_compress_q[11]} {result_compress_q[12]} {result_compress_q[13]} {result_compress_q[14]} {result_compress_q[15]} {result_compress_q[16]} {result_compress_q[17]} {result_compress_q[18]} {result_compress_q[19]} {result_compress_q[20]} {result_compress_q[21]} {result_compress_q[22]} {result_compress_q[23]} {result_compress_q[24]} {result_compress_q[25]} {result_compress_q[26]} {result_compress_q[27]} {result_compress_q[28]} {result_compress_q[29]} {result_compress_q[30]} {result_compress_q[31]} {result_compress_q[32]} {result_compress_q[33]} {result_compress_q[34]} {result_compress_q[35]} {result_compress_q[36]} {result_compress_q[37]} {result_compress_q[38]} {result_compress_q[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe9]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe9]
+connect_debug_port u_ila_0/probe9 [get_nets [list sys_clk_IBUF_BUFG ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe10]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe10]
+connect_debug_port u_ila_0/probe10 [get_nets [list sys_rst_n_IBUF ]]
+delete_debug_core [get_debug_cores {u_ila_0 }]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+startgroup 
+set_property C_EN_STRG_QUAL true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU_CNT 2 [get_debug_cores u_ila_0 ]
+endgroup
+set_property port_width 1 [get_debug_ports u_ila_0/clk]
+connect_debug_port u_ila_0/clk [get_nets [list sys_clk_IBUF_BUFG ]]
+set_property port_width 16 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {rom_fir_connect_inst/ROM_Control_inst/SI[0]} {rom_fir_connect_inst/ROM_Control_inst/SI[1]} {rom_fir_connect_inst/ROM_Control_inst/SI[2]} {rom_fir_connect_inst/ROM_Control_inst/SI[3]} {rom_fir_connect_inst/ROM_Control_inst/SI[4]} {rom_fir_connect_inst/ROM_Control_inst/SI[5]} {rom_fir_connect_inst/ROM_Control_inst/SI[6]} {rom_fir_connect_inst/ROM_Control_inst/SI[7]} {rom_fir_connect_inst/ROM_Control_inst/SI[8]} {rom_fir_connect_inst/ROM_Control_inst/SI[9]} {rom_fir_connect_inst/ROM_Control_inst/SI[10]} {rom_fir_connect_inst/ROM_Control_inst/SI[11]} {rom_fir_connect_inst/ROM_Control_inst/SI[12]} {rom_fir_connect_inst/ROM_Control_inst/SI[13]} {rom_fir_connect_inst/ROM_Control_inst/SI[14]} {rom_fir_connect_inst/ROM_Control_inst/SI[15]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 16 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {rom_fir_connect_inst/ROM_Control_inst/SQ[0]} {rom_fir_connect_inst/ROM_Control_inst/SQ[1]} {rom_fir_connect_inst/ROM_Control_inst/SQ[2]} {rom_fir_connect_inst/ROM_Control_inst/SQ[3]} {rom_fir_connect_inst/ROM_Control_inst/SQ[4]} {rom_fir_connect_inst/ROM_Control_inst/SQ[5]} {rom_fir_connect_inst/ROM_Control_inst/SQ[6]} {rom_fir_connect_inst/ROM_Control_inst/SQ[7]} {rom_fir_connect_inst/ROM_Control_inst/SQ[8]} {rom_fir_connect_inst/ROM_Control_inst/SQ[9]} {rom_fir_connect_inst/ROM_Control_inst/SQ[10]} {rom_fir_connect_inst/ROM_Control_inst/SQ[11]} {rom_fir_connect_inst/ROM_Control_inst/SQ[12]} {rom_fir_connect_inst/ROM_Control_inst/SQ[13]} {rom_fir_connect_inst/ROM_Control_inst/SQ[14]} {rom_fir_connect_inst/ROM_Control_inst/SQ[15]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {compress_result_OBUF[0]} {compress_result_OBUF[1]} {compress_result_OBUF[2]} {compress_result_OBUF[3]} {compress_result_OBUF[4]} {compress_result_OBUF[5]} {compress_result_OBUF[6]} {compress_result_OBUF[7]} {compress_result_OBUF[8]} {compress_result_OBUF[9]} {compress_result_OBUF[10]} {compress_result_OBUF[11]} {compress_result_OBUF[12]} {compress_result_OBUF[13]} {compress_result_OBUF[14]} {compress_result_OBUF[15]} {compress_result_OBUF[16]} {compress_result_OBUF[17]} {compress_result_OBUF[18]} {compress_result_OBUF[19]} {compress_result_OBUF[20]} {compress_result_OBUF[21]} {compress_result_OBUF[22]} {compress_result_OBUF[23]} {compress_result_OBUF[24]} {compress_result_OBUF[25]} {compress_result_OBUF[26]} {compress_result_OBUF[27]} {compress_result_OBUF[28]} {compress_result_OBUF[29]} {compress_result_OBUF[30]} {compress_result_OBUF[31]} {compress_result_OBUF[32]} {compress_result_OBUF[33]} {compress_result_OBUF[34]} {compress_result_OBUF[35]} {compress_result_OBUF[36]} {compress_result_OBUF[37]} {compress_result_OBUF[38]} {compress_result_OBUF[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list {m_axis_data_tdata_sihi[0]} {m_axis_data_tdata_sihi[1]} {m_axis_data_tdata_sihi[2]} {m_axis_data_tdata_sihi[3]} {m_axis_data_tdata_sihi[4]} {m_axis_data_tdata_sihi[5]} {m_axis_data_tdata_sihi[6]} {m_axis_data_tdata_sihi[7]} {m_axis_data_tdata_sihi[8]} {m_axis_data_tdata_sihi[9]} {m_axis_data_tdata_sihi[10]} {m_axis_data_tdata_sihi[11]} {m_axis_data_tdata_sihi[12]} {m_axis_data_tdata_sihi[13]} {m_axis_data_tdata_sihi[14]} {m_axis_data_tdata_sihi[15]} {m_axis_data_tdata_sihi[16]} {m_axis_data_tdata_sihi[17]} {m_axis_data_tdata_sihi[18]} {m_axis_data_tdata_sihi[19]} {m_axis_data_tdata_sihi[20]} {m_axis_data_tdata_sihi[21]} {m_axis_data_tdata_sihi[22]} {m_axis_data_tdata_sihi[23]} {m_axis_data_tdata_sihi[24]} {m_axis_data_tdata_sihi[25]} {m_axis_data_tdata_sihi[26]} {m_axis_data_tdata_sihi[27]} {m_axis_data_tdata_sihi[28]} {m_axis_data_tdata_sihi[29]} {m_axis_data_tdata_sihi[30]} {m_axis_data_tdata_sihi[31]} {m_axis_data_tdata_sihi[32]} {m_axis_data_tdata_sihi[33]} {m_axis_data_tdata_sihi[34]} {m_axis_data_tdata_sihi[35]} {m_axis_data_tdata_sihi[36]} {m_axis_data_tdata_sihi[37]} {m_axis_data_tdata_sihi[38]} {m_axis_data_tdata_sihi[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list {m_axis_data_tdata_sihq[0]} {m_axis_data_tdata_sihq[1]} {m_axis_data_tdata_sihq[2]} {m_axis_data_tdata_sihq[3]} {m_axis_data_tdata_sihq[4]} {m_axis_data_tdata_sihq[5]} {m_axis_data_tdata_sihq[6]} {m_axis_data_tdata_sihq[7]} {m_axis_data_tdata_sihq[8]} {m_axis_data_tdata_sihq[9]} {m_axis_data_tdata_sihq[10]} {m_axis_data_tdata_sihq[11]} {m_axis_data_tdata_sihq[12]} {m_axis_data_tdata_sihq[13]} {m_axis_data_tdata_sihq[14]} {m_axis_data_tdata_sihq[15]} {m_axis_data_tdata_sihq[16]} {m_axis_data_tdata_sihq[17]} {m_axis_data_tdata_sihq[18]} {m_axis_data_tdata_sihq[19]} {m_axis_data_tdata_sihq[20]} {m_axis_data_tdata_sihq[21]} {m_axis_data_tdata_sihq[22]} {m_axis_data_tdata_sihq[23]} {m_axis_data_tdata_sihq[24]} {m_axis_data_tdata_sihq[25]} {m_axis_data_tdata_sihq[26]} {m_axis_data_tdata_sihq[27]} {m_axis_data_tdata_sihq[28]} {m_axis_data_tdata_sihq[29]} {m_axis_data_tdata_sihq[30]} {m_axis_data_tdata_sihq[31]} {m_axis_data_tdata_sihq[32]} {m_axis_data_tdata_sihq[33]} {m_axis_data_tdata_sihq[34]} {m_axis_data_tdata_sihq[35]} {m_axis_data_tdata_sihq[36]} {m_axis_data_tdata_sihq[37]} {m_axis_data_tdata_sihq[38]} {m_axis_data_tdata_sihq[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe5]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list {m_axis_data_tdata_sqhi[0]} {m_axis_data_tdata_sqhi[1]} {m_axis_data_tdata_sqhi[2]} {m_axis_data_tdata_sqhi[3]} {m_axis_data_tdata_sqhi[4]} {m_axis_data_tdata_sqhi[5]} {m_axis_data_tdata_sqhi[6]} {m_axis_data_tdata_sqhi[7]} {m_axis_data_tdata_sqhi[8]} {m_axis_data_tdata_sqhi[9]} {m_axis_data_tdata_sqhi[10]} {m_axis_data_tdata_sqhi[11]} {m_axis_data_tdata_sqhi[12]} {m_axis_data_tdata_sqhi[13]} {m_axis_data_tdata_sqhi[14]} {m_axis_data_tdata_sqhi[15]} {m_axis_data_tdata_sqhi[16]} {m_axis_data_tdata_sqhi[17]} {m_axis_data_tdata_sqhi[18]} {m_axis_data_tdata_sqhi[19]} {m_axis_data_tdata_sqhi[20]} {m_axis_data_tdata_sqhi[21]} {m_axis_data_tdata_sqhi[22]} {m_axis_data_tdata_sqhi[23]} {m_axis_data_tdata_sqhi[24]} {m_axis_data_tdata_sqhi[25]} {m_axis_data_tdata_sqhi[26]} {m_axis_data_tdata_sqhi[27]} {m_axis_data_tdata_sqhi[28]} {m_axis_data_tdata_sqhi[29]} {m_axis_data_tdata_sqhi[30]} {m_axis_data_tdata_sqhi[31]} {m_axis_data_tdata_sqhi[32]} {m_axis_data_tdata_sqhi[33]} {m_axis_data_tdata_sqhi[34]} {m_axis_data_tdata_sqhi[35]} {m_axis_data_tdata_sqhi[36]} {m_axis_data_tdata_sqhi[37]} {m_axis_data_tdata_sqhi[38]} {m_axis_data_tdata_sqhi[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe6]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe6]
+connect_debug_port u_ila_0/probe6 [get_nets [list {m_axis_data_tdata_sqhq[0]} {m_axis_data_tdata_sqhq[1]} {m_axis_data_tdata_sqhq[2]} {m_axis_data_tdata_sqhq[3]} {m_axis_data_tdata_sqhq[4]} {m_axis_data_tdata_sqhq[5]} {m_axis_data_tdata_sqhq[6]} {m_axis_data_tdata_sqhq[7]} {m_axis_data_tdata_sqhq[8]} {m_axis_data_tdata_sqhq[9]} {m_axis_data_tdata_sqhq[10]} {m_axis_data_tdata_sqhq[11]} {m_axis_data_tdata_sqhq[12]} {m_axis_data_tdata_sqhq[13]} {m_axis_data_tdata_sqhq[14]} {m_axis_data_tdata_sqhq[15]} {m_axis_data_tdata_sqhq[16]} {m_axis_data_tdata_sqhq[17]} {m_axis_data_tdata_sqhq[18]} {m_axis_data_tdata_sqhq[19]} {m_axis_data_tdata_sqhq[20]} {m_axis_data_tdata_sqhq[21]} {m_axis_data_tdata_sqhq[22]} {m_axis_data_tdata_sqhq[23]} {m_axis_data_tdata_sqhq[24]} {m_axis_data_tdata_sqhq[25]} {m_axis_data_tdata_sqhq[26]} {m_axis_data_tdata_sqhq[27]} {m_axis_data_tdata_sqhq[28]} {m_axis_data_tdata_sqhq[29]} {m_axis_data_tdata_sqhq[30]} {m_axis_data_tdata_sqhq[31]} {m_axis_data_tdata_sqhq[32]} {m_axis_data_tdata_sqhq[33]} {m_axis_data_tdata_sqhq[34]} {m_axis_data_tdata_sqhq[35]} {m_axis_data_tdata_sqhq[36]} {m_axis_data_tdata_sqhq[37]} {m_axis_data_tdata_sqhq[38]} {m_axis_data_tdata_sqhq[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe7]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe7]
+connect_debug_port u_ila_0/probe7 [get_nets [list {result_compress_i[0]} {result_compress_i[1]} {result_compress_i[2]} {result_compress_i[3]} {result_compress_i[4]} {result_compress_i[5]} {result_compress_i[6]} {result_compress_i[7]} {result_compress_i[8]} {result_compress_i[9]} {result_compress_i[10]} {result_compress_i[11]} {result_compress_i[12]} {result_compress_i[13]} {result_compress_i[14]} {result_compress_i[15]} {result_compress_i[16]} {result_compress_i[17]} {result_compress_i[18]} {result_compress_i[19]} {result_compress_i[20]} {result_compress_i[21]} {result_compress_i[22]} {result_compress_i[23]} {result_compress_i[24]} {result_compress_i[25]} {result_compress_i[26]} {result_compress_i[27]} {result_compress_i[28]} {result_compress_i[29]} {result_compress_i[30]} {result_compress_i[31]} {result_compress_i[32]} {result_compress_i[33]} {result_compress_i[34]} {result_compress_i[35]} {result_compress_i[36]} {result_compress_i[37]} {result_compress_i[38]} {result_compress_i[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe8]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe8]
+connect_debug_port u_ila_0/probe8 [get_nets [list {result_compress_q[0]} {result_compress_q[1]} {result_compress_q[2]} {result_compress_q[3]} {result_compress_q[4]} {result_compress_q[5]} {result_compress_q[6]} {result_compress_q[7]} {result_compress_q[8]} {result_compress_q[9]} {result_compress_q[10]} {result_compress_q[11]} {result_compress_q[12]} {result_compress_q[13]} {result_compress_q[14]} {result_compress_q[15]} {result_compress_q[16]} {result_compress_q[17]} {result_compress_q[18]} {result_compress_q[19]} {result_compress_q[20]} {result_compress_q[21]} {result_compress_q[22]} {result_compress_q[23]} {result_compress_q[24]} {result_compress_q[25]} {result_compress_q[26]} {result_compress_q[27]} {result_compress_q[28]} {result_compress_q[29]} {result_compress_q[30]} {result_compress_q[31]} {result_compress_q[32]} {result_compress_q[33]} {result_compress_q[34]} {result_compress_q[35]} {result_compress_q[36]} {result_compress_q[37]} {result_compress_q[38]} {result_compress_q[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe9]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe9]
+connect_debug_port u_ila_0/probe9 [get_nets [list sys_clk_IBUF_BUFG ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe10]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe10]
+connect_debug_port u_ila_0/probe10 [get_nets [list sys_rst_n_IBUF ]]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+save_constraints
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.050 . Memory (MB): peak = 3505.984 ; gain = 0.000
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hq/Conv_Sq_Hq.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hi/Conv_Sq_Hi.xci' is already up-to-date
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 3507.254 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.313 . Memory (MB): peak = 3534.895 ; gain = 27.641
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.067 . Memory (MB): peak = 3641.508 ; gain = 0.000
+[Sat Apr  2 20:46:53 2022] Launched impl_1...
+Run output will be captured here: C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:23 ; elapsed = 00:00:14 . Memory (MB): peak = 3643.676 ; gain = 136.422
+set_property PROBES.FILE {C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.runs/impl_1/compress_result_top.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.runs/impl_1/compress_result_top.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.runs/impl_1/compress_result_top.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 3643.676 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-2302] Device xc7k325t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Apr-02 20:56:37
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-Apr-02 20:56:37
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Apr-02 20:57:04
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-Apr-02 20:57:04
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-2302] Device xc7k325t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Apr-02 20:59:52
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-Apr-02 20:59:52
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Apr-02 20:59:56
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-Apr-02 20:59:56
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Apr-02 21:00:01
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-Apr-02 21:00:01
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Apr-02 21:00:05
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-Apr-02 21:00:05
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Apr-02 21:00:09
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-Apr-02 21:00:09
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Apr-02 21:00:16
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-Apr-02 21:00:16
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Apr-02 21:00:19
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-Apr-02 21:00:19
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-2302] Device xc7k325t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Apr-02 21:02:09
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-Apr-02 21:02:09
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-2302] Device xc7k325t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Apr-02 21:02:35
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-Apr-02 21:02:35
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Apr-02 21:02:39
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-Apr-02 21:02:39
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Apr-02 21:02:43
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-Apr-02 21:02:43
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Apr-02 21:02:47
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-Apr-02 21:02:47
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Apr-02 21:02:51
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-Apr-02 21:02:51
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Apr-02 21:02:56
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-Apr-02 21:02:56
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Apr-02 21:03:00
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-Apr-02 21:03:00
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Apr-02 21:03:05
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-Apr-02 21:03:05
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Labtools 27-3176] hw_server failed during internal command.
+Resolution: Check that the hw_server is running and the hardware connectivity to the target
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210299492397
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210299492397
+INFO: [Labtools 27-1435] Device xc7k325t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.runs/impl_1/compress_result_top.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.runs/impl_1/compress_result_top.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.runs/impl_1/compress_result_top.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 3684.922 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-2302] Device xc7k325t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Apr-02 21:03:31
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-Apr-02 21:03:31
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Apr-02 21:03:39
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-Apr-02 21:03:39
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-2302] Device xc7k325t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Apr-02 21:03:57
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-Apr-02 21:03:57
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Apr-02 21:04:11
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-Apr-02 21:04:11
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Apr-02 21:04:25
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-Apr-02 21:04:25
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Apr-02 21:04:29
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-Apr-02 21:04:29
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Apr-02 21:04:33
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-Apr-02 21:04:33
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Apr-02 21:04:39
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-Apr-02 21:04:39
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Apr-02 21:04:43
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-Apr-02 21:04:43
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Apr-02 21:04:47
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-Apr-02 21:04:47
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Apr-02 21:04:51
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-Apr-02 21:04:51
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Apr-02 21:04:55
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-Apr-02 21:04:55
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Apr-02 21:04:59
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-Apr-02 21:04:59
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Apr-02 21:05:06
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-Apr-02 21:05:06
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Apr-02 21:05:10
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-Apr-02 21:05:10
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+save_wave_config {C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw_target {localhost:3121/xilinx_tcf/Digilent/210299492397}
+INFO: [Labtoolstcl 44-464] Closing hw_target localhost:3121/xilinx_tcf/Digilent/210299492397
+delete_debug_core [get_debug_cores {u_ila_0 }]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 131072 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+startgroup 
+set_property C_EN_STRG_QUAL true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU_CNT 2 [get_debug_cores u_ila_0 ]
+endgroup
+set_property port_width 1 [get_debug_ports u_ila_0/clk]
+connect_debug_port u_ila_0/clk [get_nets [list sys_clk_IBUF_BUFG ]]
+set_property port_width 16 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {rom_fir_connect_inst/ROM_Control_inst/SI[0]} {rom_fir_connect_inst/ROM_Control_inst/SI[1]} {rom_fir_connect_inst/ROM_Control_inst/SI[2]} {rom_fir_connect_inst/ROM_Control_inst/SI[3]} {rom_fir_connect_inst/ROM_Control_inst/SI[4]} {rom_fir_connect_inst/ROM_Control_inst/SI[5]} {rom_fir_connect_inst/ROM_Control_inst/SI[6]} {rom_fir_connect_inst/ROM_Control_inst/SI[7]} {rom_fir_connect_inst/ROM_Control_inst/SI[8]} {rom_fir_connect_inst/ROM_Control_inst/SI[9]} {rom_fir_connect_inst/ROM_Control_inst/SI[10]} {rom_fir_connect_inst/ROM_Control_inst/SI[11]} {rom_fir_connect_inst/ROM_Control_inst/SI[12]} {rom_fir_connect_inst/ROM_Control_inst/SI[13]} {rom_fir_connect_inst/ROM_Control_inst/SI[14]} {rom_fir_connect_inst/ROM_Control_inst/SI[15]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 16 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {rom_fir_connect_inst/ROM_Control_inst/SQ[0]} {rom_fir_connect_inst/ROM_Control_inst/SQ[1]} {rom_fir_connect_inst/ROM_Control_inst/SQ[2]} {rom_fir_connect_inst/ROM_Control_inst/SQ[3]} {rom_fir_connect_inst/ROM_Control_inst/SQ[4]} {rom_fir_connect_inst/ROM_Control_inst/SQ[5]} {rom_fir_connect_inst/ROM_Control_inst/SQ[6]} {rom_fir_connect_inst/ROM_Control_inst/SQ[7]} {rom_fir_connect_inst/ROM_Control_inst/SQ[8]} {rom_fir_connect_inst/ROM_Control_inst/SQ[9]} {rom_fir_connect_inst/ROM_Control_inst/SQ[10]} {rom_fir_connect_inst/ROM_Control_inst/SQ[11]} {rom_fir_connect_inst/ROM_Control_inst/SQ[12]} {rom_fir_connect_inst/ROM_Control_inst/SQ[13]} {rom_fir_connect_inst/ROM_Control_inst/SQ[14]} {rom_fir_connect_inst/ROM_Control_inst/SQ[15]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {compress_result_OBUF[0]} {compress_result_OBUF[1]} {compress_result_OBUF[2]} {compress_result_OBUF[3]} {compress_result_OBUF[4]} {compress_result_OBUF[5]} {compress_result_OBUF[6]} {compress_result_OBUF[7]} {compress_result_OBUF[8]} {compress_result_OBUF[9]} {compress_result_OBUF[10]} {compress_result_OBUF[11]} {compress_result_OBUF[12]} {compress_result_OBUF[13]} {compress_result_OBUF[14]} {compress_result_OBUF[15]} {compress_result_OBUF[16]} {compress_result_OBUF[17]} {compress_result_OBUF[18]} {compress_result_OBUF[19]} {compress_result_OBUF[20]} {compress_result_OBUF[21]} {compress_result_OBUF[22]} {compress_result_OBUF[23]} {compress_result_OBUF[24]} {compress_result_OBUF[25]} {compress_result_OBUF[26]} {compress_result_OBUF[27]} {compress_result_OBUF[28]} {compress_result_OBUF[29]} {compress_result_OBUF[30]} {compress_result_OBUF[31]} {compress_result_OBUF[32]} {compress_result_OBUF[33]} {compress_result_OBUF[34]} {compress_result_OBUF[35]} {compress_result_OBUF[36]} {compress_result_OBUF[37]} {compress_result_OBUF[38]} {compress_result_OBUF[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list {m_axis_data_tdata_sihi[0]} {m_axis_data_tdata_sihi[1]} {m_axis_data_tdata_sihi[2]} {m_axis_data_tdata_sihi[3]} {m_axis_data_tdata_sihi[4]} {m_axis_data_tdata_sihi[5]} {m_axis_data_tdata_sihi[6]} {m_axis_data_tdata_sihi[7]} {m_axis_data_tdata_sihi[8]} {m_axis_data_tdata_sihi[9]} {m_axis_data_tdata_sihi[10]} {m_axis_data_tdata_sihi[11]} {m_axis_data_tdata_sihi[12]} {m_axis_data_tdata_sihi[13]} {m_axis_data_tdata_sihi[14]} {m_axis_data_tdata_sihi[15]} {m_axis_data_tdata_sihi[16]} {m_axis_data_tdata_sihi[17]} {m_axis_data_tdata_sihi[18]} {m_axis_data_tdata_sihi[19]} {m_axis_data_tdata_sihi[20]} {m_axis_data_tdata_sihi[21]} {m_axis_data_tdata_sihi[22]} {m_axis_data_tdata_sihi[23]} {m_axis_data_tdata_sihi[24]} {m_axis_data_tdata_sihi[25]} {m_axis_data_tdata_sihi[26]} {m_axis_data_tdata_sihi[27]} {m_axis_data_tdata_sihi[28]} {m_axis_data_tdata_sihi[29]} {m_axis_data_tdata_sihi[30]} {m_axis_data_tdata_sihi[31]} {m_axis_data_tdata_sihi[32]} {m_axis_data_tdata_sihi[33]} {m_axis_data_tdata_sihi[34]} {m_axis_data_tdata_sihi[35]} {m_axis_data_tdata_sihi[36]} {m_axis_data_tdata_sihi[37]} {m_axis_data_tdata_sihi[38]} {m_axis_data_tdata_sihi[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list {m_axis_data_tdata_sihq[0]} {m_axis_data_tdata_sihq[1]} {m_axis_data_tdata_sihq[2]} {m_axis_data_tdata_sihq[3]} {m_axis_data_tdata_sihq[4]} {m_axis_data_tdata_sihq[5]} {m_axis_data_tdata_sihq[6]} {m_axis_data_tdata_sihq[7]} {m_axis_data_tdata_sihq[8]} {m_axis_data_tdata_sihq[9]} {m_axis_data_tdata_sihq[10]} {m_axis_data_tdata_sihq[11]} {m_axis_data_tdata_sihq[12]} {m_axis_data_tdata_sihq[13]} {m_axis_data_tdata_sihq[14]} {m_axis_data_tdata_sihq[15]} {m_axis_data_tdata_sihq[16]} {m_axis_data_tdata_sihq[17]} {m_axis_data_tdata_sihq[18]} {m_axis_data_tdata_sihq[19]} {m_axis_data_tdata_sihq[20]} {m_axis_data_tdata_sihq[21]} {m_axis_data_tdata_sihq[22]} {m_axis_data_tdata_sihq[23]} {m_axis_data_tdata_sihq[24]} {m_axis_data_tdata_sihq[25]} {m_axis_data_tdata_sihq[26]} {m_axis_data_tdata_sihq[27]} {m_axis_data_tdata_sihq[28]} {m_axis_data_tdata_sihq[29]} {m_axis_data_tdata_sihq[30]} {m_axis_data_tdata_sihq[31]} {m_axis_data_tdata_sihq[32]} {m_axis_data_tdata_sihq[33]} {m_axis_data_tdata_sihq[34]} {m_axis_data_tdata_sihq[35]} {m_axis_data_tdata_sihq[36]} {m_axis_data_tdata_sihq[37]} {m_axis_data_tdata_sihq[38]} {m_axis_data_tdata_sihq[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe5]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list {m_axis_data_tdata_sqhi[0]} {m_axis_data_tdata_sqhi[1]} {m_axis_data_tdata_sqhi[2]} {m_axis_data_tdata_sqhi[3]} {m_axis_data_tdata_sqhi[4]} {m_axis_data_tdata_sqhi[5]} {m_axis_data_tdata_sqhi[6]} {m_axis_data_tdata_sqhi[7]} {m_axis_data_tdata_sqhi[8]} {m_axis_data_tdata_sqhi[9]} {m_axis_data_tdata_sqhi[10]} {m_axis_data_tdata_sqhi[11]} {m_axis_data_tdata_sqhi[12]} {m_axis_data_tdata_sqhi[13]} {m_axis_data_tdata_sqhi[14]} {m_axis_data_tdata_sqhi[15]} {m_axis_data_tdata_sqhi[16]} {m_axis_data_tdata_sqhi[17]} {m_axis_data_tdata_sqhi[18]} {m_axis_data_tdata_sqhi[19]} {m_axis_data_tdata_sqhi[20]} {m_axis_data_tdata_sqhi[21]} {m_axis_data_tdata_sqhi[22]} {m_axis_data_tdata_sqhi[23]} {m_axis_data_tdata_sqhi[24]} {m_axis_data_tdata_sqhi[25]} {m_axis_data_tdata_sqhi[26]} {m_axis_data_tdata_sqhi[27]} {m_axis_data_tdata_sqhi[28]} {m_axis_data_tdata_sqhi[29]} {m_axis_data_tdata_sqhi[30]} {m_axis_data_tdata_sqhi[31]} {m_axis_data_tdata_sqhi[32]} {m_axis_data_tdata_sqhi[33]} {m_axis_data_tdata_sqhi[34]} {m_axis_data_tdata_sqhi[35]} {m_axis_data_tdata_sqhi[36]} {m_axis_data_tdata_sqhi[37]} {m_axis_data_tdata_sqhi[38]} {m_axis_data_tdata_sqhi[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe6]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe6]
+connect_debug_port u_ila_0/probe6 [get_nets [list {m_axis_data_tdata_sqhq[0]} {m_axis_data_tdata_sqhq[1]} {m_axis_data_tdata_sqhq[2]} {m_axis_data_tdata_sqhq[3]} {m_axis_data_tdata_sqhq[4]} {m_axis_data_tdata_sqhq[5]} {m_axis_data_tdata_sqhq[6]} {m_axis_data_tdata_sqhq[7]} {m_axis_data_tdata_sqhq[8]} {m_axis_data_tdata_sqhq[9]} {m_axis_data_tdata_sqhq[10]} {m_axis_data_tdata_sqhq[11]} {m_axis_data_tdata_sqhq[12]} {m_axis_data_tdata_sqhq[13]} {m_axis_data_tdata_sqhq[14]} {m_axis_data_tdata_sqhq[15]} {m_axis_data_tdata_sqhq[16]} {m_axis_data_tdata_sqhq[17]} {m_axis_data_tdata_sqhq[18]} {m_axis_data_tdata_sqhq[19]} {m_axis_data_tdata_sqhq[20]} {m_axis_data_tdata_sqhq[21]} {m_axis_data_tdata_sqhq[22]} {m_axis_data_tdata_sqhq[23]} {m_axis_data_tdata_sqhq[24]} {m_axis_data_tdata_sqhq[25]} {m_axis_data_tdata_sqhq[26]} {m_axis_data_tdata_sqhq[27]} {m_axis_data_tdata_sqhq[28]} {m_axis_data_tdata_sqhq[29]} {m_axis_data_tdata_sqhq[30]} {m_axis_data_tdata_sqhq[31]} {m_axis_data_tdata_sqhq[32]} {m_axis_data_tdata_sqhq[33]} {m_axis_data_tdata_sqhq[34]} {m_axis_data_tdata_sqhq[35]} {m_axis_data_tdata_sqhq[36]} {m_axis_data_tdata_sqhq[37]} {m_axis_data_tdata_sqhq[38]} {m_axis_data_tdata_sqhq[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe7]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe7]
+connect_debug_port u_ila_0/probe7 [get_nets [list {result_compress_i[0]} {result_compress_i[1]} {result_compress_i[2]} {result_compress_i[3]} {result_compress_i[4]} {result_compress_i[5]} {result_compress_i[6]} {result_compress_i[7]} {result_compress_i[8]} {result_compress_i[9]} {result_compress_i[10]} {result_compress_i[11]} {result_compress_i[12]} {result_compress_i[13]} {result_compress_i[14]} {result_compress_i[15]} {result_compress_i[16]} {result_compress_i[17]} {result_compress_i[18]} {result_compress_i[19]} {result_compress_i[20]} {result_compress_i[21]} {result_compress_i[22]} {result_compress_i[23]} {result_compress_i[24]} {result_compress_i[25]} {result_compress_i[26]} {result_compress_i[27]} {result_compress_i[28]} {result_compress_i[29]} {result_compress_i[30]} {result_compress_i[31]} {result_compress_i[32]} {result_compress_i[33]} {result_compress_i[34]} {result_compress_i[35]} {result_compress_i[36]} {result_compress_i[37]} {result_compress_i[38]} {result_compress_i[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe8]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe8]
+connect_debug_port u_ila_0/probe8 [get_nets [list {result_compress_q[0]} {result_compress_q[1]} {result_compress_q[2]} {result_compress_q[3]} {result_compress_q[4]} {result_compress_q[5]} {result_compress_q[6]} {result_compress_q[7]} {result_compress_q[8]} {result_compress_q[9]} {result_compress_q[10]} {result_compress_q[11]} {result_compress_q[12]} {result_compress_q[13]} {result_compress_q[14]} {result_compress_q[15]} {result_compress_q[16]} {result_compress_q[17]} {result_compress_q[18]} {result_compress_q[19]} {result_compress_q[20]} {result_compress_q[21]} {result_compress_q[22]} {result_compress_q[23]} {result_compress_q[24]} {result_compress_q[25]} {result_compress_q[26]} {result_compress_q[27]} {result_compress_q[28]} {result_compress_q[29]} {result_compress_q[30]} {result_compress_q[31]} {result_compress_q[32]} {result_compress_q[33]} {result_compress_q[34]} {result_compress_q[35]} {result_compress_q[36]} {result_compress_q[37]} {result_compress_q[38]} {result_compress_q[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe9]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe9]
+connect_debug_port u_ila_0/probe9 [get_nets [list sys_clk_IBUF_BUFG ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe10]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe10]
+connect_debug_port u_ila_0/probe10 [get_nets [list sys_rst_n_IBUF ]]
+save_constraints
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 3688.691 ; gain = 0.000
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hq/Conv_Sq_Hq.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hi/Conv_Sq_Hi.xci' is already up-to-date
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.100 . Memory (MB): peak = 3688.691 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.533 . Memory (MB): peak = 3700.258 ; gain = 11.566
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.063 . Memory (MB): peak = 3700.258 ; gain = 0.000
+[Sat Apr  2 21:07:47 2022] Launched impl_1...
+Run output will be captured here: C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:23 ; elapsed = 00:00:13 . Memory (MB): peak = 3700.273 ; gain = 11.582
+report_utilization -name utilization_1
+report_utilization: Time (s): cpu = 00:00:21 ; elapsed = 00:00:09 . Memory (MB): peak = 4402.266 ; gain = 701.992
+delete_debug_core [get_debug_cores {u_ila_0 }]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 4096 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+startgroup 
+set_property C_EN_STRG_QUAL true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU_CNT 2 [get_debug_cores u_ila_0 ]
+endgroup
+set_property port_width 1 [get_debug_ports u_ila_0/clk]
+connect_debug_port u_ila_0/clk [get_nets [list sys_clk_IBUF_BUFG ]]
+set_property port_width 16 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {rom_fir_connect_inst/ROM_Control_inst/SI[0]} {rom_fir_connect_inst/ROM_Control_inst/SI[1]} {rom_fir_connect_inst/ROM_Control_inst/SI[2]} {rom_fir_connect_inst/ROM_Control_inst/SI[3]} {rom_fir_connect_inst/ROM_Control_inst/SI[4]} {rom_fir_connect_inst/ROM_Control_inst/SI[5]} {rom_fir_connect_inst/ROM_Control_inst/SI[6]} {rom_fir_connect_inst/ROM_Control_inst/SI[7]} {rom_fir_connect_inst/ROM_Control_inst/SI[8]} {rom_fir_connect_inst/ROM_Control_inst/SI[9]} {rom_fir_connect_inst/ROM_Control_inst/SI[10]} {rom_fir_connect_inst/ROM_Control_inst/SI[11]} {rom_fir_connect_inst/ROM_Control_inst/SI[12]} {rom_fir_connect_inst/ROM_Control_inst/SI[13]} {rom_fir_connect_inst/ROM_Control_inst/SI[14]} {rom_fir_connect_inst/ROM_Control_inst/SI[15]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 16 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {rom_fir_connect_inst/ROM_Control_inst/SQ[0]} {rom_fir_connect_inst/ROM_Control_inst/SQ[1]} {rom_fir_connect_inst/ROM_Control_inst/SQ[2]} {rom_fir_connect_inst/ROM_Control_inst/SQ[3]} {rom_fir_connect_inst/ROM_Control_inst/SQ[4]} {rom_fir_connect_inst/ROM_Control_inst/SQ[5]} {rom_fir_connect_inst/ROM_Control_inst/SQ[6]} {rom_fir_connect_inst/ROM_Control_inst/SQ[7]} {rom_fir_connect_inst/ROM_Control_inst/SQ[8]} {rom_fir_connect_inst/ROM_Control_inst/SQ[9]} {rom_fir_connect_inst/ROM_Control_inst/SQ[10]} {rom_fir_connect_inst/ROM_Control_inst/SQ[11]} {rom_fir_connect_inst/ROM_Control_inst/SQ[12]} {rom_fir_connect_inst/ROM_Control_inst/SQ[13]} {rom_fir_connect_inst/ROM_Control_inst/SQ[14]} {rom_fir_connect_inst/ROM_Control_inst/SQ[15]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {compress_result_OBUF[0]} {compress_result_OBUF[1]} {compress_result_OBUF[2]} {compress_result_OBUF[3]} {compress_result_OBUF[4]} {compress_result_OBUF[5]} {compress_result_OBUF[6]} {compress_result_OBUF[7]} {compress_result_OBUF[8]} {compress_result_OBUF[9]} {compress_result_OBUF[10]} {compress_result_OBUF[11]} {compress_result_OBUF[12]} {compress_result_OBUF[13]} {compress_result_OBUF[14]} {compress_result_OBUF[15]} {compress_result_OBUF[16]} {compress_result_OBUF[17]} {compress_result_OBUF[18]} {compress_result_OBUF[19]} {compress_result_OBUF[20]} {compress_result_OBUF[21]} {compress_result_OBUF[22]} {compress_result_OBUF[23]} {compress_result_OBUF[24]} {compress_result_OBUF[25]} {compress_result_OBUF[26]} {compress_result_OBUF[27]} {compress_result_OBUF[28]} {compress_result_OBUF[29]} {compress_result_OBUF[30]} {compress_result_OBUF[31]} {compress_result_OBUF[32]} {compress_result_OBUF[33]} {compress_result_OBUF[34]} {compress_result_OBUF[35]} {compress_result_OBUF[36]} {compress_result_OBUF[37]} {compress_result_OBUF[38]} {compress_result_OBUF[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list {m_axis_data_tdata_sihi[0]} {m_axis_data_tdata_sihi[1]} {m_axis_data_tdata_sihi[2]} {m_axis_data_tdata_sihi[3]} {m_axis_data_tdata_sihi[4]} {m_axis_data_tdata_sihi[5]} {m_axis_data_tdata_sihi[6]} {m_axis_data_tdata_sihi[7]} {m_axis_data_tdata_sihi[8]} {m_axis_data_tdata_sihi[9]} {m_axis_data_tdata_sihi[10]} {m_axis_data_tdata_sihi[11]} {m_axis_data_tdata_sihi[12]} {m_axis_data_tdata_sihi[13]} {m_axis_data_tdata_sihi[14]} {m_axis_data_tdata_sihi[15]} {m_axis_data_tdata_sihi[16]} {m_axis_data_tdata_sihi[17]} {m_axis_data_tdata_sihi[18]} {m_axis_data_tdata_sihi[19]} {m_axis_data_tdata_sihi[20]} {m_axis_data_tdata_sihi[21]} {m_axis_data_tdata_sihi[22]} {m_axis_data_tdata_sihi[23]} {m_axis_data_tdata_sihi[24]} {m_axis_data_tdata_sihi[25]} {m_axis_data_tdata_sihi[26]} {m_axis_data_tdata_sihi[27]} {m_axis_data_tdata_sihi[28]} {m_axis_data_tdata_sihi[29]} {m_axis_data_tdata_sihi[30]} {m_axis_data_tdata_sihi[31]} {m_axis_data_tdata_sihi[32]} {m_axis_data_tdata_sihi[33]} {m_axis_data_tdata_sihi[34]} {m_axis_data_tdata_sihi[35]} {m_axis_data_tdata_sihi[36]} {m_axis_data_tdata_sihi[37]} {m_axis_data_tdata_sihi[38]} {m_axis_data_tdata_sihi[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list {m_axis_data_tdata_sihq[0]} {m_axis_data_tdata_sihq[1]} {m_axis_data_tdata_sihq[2]} {m_axis_data_tdata_sihq[3]} {m_axis_data_tdata_sihq[4]} {m_axis_data_tdata_sihq[5]} {m_axis_data_tdata_sihq[6]} {m_axis_data_tdata_sihq[7]} {m_axis_data_tdata_sihq[8]} {m_axis_data_tdata_sihq[9]} {m_axis_data_tdata_sihq[10]} {m_axis_data_tdata_sihq[11]} {m_axis_data_tdata_sihq[12]} {m_axis_data_tdata_sihq[13]} {m_axis_data_tdata_sihq[14]} {m_axis_data_tdata_sihq[15]} {m_axis_data_tdata_sihq[16]} {m_axis_data_tdata_sihq[17]} {m_axis_data_tdata_sihq[18]} {m_axis_data_tdata_sihq[19]} {m_axis_data_tdata_sihq[20]} {m_axis_data_tdata_sihq[21]} {m_axis_data_tdata_sihq[22]} {m_axis_data_tdata_sihq[23]} {m_axis_data_tdata_sihq[24]} {m_axis_data_tdata_sihq[25]} {m_axis_data_tdata_sihq[26]} {m_axis_data_tdata_sihq[27]} {m_axis_data_tdata_sihq[28]} {m_axis_data_tdata_sihq[29]} {m_axis_data_tdata_sihq[30]} {m_axis_data_tdata_sihq[31]} {m_axis_data_tdata_sihq[32]} {m_axis_data_tdata_sihq[33]} {m_axis_data_tdata_sihq[34]} {m_axis_data_tdata_sihq[35]} {m_axis_data_tdata_sihq[36]} {m_axis_data_tdata_sihq[37]} {m_axis_data_tdata_sihq[38]} {m_axis_data_tdata_sihq[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe5]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list {m_axis_data_tdata_sqhi[0]} {m_axis_data_tdata_sqhi[1]} {m_axis_data_tdata_sqhi[2]} {m_axis_data_tdata_sqhi[3]} {m_axis_data_tdata_sqhi[4]} {m_axis_data_tdata_sqhi[5]} {m_axis_data_tdata_sqhi[6]} {m_axis_data_tdata_sqhi[7]} {m_axis_data_tdata_sqhi[8]} {m_axis_data_tdata_sqhi[9]} {m_axis_data_tdata_sqhi[10]} {m_axis_data_tdata_sqhi[11]} {m_axis_data_tdata_sqhi[12]} {m_axis_data_tdata_sqhi[13]} {m_axis_data_tdata_sqhi[14]} {m_axis_data_tdata_sqhi[15]} {m_axis_data_tdata_sqhi[16]} {m_axis_data_tdata_sqhi[17]} {m_axis_data_tdata_sqhi[18]} {m_axis_data_tdata_sqhi[19]} {m_axis_data_tdata_sqhi[20]} {m_axis_data_tdata_sqhi[21]} {m_axis_data_tdata_sqhi[22]} {m_axis_data_tdata_sqhi[23]} {m_axis_data_tdata_sqhi[24]} {m_axis_data_tdata_sqhi[25]} {m_axis_data_tdata_sqhi[26]} {m_axis_data_tdata_sqhi[27]} {m_axis_data_tdata_sqhi[28]} {m_axis_data_tdata_sqhi[29]} {m_axis_data_tdata_sqhi[30]} {m_axis_data_tdata_sqhi[31]} {m_axis_data_tdata_sqhi[32]} {m_axis_data_tdata_sqhi[33]} {m_axis_data_tdata_sqhi[34]} {m_axis_data_tdata_sqhi[35]} {m_axis_data_tdata_sqhi[36]} {m_axis_data_tdata_sqhi[37]} {m_axis_data_tdata_sqhi[38]} {m_axis_data_tdata_sqhi[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe6]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe6]
+connect_debug_port u_ila_0/probe6 [get_nets [list {m_axis_data_tdata_sqhq[0]} {m_axis_data_tdata_sqhq[1]} {m_axis_data_tdata_sqhq[2]} {m_axis_data_tdata_sqhq[3]} {m_axis_data_tdata_sqhq[4]} {m_axis_data_tdata_sqhq[5]} {m_axis_data_tdata_sqhq[6]} {m_axis_data_tdata_sqhq[7]} {m_axis_data_tdata_sqhq[8]} {m_axis_data_tdata_sqhq[9]} {m_axis_data_tdata_sqhq[10]} {m_axis_data_tdata_sqhq[11]} {m_axis_data_tdata_sqhq[12]} {m_axis_data_tdata_sqhq[13]} {m_axis_data_tdata_sqhq[14]} {m_axis_data_tdata_sqhq[15]} {m_axis_data_tdata_sqhq[16]} {m_axis_data_tdata_sqhq[17]} {m_axis_data_tdata_sqhq[18]} {m_axis_data_tdata_sqhq[19]} {m_axis_data_tdata_sqhq[20]} {m_axis_data_tdata_sqhq[21]} {m_axis_data_tdata_sqhq[22]} {m_axis_data_tdata_sqhq[23]} {m_axis_data_tdata_sqhq[24]} {m_axis_data_tdata_sqhq[25]} {m_axis_data_tdata_sqhq[26]} {m_axis_data_tdata_sqhq[27]} {m_axis_data_tdata_sqhq[28]} {m_axis_data_tdata_sqhq[29]} {m_axis_data_tdata_sqhq[30]} {m_axis_data_tdata_sqhq[31]} {m_axis_data_tdata_sqhq[32]} {m_axis_data_tdata_sqhq[33]} {m_axis_data_tdata_sqhq[34]} {m_axis_data_tdata_sqhq[35]} {m_axis_data_tdata_sqhq[36]} {m_axis_data_tdata_sqhq[37]} {m_axis_data_tdata_sqhq[38]} {m_axis_data_tdata_sqhq[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe7]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe7]
+connect_debug_port u_ila_0/probe7 [get_nets [list {result_compress_i[0]} {result_compress_i[1]} {result_compress_i[2]} {result_compress_i[3]} {result_compress_i[4]} {result_compress_i[5]} {result_compress_i[6]} {result_compress_i[7]} {result_compress_i[8]} {result_compress_i[9]} {result_compress_i[10]} {result_compress_i[11]} {result_compress_i[12]} {result_compress_i[13]} {result_compress_i[14]} {result_compress_i[15]} {result_compress_i[16]} {result_compress_i[17]} {result_compress_i[18]} {result_compress_i[19]} {result_compress_i[20]} {result_compress_i[21]} {result_compress_i[22]} {result_compress_i[23]} {result_compress_i[24]} {result_compress_i[25]} {result_compress_i[26]} {result_compress_i[27]} {result_compress_i[28]} {result_compress_i[29]} {result_compress_i[30]} {result_compress_i[31]} {result_compress_i[32]} {result_compress_i[33]} {result_compress_i[34]} {result_compress_i[35]} {result_compress_i[36]} {result_compress_i[37]} {result_compress_i[38]} {result_compress_i[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe8]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe8]
+connect_debug_port u_ila_0/probe8 [get_nets [list {result_compress_q[0]} {result_compress_q[1]} {result_compress_q[2]} {result_compress_q[3]} {result_compress_q[4]} {result_compress_q[5]} {result_compress_q[6]} {result_compress_q[7]} {result_compress_q[8]} {result_compress_q[9]} {result_compress_q[10]} {result_compress_q[11]} {result_compress_q[12]} {result_compress_q[13]} {result_compress_q[14]} {result_compress_q[15]} {result_compress_q[16]} {result_compress_q[17]} {result_compress_q[18]} {result_compress_q[19]} {result_compress_q[20]} {result_compress_q[21]} {result_compress_q[22]} {result_compress_q[23]} {result_compress_q[24]} {result_compress_q[25]} {result_compress_q[26]} {result_compress_q[27]} {result_compress_q[28]} {result_compress_q[29]} {result_compress_q[30]} {result_compress_q[31]} {result_compress_q[32]} {result_compress_q[33]} {result_compress_q[34]} {result_compress_q[35]} {result_compress_q[36]} {result_compress_q[37]} {result_compress_q[38]} {result_compress_q[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe9]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe9]
+connect_debug_port u_ila_0/probe9 [get_nets [list sys_clk_IBUF_BUFG ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe10]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe10]
+connect_debug_port u_ila_0/probe10 [get_nets [list sys_rst_n_IBUF ]]
+save_constraints
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 4402.266 ; gain = 0.000
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hq/Conv_Sq_Hq.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hi/Conv_Sq_Hi.xci' is already up-to-date
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 4402.266 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.295 . Memory (MB): peak = 4402.266 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.140 . Memory (MB): peak = 4402.266 ; gain = 0.000
+[Sat Apr  2 21:21:50 2022] Launched impl_1...
+Run output will be captured here: C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:22 ; elapsed = 00:00:14 . Memory (MB): peak = 4402.266 ; gain = 0.000
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 2729 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Constraints 18-5170] The checkpoint was created with non-default parameter values which do not match the current Vivado settings.  Mismatching parameters are:
+  general.maxThreads
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 4566.074 ; gain = 55.047
+Restored from archive | CPU: 6.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 4566.074 ; gain = 55.047
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 4566.074 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 398 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 376 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 6 instances
+  SRLC32E => SRL16E: 16 instances
+
+open_run: Time (s): cpu = 00:00:28 ; elapsed = 00:00:23 . Memory (MB): peak = 4632.348 ; gain = 230.082
+open_report: Time (s): cpu = 00:00:23 ; elapsed = 00:00:12 . Memory (MB): peak = 5020.246 ; gain = 373.887
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7k325tfbg676-2
+Top: compress_result_top
+WARNING: [Synth 8-2611] redeclaration of ansi port compress_result is not allowed [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/new/compress_result_top.v:37]
+WARNING: [Synth 8-976] compress_result has already been declared [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/new/compress_result_top.v:37]
+WARNING: [Synth 8-2654] second declaration of compress_result ignored [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/new/compress_result_top.v:37]
+INFO: [Synth 8-994] compress_result is declared here [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/new/compress_result_top.v:26]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 5300.031 ; gain = 28.195
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'compress_result_top' [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/new/compress_result_top.v:23]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/new/compress_result_top.v:24]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/new/compress_result_top.v:25]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/new/compress_result_top.v:26]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/new/compress_result_top.v:31]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/new/compress_result_top.v:32]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/new/compress_result_top.v:45]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/new/compress_result_top.v:51]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/new/compress_result_top.v:57]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/new/compress_result_top.v:63]
+INFO: [Synth 8-6157] synthesizing module 'rom_fir_connect' [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/imports/new/rom_fir_connect.v:23]
+INFO: [Synth 8-6157] synthesizing module 'four_way_out' [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/imports/new/four_way_out.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Conv_Si_Hi' [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/.Xil/Vivado-24852-LAPTOP-50M5PQTT/realtime/Conv_Si_Hi_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Conv_Si_Hi' (1#1) [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/.Xil/Vivado-24852-LAPTOP-50M5PQTT/realtime/Conv_Si_Hi_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Conv_Si_Hq' [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/.Xil/Vivado-24852-LAPTOP-50M5PQTT/realtime/Conv_Si_Hq_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Conv_Si_Hq' (2#1) [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/.Xil/Vivado-24852-LAPTOP-50M5PQTT/realtime/Conv_Si_Hq_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Conv_Sq_Hi' [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/.Xil/Vivado-24852-LAPTOP-50M5PQTT/realtime/Conv_Sq_Hi_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Conv_Sq_Hi' (3#1) [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/.Xil/Vivado-24852-LAPTOP-50M5PQTT/realtime/Conv_Sq_Hi_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Conv_Sq_Hq' [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/.Xil/Vivado-24852-LAPTOP-50M5PQTT/realtime/Conv_Sq_Hq_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Conv_Sq_Hq' (4#1) [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/.Xil/Vivado-24852-LAPTOP-50M5PQTT/realtime/Conv_Sq_Hq_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'four_way_out' (5#1) [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/imports/new/four_way_out.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ROM_Control' [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/imports/new/ROM_Control.v:23]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/imports/new/ROM_Control.v:26]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/imports/new/ROM_Control.v:27]
+INFO: [Synth 8-6157] synthesizing module 'ROM_320x16_S_I' [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/.Xil/Vivado-24852-LAPTOP-50M5PQTT/realtime/ROM_320x16_S_I_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ROM_320x16_S_I' (6#1) [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/.Xil/Vivado-24852-LAPTOP-50M5PQTT/realtime/ROM_320x16_S_I_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ROM_320x16_S_Q' [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/.Xil/Vivado-24852-LAPTOP-50M5PQTT/realtime/ROM_320x16_S_Q_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ROM_320x16_S_Q' (7#1) [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/.Xil/Vivado-24852-LAPTOP-50M5PQTT/realtime/ROM_320x16_S_Q_stub.v:6]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ROM_320x16_S_I_inst'. This will prevent further optimization [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/imports/new/ROM_Control.v:29]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ROM_320x16_S_Q_inst'. This will prevent further optimization [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/imports/new/ROM_Control.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'ROM_Control' (8#1) [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/imports/new/ROM_Control.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'rom_fir_connect' (9#1) [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/imports/new/rom_fir_connect.v:23]
+INFO: [Synth 8-6157] synthesizing module 'result_out_abs' [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/new/result_out_abs.v:23]
+INFO: [Synth 8-6157] synthesizing module 'cordic_0' [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/.Xil/Vivado-24852-LAPTOP-50M5PQTT/realtime/cordic_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cordic_0' (10#1) [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/.Xil/Vivado-24852-LAPTOP-50M5PQTT/realtime/cordic_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'result_out_abs' (11#1) [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/new/result_out_abs.v:23]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'result_out_abs_inst'. This will prevent further optimization [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/new/compress_result_top.v:125]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'rom_fir_connect_inst'. This will prevent further optimization [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/new/compress_result_top.v:95]
+INFO: [Synth 8-6155] done synthesizing module 'compress_result_top' (12#1) [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/new/compress_result_top.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 5330.359 ; gain = 58.523
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 5331.484 ; gain = 59.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 5331.484 ; gain = 59.648
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Si_Hi/Conv_Si_Hi.dcp' for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Si_Hi_inst'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Si_Hq/Conv_Si_Hq.dcp' for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Si_Hq_inst'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hi/Conv_Sq_Hi.dcp' for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Sq_Hi_inst'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hq/Conv_Sq_Hq.dcp' for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Sq_Hq_inst'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/ROM_320x16_S_I/ROM_320x16_S_I.dcp' for cell 'rom_fir_connect_inst/ROM_Control_inst/ROM_320x16_S_I_inst'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/ROM_320x16_S_Q/ROM_320x16_S_Q.dcp' for cell 'rom_fir_connect_inst/ROM_Control_inst/ROM_320x16_S_Q_inst'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/cordic_0/cordic_0.dcp' for cell 'result_out_abs_inst/cordic_0_inst'
+INFO: [Netlist 29-17] Analyzing 2062 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result[0]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result[0]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result[0]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result[0]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[10]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[10]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[10]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[10]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[11]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[11]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[11]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[11]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[12]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[12]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[12]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[12]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[13]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[13]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[13]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[13]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[14]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[14]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[14]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[14]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[15]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[15]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[15]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[15]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[16]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[16]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[16]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[16]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[17]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[17]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[17]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[17]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[18]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[18]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[18]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[18]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[19]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[19]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[19]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[19]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[1]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[1]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[1]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[1]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[20]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[20]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[20]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[20]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[21]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[21]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[21]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[21]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[22]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[22]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[22]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[22]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[23]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[23]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[23]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[23]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[24]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[24]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[24]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[24]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[25]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[25]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[25]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[25]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[26]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[26]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[26]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[26]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[27]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[27]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[27]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[27]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[28]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[28]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[28]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[28]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[29]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[29]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[29]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[29]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[2]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[2]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[2]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[2]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[30]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[30]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[30]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[30]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[31]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[31]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[31]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[31]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[32]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[32]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[32]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[32]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[33]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[33]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[33]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[33]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[34]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[34]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[34]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[34]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[35]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[35]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[35]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[35]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[36]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[36]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[36]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[36]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[37]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[37]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[37]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[37]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[38]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[38]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[38]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[38]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[39]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[39]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[39]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[39]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[3]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[3]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[3]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[3]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[4]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[4]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[4]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[4]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[5]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[5]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[5]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[5]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[6]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[6]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[6]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[6]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[7]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[7]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[7]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[7]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[8]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[8]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[8]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[8]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[9]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[9]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: compress_result_OBUF[9]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets compress_result_OBUF[9]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: sys_clk
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets sys_clk]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: sys_clk
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets sys_clk]
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 40 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hq/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Sq_Hq_inst/U0'
+Finished Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hq/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Sq_Hq_inst/U0'
+Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hi/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Sq_Hi_inst/U0'
+Finished Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hi/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Sq_Hi_inst/U0'
+Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Si_Hi/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Si_Hi_inst/U0'
+Finished Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Si_Hi/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Si_Hi_inst/U0'
+Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Si_Hq/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Si_Hq_inst/U0'
+Finished Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Si_Hq/constraints/fir_compiler_v7_2.xdc] for cell 'rom_fir_connect_inst/four_way_out_inst/Conv_Si_Hq_inst/U0'
+Parsing XDC File [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/constrs_1/new/plus_compress_constrains.xdc]
+Finished Parsing XDC File [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/constrs_1/new/plus_compress_constrains.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.srcs/constrs_1/new/plus_compress_constrains.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/compress_result_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/compress_result_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 5746.719 ; gain = 0.000
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 5746.719 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:52 ; elapsed = 00:00:39 . Memory (MB): peak = 5746.719 ; gain = 474.883
+56 Infos, 85 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:52 ; elapsed = 00:00:40 . Memory (MB): peak = 5746.719 ; gain = 478.887
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit, general.maxThreads
+current_design synth_1
+report_utilization -name utilization_1
+report_utilization: Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 6056.773 ; gain = 210.172
+report_utilization -name utilization_2
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+report_utilization: Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 6295.570 ; gain = 238.797
+INFO: [Common 17-344] 'report_utilization' was cancelled
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210299492397
+set_property PROGRAM.FILE {C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.runs/impl_1/compress_result_top.bit} [get_hw_devices xc7k325t_0]
+set_property PROBES.FILE {C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.runs/impl_1/compress_result_top.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.runs/impl_1/compress_result_top.ltx} [get_hw_devices xc7k325t_0]
+current_hw_device [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_0' at location 'uuid_23E7D65A79BC59F7BC47406C1714DFAE' from probes file, since it cannot be found on the programmed device.
+create_hw_cfgmem -hw_device [get_hw_devices xc7k325t_0] -mem_dev [lindex [get_cfgmem_parts {mt25ql256-spi-x1_x2_x4}] 0]
+set_property PROBES.FILE {C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.runs/impl_1/compress_result_top.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.runs/impl_1/compress_result_top.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.runs/impl_1/compress_result_top.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 6695.676 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-2302] Device xc7k325t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Apr-02 21:41:40
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-Apr-02 21:41:40
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Apr-02 21:41:44
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-Apr-02 21:41:44
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Apr-02 21:41:52
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-Apr-02 21:41:52
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Apr  2 21:42:27 2022...

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="four_conv_out_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="four_conv_out" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="26325000000fs"></ZoomStartTime>
+      <ZoomEndTime time="37490000001fs"></ZoomEndTime>
+      <Cursor1Time time="32280000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="305"></NameColumnWidth>
+      <ValueColumnWidth column_width="208"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="26" />
+   <wvobject fp_name="/four_conv_out/sys_clk" type="logic">
+      <obj_property name="ElementShortName">sys_clk</obj_property>
+      <obj_property name="ObjectShortName">sys_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/four_conv_out/sys_rst_n" type="logic">
+      <obj_property name="ElementShortName">sys_rst_n</obj_property>
+      <obj_property name="ObjectShortName">sys_rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/four_conv_out/addra" type="array">
+      <obj_property name="ElementShortName">addra[8:0]</obj_property>
+      <obj_property name="ObjectShortName">addra[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/four_conv_out/cnt" type="array">
+      <obj_property name="ElementShortName">cnt[3:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/four_conv_out/result_compress_i" type="array">
+      <obj_property name="ElementShortName">result_compress_i[39:0]</obj_property>
+      <obj_property name="ObjectShortName">result_compress_i[39:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject fp_name="/four_conv_out/result_compress_q" type="array">
+      <obj_property name="ElementShortName">result_compress_q[39:0]</obj_property>
+      <obj_property name="ObjectShortName">result_compress_q[39:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject fp_name="/four_conv_out/compress_result_data_valid" type="logic">
+      <obj_property name="ElementShortName">compress_result_data_valid</obj_property>
+      <obj_property name="ObjectShortName">compress_result_data_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/four_conv_out/compress_result_0" type="array">
+      <obj_property name="ElementShortName">compress_result_0[39:0]</obj_property>
+      <obj_property name="ObjectShortName">compress_result_0[39:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/four_conv_out/compress_result_1" type="array">
+      <obj_property name="ElementShortName">compress_result_1[39:0]</obj_property>
+      <obj_property name="ObjectShortName">compress_result_1[39:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/four_conv_out/compress_result" type="array">
+      <obj_property name="ElementShortName">compress_result[39:0]</obj_property>
+      <obj_property name="ObjectShortName">compress_result[39:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject fp_name="/four_conv_out/s_axis_data_tvalid_sihi" type="logic">
+      <obj_property name="ElementShortName">s_axis_data_tvalid_sihi</obj_property>
+      <obj_property name="ObjectShortName">s_axis_data_tvalid_sihi</obj_property>
+   </wvobject>
+   <wvobject fp_name="/four_conv_out/s_axis_data_tready_sihi" type="logic">
+      <obj_property name="ElementShortName">s_axis_data_tready_sihi</obj_property>
+      <obj_property name="ObjectShortName">s_axis_data_tready_sihi</obj_property>
+   </wvobject>
+   <wvobject fp_name="/four_conv_out/m_axis_data_tvalid_sihi" type="logic">
+      <obj_property name="ElementShortName">m_axis_data_tvalid_sihi</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tvalid_sihi</obj_property>
+   </wvobject>
+   <wvobject fp_name="/four_conv_out/m_axis_data_tdata_sihi" type="array">
+      <obj_property name="ElementShortName">m_axis_data_tdata_sihi[39:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tdata_sihi[39:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject fp_name="/four_conv_out/s_axis_data_tvalid_sihq" type="logic">
+      <obj_property name="ElementShortName">s_axis_data_tvalid_sihq</obj_property>
+      <obj_property name="ObjectShortName">s_axis_data_tvalid_sihq</obj_property>
+   </wvobject>
+   <wvobject fp_name="/four_conv_out/s_axis_data_tready_sihq" type="logic">
+      <obj_property name="ElementShortName">s_axis_data_tready_sihq</obj_property>
+      <obj_property name="ObjectShortName">s_axis_data_tready_sihq</obj_property>
+   </wvobject>
+   <wvobject fp_name="/four_conv_out/m_axis_data_tvalid_sihq" type="logic">
+      <obj_property name="ElementShortName">m_axis_data_tvalid_sihq</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tvalid_sihq</obj_property>
+   </wvobject>
+   <wvobject fp_name="/four_conv_out/m_axis_data_tdata_sihq" type="array">
+      <obj_property name="ElementShortName">m_axis_data_tdata_sihq[39:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tdata_sihq[39:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject fp_name="/four_conv_out/s_axis_data_tvalid_sqhi" type="logic">
+      <obj_property name="ElementShortName">s_axis_data_tvalid_sqhi</obj_property>
+      <obj_property name="ObjectShortName">s_axis_data_tvalid_sqhi</obj_property>
+   </wvobject>
+   <wvobject fp_name="/four_conv_out/s_axis_data_tready_sqhi" type="logic">
+      <obj_property name="ElementShortName">s_axis_data_tready_sqhi</obj_property>
+      <obj_property name="ObjectShortName">s_axis_data_tready_sqhi</obj_property>
+   </wvobject>
+   <wvobject fp_name="/four_conv_out/m_axis_data_tvalid_sqhi" type="logic">
+      <obj_property name="ElementShortName">m_axis_data_tvalid_sqhi</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tvalid_sqhi</obj_property>
+   </wvobject>
+   <wvobject fp_name="/four_conv_out/m_axis_data_tdata_sqhi" type="array">
+      <obj_property name="ElementShortName">m_axis_data_tdata_sqhi[39:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tdata_sqhi[39:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject fp_name="/four_conv_out/s_axis_data_tvalid_sqhq" type="logic">
+      <obj_property name="ElementShortName">s_axis_data_tvalid_sqhq</obj_property>
+      <obj_property name="ObjectShortName">s_axis_data_tvalid_sqhq</obj_property>
+   </wvobject>
+   <wvobject fp_name="/four_conv_out/s_axis_data_tready_sqhq" type="logic">
+      <obj_property name="ElementShortName">s_axis_data_tready_sqhq</obj_property>
+      <obj_property name="ObjectShortName">s_axis_data_tready_sqhq</obj_property>
+   </wvobject>
+   <wvobject fp_name="/four_conv_out/m_axis_data_tvalid_sqhq" type="logic">
+      <obj_property name="ElementShortName">m_axis_data_tvalid_sqhq</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tvalid_sqhq</obj_property>
+   </wvobject>
+   <wvobject fp_name="/four_conv_out/m_axis_data_tdata_sqhq" type="array">
+      <obj_property name="ElementShortName">m_axis_data_tdata_sqhq[39:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tdata_sqhq[39:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+</wave_config>

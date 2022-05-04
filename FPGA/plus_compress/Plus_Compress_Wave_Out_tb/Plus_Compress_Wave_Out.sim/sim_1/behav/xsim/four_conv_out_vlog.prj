@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Plus_Compress_Wave_Out.srcs/sources_1/ip/ROM_320x16_S_Q/sim/ROM_320x16_S_Q.v" \
+"../../../../Plus_Compress_Wave_Out.srcs/sources_1/ip/ROM_320x16_S_I/sim/ROM_320x16_S_I.v" \
+"../../../../Plus_Compress_Wave_Out.srcs/sources_1/imports/new/ROM_Control.v" \
+"../../../../Plus_Compress_Wave_Out.srcs/sources_1/imports/new/four_way_out.v" \
+"../../../../Plus_Compress_Wave_Out.srcs/sources_1/new/result_out_abs.v" \
+"../../../../Plus_Compress_Wave_Out.srcs/sources_1/imports/new/rom_fir_connect.v" \
+"../../../../Plus_Compress_Wave_Out.srcs/sim_1/imports/new/four_conv_out.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

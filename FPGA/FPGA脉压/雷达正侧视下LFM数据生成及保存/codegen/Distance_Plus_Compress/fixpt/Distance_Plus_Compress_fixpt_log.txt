@@ -1,0 +1,17 @@
+
+Warnings: 
+
+File: C:\Users\WYHAIRCAS\Desktop\SAR点目标成像仿真\FPGA脉压\正侧视\Distance_Plus_Compress.m, line : 5, column : 11. Function 'fft' not supported for fixed-point conversion.
+File: C:\Users\WYHAIRCAS\Desktop\SAR点目标成像仿真\FPGA脉压\正侧视\Distance_Plus_Compress.m, line : 12, column : 11. Function 'exp' not supported for fixed-point conversion.
+File: C:\Users\WYHAIRCAS\Desktop\SAR点目标成像仿真\FPGA脉压\正侧视\Distance_Plus_Compress.m, line : 19, column : 9. Function 'fft' not supported for fixed-point conversion.
+File: C:\Users\WYHAIRCAS\Desktop\SAR点目标成像仿真\FPGA脉压\正侧视\Distance_Plus_Compress.m, line : 22, column : 8. Function 'ifft' not supported for fixed-point conversion.
+File: C:\Users\WYHAIRCAS\Desktop\SAR点目标成像仿真\FPGA脉压\正侧视\Distance_Plus_Compress.m, line : 4, column : 8. The expression 'NFFT_r = Nrg;' was not executed during simulation. Consider using a more thorough testbench.
+File: C:\Users\WYHAIRCAS\Desktop\SAR点目标成像仿真\FPGA脉压\正侧视\Distance_Plus_Compress.m, line : 5, column : 9. The expression 'S_range = fft(s_echo,NFFT_r,2);' was not executed during simulation. Consider using a more thorough testbench.
+File: C:\Users\WYHAIRCAS\Desktop\SAR点目标成像仿真\FPGA脉压\正侧视\Distance_Plus_Compress.m, line : 6, column : 7. The expression 't_ref = ( -Nr/2 : (Nr/2-1) )/Fr;' was not executed during simulation. Consider using a more thorough testbench.
+File: C:\Users\WYHAIRCAS\Desktop\SAR点目标成像仿真\FPGA脉压\正侧视\Distance_Plus_Compress.m, line : 7, column : 11. The expression 't_ref_mtx = ones(Naz,1)*t_ref;' was not executed during simulation. Consider using a more thorough testbench.
+File: C:\Users\WYHAIRCAS\Desktop\SAR点目标成像仿真\FPGA脉压\正侧视\Distance_Plus_Compress.m, line : 12, column : 9. The expression 's_ref = exp((1j*pi*Kr).*((t_ref_mtx).^2));' was not executed during simulation. Consider using a more thorough testbench.
+File: C:\Users\WYHAIRCAS\Desktop\SAR点目标成像仿真\FPGA脉压\正侧视\Distance_Plus_Compress.m, line : 16, column : 7. The expression 's_ref = [s_ref,zeros(Naz,floor(Nrg-Nr))];' was not executed during simulation. Consider using a more thorough testbench.
+File: C:\Users\WYHAIRCAS\Desktop\SAR点目标成像仿真\FPGA脉压\正侧视\Distance_Plus_Compress.m, line : 19, column : 7. The expression 'S_ref = fft(s_ref,NFFT_r,2);' was not executed during simulation. Consider using a more thorough testbench.
+File: C:\Users\WYHAIRCAS\Desktop\SAR点目标成像仿真\FPGA脉压\正侧视\Distance_Plus_Compress.m, line : 20, column : 9. The expression 'H_range = conj(S_ref);' was not executed during simulation. Consider using a more thorough testbench.
+File: C:\Users\WYHAIRCAS\Desktop\SAR点目标成像仿真\FPGA脉压\正侧视\Distance_Plus_Compress.m, line : 21, column : 11. The expression 'S_range_c = S_range.*H_range;' was not executed during simulation. Consider using a more thorough testbench.
+File: C:\Users\WYHAIRCAS\Desktop\SAR点目标成像仿真\FPGA脉压\正侧视\Distance_Plus_Compress.m, line : 22, column : 6. The expression 's_rc = ifft(S_range_c,[],2);' was not executed during simulation. Consider using a more thorough testbench.

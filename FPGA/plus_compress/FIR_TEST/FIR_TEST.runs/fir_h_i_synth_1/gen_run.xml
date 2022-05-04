@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="fir_h_i_synth_1" LaunchPart="xc7k325tfbg676-2" LaunchTime="1648602769">
+  <File Type="PA-TCL" Name="fir_h_i.tcl"/>
+  <File Type="REPORTS-TCL" Name="fir_h_i_reports.tcl"/>
+  <File Type="RDS-RDS" Name="fir_h_i.vds"/>
+  <File Type="RDS-UTIL" Name="fir_h_i_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="fir_h_i_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="fir_h_i.dcp"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/fir_h_i">
+    <File Path="$PSRCDIR/sources_1/ip/fir_h_i/fir_h_i.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="fir_h_i"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/fir_h_i">
+    <File Path="$PSRCDIR/sources_1/ip/fir_h_i/fir_h_i.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="fir_h_i"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

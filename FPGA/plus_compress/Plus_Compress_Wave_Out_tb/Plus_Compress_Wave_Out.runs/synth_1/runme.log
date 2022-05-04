@@ -1,0 +1,305 @@
+
+*** Running vivado
+    with args -log rom_fir_connect.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source rom_fir_connect.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source rom_fir_connect.tcl -notrace
+Command: synth_design -top rom_fir_connect -part xc7k325tfbg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 18876 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 470.609 ; gain = 99.559
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'rom_fir_connect' [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/Plus_Compress_Wave_Out.srcs/sources_1/imports/new/rom_fir_connect.v:23]
+INFO: [Synth 8-6157] synthesizing module 'four_way_out' [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/Plus_Compress_Wave_Out.srcs/sources_1/imports/new/four_way_out.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Conv_Si_Hi' [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/Plus_Compress_Wave_Out.runs/synth_1/.Xil/Vivado-12816-LAPTOP-50M5PQTT/realtime/Conv_Si_Hi_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Conv_Si_Hi' (1#1) [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/Plus_Compress_Wave_Out.runs/synth_1/.Xil/Vivado-12816-LAPTOP-50M5PQTT/realtime/Conv_Si_Hi_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Conv_Si_Hq' [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/Plus_Compress_Wave_Out.runs/synth_1/.Xil/Vivado-12816-LAPTOP-50M5PQTT/realtime/Conv_Si_Hq_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Conv_Si_Hq' (2#1) [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/Plus_Compress_Wave_Out.runs/synth_1/.Xil/Vivado-12816-LAPTOP-50M5PQTT/realtime/Conv_Si_Hq_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Conv_Sq_Hi' [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/Plus_Compress_Wave_Out.runs/synth_1/.Xil/Vivado-12816-LAPTOP-50M5PQTT/realtime/Conv_Sq_Hi_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Conv_Sq_Hi' (3#1) [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/Plus_Compress_Wave_Out.runs/synth_1/.Xil/Vivado-12816-LAPTOP-50M5PQTT/realtime/Conv_Sq_Hi_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Conv_Sq_Hq' [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/Plus_Compress_Wave_Out.runs/synth_1/.Xil/Vivado-12816-LAPTOP-50M5PQTT/realtime/Conv_Sq_Hq_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Conv_Sq_Hq' (4#1) [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/Plus_Compress_Wave_Out.runs/synth_1/.Xil/Vivado-12816-LAPTOP-50M5PQTT/realtime/Conv_Sq_Hq_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'four_way_out' (5#1) [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/Plus_Compress_Wave_Out.srcs/sources_1/imports/new/four_way_out.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ROM_Control' [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/Plus_Compress_Wave_Out.srcs/sources_1/imports/new/ROM_Control.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ROM_320x16_S_I' [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/Plus_Compress_Wave_Out.runs/synth_1/.Xil/Vivado-12816-LAPTOP-50M5PQTT/realtime/ROM_320x16_S_I_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ROM_320x16_S_I' (6#1) [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/Plus_Compress_Wave_Out.runs/synth_1/.Xil/Vivado-12816-LAPTOP-50M5PQTT/realtime/ROM_320x16_S_I_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ROM_320x16_S_Q' [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/Plus_Compress_Wave_Out.runs/synth_1/.Xil/Vivado-12816-LAPTOP-50M5PQTT/realtime/ROM_320x16_S_Q_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ROM_320x16_S_Q' (7#1) [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/Plus_Compress_Wave_Out.runs/synth_1/.Xil/Vivado-12816-LAPTOP-50M5PQTT/realtime/ROM_320x16_S_Q_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ROM_Control' (8#1) [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/Plus_Compress_Wave_Out.srcs/sources_1/imports/new/ROM_Control.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'rom_fir_connect' (9#1) [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/Plus_Compress_Wave_Out.srcs/sources_1/imports/new/rom_fir_connect.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 527.172 ; gain = 156.121
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 527.172 ; gain = 156.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 527.172 ; gain = 156.121
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k325tfbg676-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hq/Conv_Sq_Hq/Conv_Si_Hq_in_context.xdc] for cell 'four_way_out_inst/Conv_Sq_Hq_inst'
+Finished Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hq/Conv_Sq_Hq/Conv_Si_Hq_in_context.xdc] for cell 'four_way_out_inst/Conv_Sq_Hq_inst'
+Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hi/Conv_Sq_Hi/Conv_Si_Hi_in_context.xdc] for cell 'four_way_out_inst/Conv_Sq_Hi_inst'
+Finished Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hi/Conv_Sq_Hi/Conv_Si_Hi_in_context.xdc] for cell 'four_way_out_inst/Conv_Sq_Hi_inst'
+Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/Plus_Compress_Wave_Out.srcs/sources_1/ip/ROM_320x16_S_I/ROM_320x16_S_I/ROM_320x16_S_I_in_context.xdc] for cell 'ROM_Control_inst/ROM_320x16_S_I_inst'
+Finished Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/Plus_Compress_Wave_Out.srcs/sources_1/ip/ROM_320x16_S_I/ROM_320x16_S_I/ROM_320x16_S_I_in_context.xdc] for cell 'ROM_Control_inst/ROM_320x16_S_I_inst'
+Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/Plus_Compress_Wave_Out.srcs/sources_1/ip/ROM_320x16_S_Q/ROM_320x16_S_Q/ROM_320x16_S_Q_in_context.xdc] for cell 'ROM_Control_inst/ROM_320x16_S_Q_inst'
+Finished Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/Plus_Compress_Wave_Out.srcs/sources_1/ip/ROM_320x16_S_Q/ROM_320x16_S_Q/ROM_320x16_S_Q_in_context.xdc] for cell 'ROM_Control_inst/ROM_320x16_S_Q_inst'
+Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Si_Hi/Conv_Si_Hi/Conv_Si_Hi_in_context.xdc] for cell 'four_way_out_inst/Conv_Si_Hi_inst'
+Finished Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Si_Hi/Conv_Si_Hi/Conv_Si_Hi_in_context.xdc] for cell 'four_way_out_inst/Conv_Si_Hi_inst'
+Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Si_Hq/Conv_Si_Hq/Conv_Si_Hq_in_context.xdc] for cell 'four_way_out_inst/Conv_Si_Hq_inst'
+Finished Parsing XDC File [c:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Si_Hq/Conv_Si_Hq/Conv_Si_Hq_in_context.xdc] for cell 'four_way_out_inst/Conv_Si_Hq_inst'
+Parsing XDC File [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/Plus_Compress_Wave_Out.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/Plus_Compress_Wave_Out.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 851.336 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 851.336 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 851.336 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 851.352 ; gain = 480.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k325tfbg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 851.352 ; gain = 480.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for four_way_out_inst/Conv_Sq_Hq_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for four_way_out_inst/Conv_Sq_Hi_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ROM_Control_inst/ROM_320x16_S_I_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ROM_Control_inst/ROM_320x16_S_Q_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for four_way_out_inst/Conv_Si_Hi_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for four_way_out_inst/Conv_Si_Hq_inst. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 851.352 ; gain = 480.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 851.352 ; gain = 480.301
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 840 (col length:140)
+BRAMs: 890 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 851.352 ; gain = 480.301
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 891.129 ; gain = 520.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 891.129 ; gain = 520.078
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 900.801 ; gain = 529.750
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 900.801 ; gain = 529.750
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 900.801 ; gain = 529.750
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 900.801 ; gain = 529.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 900.801 ; gain = 529.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 900.801 ; gain = 529.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 900.801 ; gain = 529.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |ROM_320x16_S_I |         1|
+|2     |ROM_320x16_S_Q |         1|
+|3     |Conv_Si_Hi     |         1|
+|4     |Conv_Si_Hq     |         1|
+|5     |Conv_Sq_Hi     |         1|
+|6     |Conv_Sq_Hq     |         1|
++------+---------------+----------+
+
+Report Cell Usage: 
++------+---------------+------+
+|      |Cell           |Count |
++------+---------------+------+
+|1     |Conv_Si_Hi     |     1|
+|2     |Conv_Si_Hq     |     1|
+|3     |Conv_Sq_Hi     |     1|
+|4     |Conv_Sq_Hq     |     1|
+|5     |ROM_320x16_S_I |     1|
+|6     |ROM_320x16_S_Q |     1|
+|7     |IBUF           |    14|
+|8     |OBUF           |   168|
++------+---------------+------+
+
+Report Instance Areas: 
++------+--------------------+-------------+------+
+|      |Instance            |Module       |Cells |
++------+--------------------+-------------+------+
+|1     |top                 |             |   382|
+|2     |  ROM_Control_inst  |ROM_Control  |    32|
+|3     |  four_way_out_inst |four_way_out |   168|
++------+--------------------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 900.801 ; gain = 529.750
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 900.801 ; gain = 205.570
+Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 900.801 ; gain = 529.750
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 921.094 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+27 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 921.094 ; gain = 561.562
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 921.094 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/Plus_Compress_Wave_Out.runs/synth_1/rom_fir_connect.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file rom_fir_connect_utilization_synth.rpt -pb rom_fir_connect_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Apr  7 22:19:28 2022...

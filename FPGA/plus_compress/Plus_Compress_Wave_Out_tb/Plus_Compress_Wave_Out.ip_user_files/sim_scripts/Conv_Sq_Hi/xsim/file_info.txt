@@ -1,0 +1,1 @@
+Conv_Sq_Hi.vhd,vhdl,xil_defaultlib,../../../../Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hi/sim/Conv_Sq_Hi.vhd,incdir="../../../../Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hi/cmodel"

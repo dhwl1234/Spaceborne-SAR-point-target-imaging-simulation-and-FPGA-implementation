@@ -1,0 +1,10 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Project/plus_compress/Plus_Compress_Wave_Out_tb/Plus_Compress_Wave_Out.srcs/sources_1/ip/cordic_0/sim/cordic_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'cordic_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Project/plus_compress/Plus_Compress_Wave_Out_tb/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hq/sim/Conv_Sq_Hq.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Conv_Sq_Hq'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Project/plus_compress/Plus_Compress_Wave_Out_tb/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hi/sim/Conv_Sq_Hi.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Conv_Sq_Hi'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Project/plus_compress/Plus_Compress_Wave_Out_tb/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Si_Hq/sim/Conv_Si_Hq.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Conv_Si_Hq'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Project/plus_compress/Plus_Compress_Wave_Out_tb/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Si_Hi/sim/Conv_Si_Hi.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Conv_Si_Hi'

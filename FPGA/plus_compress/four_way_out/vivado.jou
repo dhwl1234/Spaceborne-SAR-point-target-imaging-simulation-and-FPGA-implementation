@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Mar 30 20:48:42 2022
+# Process ID: 11188
+# Current directory: C:/Users/WYHAIRCAS/Desktop/plus_compress/four_way_out
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent624 C:\Users\WYHAIRCAS\Desktop\plus_compress\four_way_out\four_way_out.xpr
+# Log file: C:/Users/WYHAIRCAS/Desktop/plus_compress/four_way_out/vivado.log
+# Journal file: C:/Users/WYHAIRCAS/Desktop/plus_compress/four_way_out\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/WYHAIRCAS/Desktop/plus_compress/four_way_out/four_way_out.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+copy_ip -name ROM_320x16_S_I_1 -dir c:/Users/WYHAIRCAS/Desktop/plus_compress/four_way_out/four_way_out.srcs/sources_1/ip [get_ips  ROM_320x16_S_I]
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files c:/Users/WYHAIRCAS/Desktop/plus_compress/four_way_out/four_way_out.srcs/sources_1/ip/ROM_320x16_S_I_1/ROM_320x16_S_I_1.xci] -no_script -reset -force -quiet
+remove_files  c:/Users/WYHAIRCAS/Desktop/plus_compress/four_way_out/four_way_out.srcs/sources_1/ip/ROM_320x16_S_I_1/ROM_320x16_S_I_1.xci
+file delete -force c:/Users/WYHAIRCAS/Desktop/plus_compress/four_way_out/four_way_out.srcs/sources_1/ip/ROM_320x16_S_I_1

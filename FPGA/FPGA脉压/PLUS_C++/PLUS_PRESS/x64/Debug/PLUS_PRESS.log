@@ -1,0 +1,61 @@
+﻿  main.cpp
+C:\Users\WYHAIRCAS\Desktop\Matrix-master\Matrix.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Users\WYHAIRCAS\Desktop\Matrix-master\main.cpp(12,25): warning C4101: “a_i”: 未引用的局部变量
+  Matrix.cpp
+C:\Users\WYHAIRCAS\Desktop\Matrix-master\Matrix.cpp(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Users\WYHAIRCAS\Desktop\Matrix-master\Matrix.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Users\WYHAIRCAS\Desktop\Matrix-master\Matrix.cpp(369,56): error C2131: 表达式的计算结果不是常数
+C:\Users\WYHAIRCAS\Desktop\Matrix-master\Matrix.cpp(369,47): message : 因读取超过生命周期的变量而失败
+C:\Users\WYHAIRCAS\Desktop\Matrix-master\Matrix.cpp(369,47): message : 请参见“this”的用法
+C:\Users\WYHAIRCAS\Desktop\Matrix-master\Matrix.cpp(374,38): error C3863: 不可指定数组类型“std::complex<double> *[this->8<L_ALIGN>8-1*this->4<L_ALIGN>12-1]”
+C:\Users\WYHAIRCAS\Desktop\Matrix-master\Matrix.cpp(403,39): warning C4244: “+=”: 从“_Ty”转换到“int”，可能丢失数据
+          with
+          [
+              _Ty=double
+          ]
+C:\Users\WYHAIRCAS\Desktop\Matrix-master\Matrix.cpp(422,36): error C2131: 表达式的计算结果不是常数
+C:\Users\WYHAIRCAS\Desktop\Matrix-master\Matrix.cpp(422,32): message : 因读取超过生命周期的变量而失败
+C:\Users\WYHAIRCAS\Desktop\Matrix-master\Matrix.cpp(422,32): message : 请参见“this”的用法
+C:\Users\WYHAIRCAS\Desktop\Matrix-master\Matrix.cpp(429,29): error C3863: 不可指定数组类型“std::complex<double> [this->8<L_ALIGN>8*this->4<L_ALIGN>12]”
+C:\Users\WYHAIRCAS\Desktop\Matrix-master\Matrix.cpp(699,14): error C2131: 表达式的计算结果不是常数
+C:\Users\WYHAIRCAS\Desktop\Matrix-master\Matrix.cpp(699,14): message : 因读取超过生命周期的变量而失败
+C:\Users\WYHAIRCAS\Desktop\Matrix-master\Matrix.cpp(699,14): message : 请参见“n”的用法
+C:\Users\WYHAIRCAS\Desktop\Matrix-master\Matrix.cpp(699,17): error C2131: 表达式的计算结果不是常数
+C:\Users\WYHAIRCAS\Desktop\Matrix-master\Matrix.cpp(699,17): message : 因读取超过生命周期的变量而失败
+C:\Users\WYHAIRCAS\Desktop\Matrix-master\Matrix.cpp(699,17): message : 请参见“n”的用法
+C:\Users\WYHAIRCAS\Desktop\Matrix-master\Matrix.cpp(699,23): error C2131: 表达式的计算结果不是常数
+C:\Users\WYHAIRCAS\Desktop\Matrix-master\Matrix.cpp(699,23): message : 因读取超过生命周期的变量而失败
+C:\Users\WYHAIRCAS\Desktop\Matrix-master\Matrix.cpp(699,23): message : 请参见“n”的用法
+C:\Users\WYHAIRCAS\Desktop\Matrix-master\Matrix.cpp(699,26): error C2131: 表达式的计算结果不是常数
+C:\Users\WYHAIRCAS\Desktop\Matrix-master\Matrix.cpp(699,26): message : 因读取超过生命周期的变量而失败
+C:\Users\WYHAIRCAS\Desktop\Matrix-master\Matrix.cpp(699,26): message : 请参见“n”的用法
+C:\Users\WYHAIRCAS\Desktop\Matrix-master\Matrix.cpp(700,22): error C2131: 表达式的计算结果不是常数
+C:\Users\WYHAIRCAS\Desktop\Matrix-master\Matrix.cpp(700,22): message : 因读取超过生命周期的变量而失败
+C:\Users\WYHAIRCAS\Desktop\Matrix-master\Matrix.cpp(700,22): message : 请参见“n”的用法
+C:\Users\WYHAIRCAS\Desktop\Matrix-master\Matrix.cpp(700,25): error C2131: 表达式的计算结果不是常数
+C:\Users\WYHAIRCAS\Desktop\Matrix-master\Matrix.cpp(700,25): message : 因读取超过生命周期的变量而失败
+C:\Users\WYHAIRCAS\Desktop\Matrix-master\Matrix.cpp(700,25): message : 请参见“n”的用法
+C:\Users\WYHAIRCAS\Desktop\Matrix-master\Matrix.cpp(700,39): error C2131: 表达式的计算结果不是常数
+C:\Users\WYHAIRCAS\Desktop\Matrix-master\Matrix.cpp(700,39): message : 因读取超过生命周期的变量而失败
+C:\Users\WYHAIRCAS\Desktop\Matrix-master\Matrix.cpp(700,39): message : 请参见“n”的用法
+C:\Users\WYHAIRCAS\Desktop\Matrix-master\Matrix.cpp(700,42): error C2131: 表达式的计算结果不是常数
+C:\Users\WYHAIRCAS\Desktop\Matrix-master\Matrix.cpp(700,42): message : 因读取超过生命周期的变量而失败
+C:\Users\WYHAIRCAS\Desktop\Matrix-master\Matrix.cpp(700,42): message : 请参见“n”的用法
+C:\Users\WYHAIRCAS\Desktop\Matrix-master\Matrix.cpp(701,26): error C2131: 表达式的计算结果不是常数
+C:\Users\WYHAIRCAS\Desktop\Matrix-master\Matrix.cpp(701,24): message : 因读取超过生命周期的变量而失败
+C:\Users\WYHAIRCAS\Desktop\Matrix-master\Matrix.cpp(701,24): message : 请参见“n”的用法
+C:\Users\WYHAIRCAS\Desktop\Matrix-master\Matrix.cpp(711,17): error C3863: 不可指定数组类型“double [n][n]”
+C:\Users\WYHAIRCAS\Desktop\Matrix-master\Matrix.cpp(719,21): error C3863: 不可指定数组类型“double [n][n]”
+C:\Users\WYHAIRCAS\Desktop\Matrix-master\Matrix.cpp(726,21): error C3863: 不可指定数组类型“double [n][n]”
+C:\Users\WYHAIRCAS\Desktop\Matrix-master\Matrix.cpp(732,25): error C3863: 不可指定数组类型“double [n][n]”
+C:\Users\WYHAIRCAS\Desktop\Matrix-master\Matrix.cpp(740,29): error C3863: 不可指定数组类型“double [n][n]”
+C:\Users\WYHAIRCAS\Desktop\Matrix-master\Matrix.cpp(760,25): error C3863: 不可指定数组类型“double [n][n]”
+C:\Users\WYHAIRCAS\Desktop\Matrix-master\Matrix.cpp(768,29): error C3863: 不可指定数组类型“double [n][n]”
+C:\Users\WYHAIRCAS\Desktop\Matrix-master\Matrix.cpp(807,31): error C2668: “Matrix::Matrix”: 对重载函数的调用不明确
+C:\Users\WYHAIRCAS\Desktop\Matrix-master\Matrix.cpp(38,9): message : 可能是“Matrix::Matrix(int,int,double *)”
+C:\Users\WYHAIRCAS\Desktop\Matrix-master\Matrix.cpp(31,9): message : 或    “Matrix::Matrix(int,int,std::complex<double> *)”
+C:\Users\WYHAIRCAS\Desktop\Matrix-master\Matrix.cpp(807,31): message : 尝试匹配参数列表“(int, int, double_t [n*n])”时
+C:\Users\WYHAIRCAS\Desktop\Matrix-master\Matrix.cpp(809,1): error C2036: “double [n][n]”: 未知的大小
+C:\Users\WYHAIRCAS\Desktop\Matrix-master\Matrix.cpp(703,1): fatal error C1903: 无法从以前的错误中恢复；正在停止编译
+  Plus_Press.cpp
+  正在生成代码...

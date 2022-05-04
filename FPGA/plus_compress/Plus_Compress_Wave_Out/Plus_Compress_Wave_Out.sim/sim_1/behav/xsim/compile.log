@@ -1,0 +1,31 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Project/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/ip/ROM_320x16_S_Q/sim/ROM_320x16_S_Q.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_320x16_S_Q
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Project/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/ip/ROM_320x16_S_I/sim/ROM_320x16_S_I.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_320x16_S_I
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Project/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/imports/new/ROM_Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Project/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/new/compress_result_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module compress_result_top
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'compress_result' is not allowed [E:/Project/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/new/compress_result_top.v:37]
+WARNING: [VRFC 10-3380] identifier 'm_axis_data_tdata_sihi' is used before its declaration [E:/Project/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/new/compress_result_top.v:39]
+WARNING: [VRFC 10-3380] identifier 'm_axis_data_tdata_sihq' is used before its declaration [E:/Project/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/new/compress_result_top.v:40]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Project/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/imports/new/four_way_out.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module four_way_out
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Project/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/new/result_out_abs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module result_out_abs
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Project/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/imports/new/rom_fir_connect.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rom_fir_connect
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Project/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sim_1/imports/new/four_conv_out.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module four_conv_out
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Project/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Project/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/ip/cordic_0/sim/cordic_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'cordic_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Project/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hq/sim/Conv_Sq_Hq.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Conv_Sq_Hq'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Project/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hi/sim/Conv_Sq_Hi.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Conv_Sq_Hi'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Project/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Si_Hq/sim/Conv_Si_Hq.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Conv_Si_Hq'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Project/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Si_Hi/sim/Conv_Si_Hi.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Conv_Si_Hi'

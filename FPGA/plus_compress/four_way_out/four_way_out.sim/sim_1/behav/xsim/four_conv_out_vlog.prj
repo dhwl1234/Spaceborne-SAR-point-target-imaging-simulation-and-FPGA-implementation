@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../four_way_out.srcs/sources_1/ip/ROM_320x16_S_Q/sim/ROM_320x16_S_Q.v" \
+"../../../../four_way_out.srcs/sources_1/ip/ROM_320x16_S_I/sim/ROM_320x16_S_I.v" \
+"../../../../four_way_out.srcs/sources_1/new/ROM_Control.v" \
+"../../../../four_way_out.srcs/sources_1/new/four_way_out.v" \
+"../../../../four_way_out.srcs/sources_1/new/rom_fir_connect.v" \
+"../../../../four_way_out.srcs/sim_1/new/four_conv_out.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

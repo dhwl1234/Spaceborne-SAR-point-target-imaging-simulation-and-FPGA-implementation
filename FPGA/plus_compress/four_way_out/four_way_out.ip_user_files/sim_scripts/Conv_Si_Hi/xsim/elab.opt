@@ -1,0 +1,1 @@
+--relax --debug typical --mt auto -L xbip_utils_v3_0_9 -L axi_utils_v2_0_5 -L fir_compiler_v7_2_11 -L xil_defaultlib -L secureip -L xpm --snapshot Conv_Si_Hi xil_defaultlib.Conv_Si_Hi -log elaborate.log

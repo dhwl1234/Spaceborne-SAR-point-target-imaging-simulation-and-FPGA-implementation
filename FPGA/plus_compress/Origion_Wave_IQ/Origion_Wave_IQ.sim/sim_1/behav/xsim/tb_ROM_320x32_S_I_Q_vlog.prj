@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Origion_Wave_IQ.srcs/sources_1/ip/ROM_320x32_S_Q/sim/ROM_320x32_S_Q.v" \
+"../../../../Origion_Wave_IQ.srcs/sources_1/ip/ROM_320x32_S_I_1/sim/ROM_320x32_S_I.v" \
+"../../../../Origion_Wave_IQ.srcs/sources_1/new/ROM_S_I_Q.v" \
+"../../../../Origion_Wave_IQ.srcs/sim_1/new/ROM_test.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

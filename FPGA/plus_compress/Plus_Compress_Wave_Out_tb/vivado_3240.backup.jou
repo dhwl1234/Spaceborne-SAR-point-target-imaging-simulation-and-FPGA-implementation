@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Apr  7 22:10:39 2022
+# Process ID: 3240
+# Current directory: C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3596 C:\Users\WYHAIRCAS\Desktop\plus_compress\Plus_Compress_Wave_Out_tb\Plus_Compress_Wave_Out.xpr
+# Log file: C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/vivado.log
+# Journal file: C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/Plus_Compress_Wave_Out.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/result_compress_I_Q.wcfg
+open_wave_config C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/compress_result_finifsh.wcfg
+source four_conv_out.tcl
+set_param general.maxThreads 32
+run 1 ms
+run 1 ms
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+close_sim

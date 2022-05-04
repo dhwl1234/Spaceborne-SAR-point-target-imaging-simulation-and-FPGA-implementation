@@ -1,0 +1,509 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Apr  2 20:19:05 2022
+# Process ID: 24852
+# Current directory: C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18952 C:\Users\WYHAIRCAS\Desktop\plus_compress\Plus_Compress_Wave_Out_chipscope\Plus_Compress_Wave_Out.xpr
+# Log file: C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/vivado.log
+# Journal file: C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.xpr
+update_compile_order -fileset sources_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_run synth_1 -name synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+refresh_design
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+startgroup 
+set_property C_EN_STRG_QUAL true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU_CNT 2 [get_debug_cores u_ila_0 ]
+endgroup
+set_property port_width 1 [get_debug_ports u_ila_0/clk]
+connect_debug_port u_ila_0/clk [get_nets [list sys_clk_IBUF_BUFG ]]
+set_property port_width 16 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {rom_fir_connect_inst/ROM_Control_inst/SI[0]} {rom_fir_connect_inst/ROM_Control_inst/SI[1]} {rom_fir_connect_inst/ROM_Control_inst/SI[2]} {rom_fir_connect_inst/ROM_Control_inst/SI[3]} {rom_fir_connect_inst/ROM_Control_inst/SI[4]} {rom_fir_connect_inst/ROM_Control_inst/SI[5]} {rom_fir_connect_inst/ROM_Control_inst/SI[6]} {rom_fir_connect_inst/ROM_Control_inst/SI[7]} {rom_fir_connect_inst/ROM_Control_inst/SI[8]} {rom_fir_connect_inst/ROM_Control_inst/SI[9]} {rom_fir_connect_inst/ROM_Control_inst/SI[10]} {rom_fir_connect_inst/ROM_Control_inst/SI[11]} {rom_fir_connect_inst/ROM_Control_inst/SI[12]} {rom_fir_connect_inst/ROM_Control_inst/SI[13]} {rom_fir_connect_inst/ROM_Control_inst/SI[14]} {rom_fir_connect_inst/ROM_Control_inst/SI[15]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {compress_result_OBUF[0]} {compress_result_OBUF[1]} {compress_result_OBUF[2]} {compress_result_OBUF[3]} {compress_result_OBUF[4]} {compress_result_OBUF[5]} {compress_result_OBUF[6]} {compress_result_OBUF[7]} {compress_result_OBUF[8]} {compress_result_OBUF[9]} {compress_result_OBUF[10]} {compress_result_OBUF[11]} {compress_result_OBUF[12]} {compress_result_OBUF[13]} {compress_result_OBUF[14]} {compress_result_OBUF[15]} {compress_result_OBUF[16]} {compress_result_OBUF[17]} {compress_result_OBUF[18]} {compress_result_OBUF[19]} {compress_result_OBUF[20]} {compress_result_OBUF[21]} {compress_result_OBUF[22]} {compress_result_OBUF[23]} {compress_result_OBUF[24]} {compress_result_OBUF[25]} {compress_result_OBUF[26]} {compress_result_OBUF[27]} {compress_result_OBUF[28]} {compress_result_OBUF[29]} {compress_result_OBUF[30]} {compress_result_OBUF[31]} {compress_result_OBUF[32]} {compress_result_OBUF[33]} {compress_result_OBUF[34]} {compress_result_OBUF[35]} {compress_result_OBUF[36]} {compress_result_OBUF[37]} {compress_result_OBUF[38]} {compress_result_OBUF[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {m_axis_data_tdata_sihi[0]} {m_axis_data_tdata_sihi[1]} {m_axis_data_tdata_sihi[2]} {m_axis_data_tdata_sihi[3]} {m_axis_data_tdata_sihi[4]} {m_axis_data_tdata_sihi[5]} {m_axis_data_tdata_sihi[6]} {m_axis_data_tdata_sihi[7]} {m_axis_data_tdata_sihi[8]} {m_axis_data_tdata_sihi[9]} {m_axis_data_tdata_sihi[10]} {m_axis_data_tdata_sihi[11]} {m_axis_data_tdata_sihi[12]} {m_axis_data_tdata_sihi[13]} {m_axis_data_tdata_sihi[14]} {m_axis_data_tdata_sihi[15]} {m_axis_data_tdata_sihi[16]} {m_axis_data_tdata_sihi[17]} {m_axis_data_tdata_sihi[18]} {m_axis_data_tdata_sihi[19]} {m_axis_data_tdata_sihi[20]} {m_axis_data_tdata_sihi[21]} {m_axis_data_tdata_sihi[22]} {m_axis_data_tdata_sihi[23]} {m_axis_data_tdata_sihi[24]} {m_axis_data_tdata_sihi[25]} {m_axis_data_tdata_sihi[26]} {m_axis_data_tdata_sihi[27]} {m_axis_data_tdata_sihi[28]} {m_axis_data_tdata_sihi[29]} {m_axis_data_tdata_sihi[30]} {m_axis_data_tdata_sihi[31]} {m_axis_data_tdata_sihi[32]} {m_axis_data_tdata_sihi[33]} {m_axis_data_tdata_sihi[34]} {m_axis_data_tdata_sihi[35]} {m_axis_data_tdata_sihi[36]} {m_axis_data_tdata_sihi[37]} {m_axis_data_tdata_sihi[38]} {m_axis_data_tdata_sihi[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list {m_axis_data_tdata_sihq[0]} {m_axis_data_tdata_sihq[1]} {m_axis_data_tdata_sihq[2]} {m_axis_data_tdata_sihq[3]} {m_axis_data_tdata_sihq[4]} {m_axis_data_tdata_sihq[5]} {m_axis_data_tdata_sihq[6]} {m_axis_data_tdata_sihq[7]} {m_axis_data_tdata_sihq[8]} {m_axis_data_tdata_sihq[9]} {m_axis_data_tdata_sihq[10]} {m_axis_data_tdata_sihq[11]} {m_axis_data_tdata_sihq[12]} {m_axis_data_tdata_sihq[13]} {m_axis_data_tdata_sihq[14]} {m_axis_data_tdata_sihq[15]} {m_axis_data_tdata_sihq[16]} {m_axis_data_tdata_sihq[17]} {m_axis_data_tdata_sihq[18]} {m_axis_data_tdata_sihq[19]} {m_axis_data_tdata_sihq[20]} {m_axis_data_tdata_sihq[21]} {m_axis_data_tdata_sihq[22]} {m_axis_data_tdata_sihq[23]} {m_axis_data_tdata_sihq[24]} {m_axis_data_tdata_sihq[25]} {m_axis_data_tdata_sihq[26]} {m_axis_data_tdata_sihq[27]} {m_axis_data_tdata_sihq[28]} {m_axis_data_tdata_sihq[29]} {m_axis_data_tdata_sihq[30]} {m_axis_data_tdata_sihq[31]} {m_axis_data_tdata_sihq[32]} {m_axis_data_tdata_sihq[33]} {m_axis_data_tdata_sihq[34]} {m_axis_data_tdata_sihq[35]} {m_axis_data_tdata_sihq[36]} {m_axis_data_tdata_sihq[37]} {m_axis_data_tdata_sihq[38]} {m_axis_data_tdata_sihq[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list {m_axis_data_tdata_sqhi[0]} {m_axis_data_tdata_sqhi[1]} {m_axis_data_tdata_sqhi[2]} {m_axis_data_tdata_sqhi[3]} {m_axis_data_tdata_sqhi[4]} {m_axis_data_tdata_sqhi[5]} {m_axis_data_tdata_sqhi[6]} {m_axis_data_tdata_sqhi[7]} {m_axis_data_tdata_sqhi[8]} {m_axis_data_tdata_sqhi[9]} {m_axis_data_tdata_sqhi[10]} {m_axis_data_tdata_sqhi[11]} {m_axis_data_tdata_sqhi[12]} {m_axis_data_tdata_sqhi[13]} {m_axis_data_tdata_sqhi[14]} {m_axis_data_tdata_sqhi[15]} {m_axis_data_tdata_sqhi[16]} {m_axis_data_tdata_sqhi[17]} {m_axis_data_tdata_sqhi[18]} {m_axis_data_tdata_sqhi[19]} {m_axis_data_tdata_sqhi[20]} {m_axis_data_tdata_sqhi[21]} {m_axis_data_tdata_sqhi[22]} {m_axis_data_tdata_sqhi[23]} {m_axis_data_tdata_sqhi[24]} {m_axis_data_tdata_sqhi[25]} {m_axis_data_tdata_sqhi[26]} {m_axis_data_tdata_sqhi[27]} {m_axis_data_tdata_sqhi[28]} {m_axis_data_tdata_sqhi[29]} {m_axis_data_tdata_sqhi[30]} {m_axis_data_tdata_sqhi[31]} {m_axis_data_tdata_sqhi[32]} {m_axis_data_tdata_sqhi[33]} {m_axis_data_tdata_sqhi[34]} {m_axis_data_tdata_sqhi[35]} {m_axis_data_tdata_sqhi[36]} {m_axis_data_tdata_sqhi[37]} {m_axis_data_tdata_sqhi[38]} {m_axis_data_tdata_sqhi[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 16 [get_debug_ports u_ila_0/probe5]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list {rom_fir_connect_inst/ROM_Control_inst/SQ[0]} {rom_fir_connect_inst/ROM_Control_inst/SQ[1]} {rom_fir_connect_inst/ROM_Control_inst/SQ[2]} {rom_fir_connect_inst/ROM_Control_inst/SQ[3]} {rom_fir_connect_inst/ROM_Control_inst/SQ[4]} {rom_fir_connect_inst/ROM_Control_inst/SQ[5]} {rom_fir_connect_inst/ROM_Control_inst/SQ[6]} {rom_fir_connect_inst/ROM_Control_inst/SQ[7]} {rom_fir_connect_inst/ROM_Control_inst/SQ[8]} {rom_fir_connect_inst/ROM_Control_inst/SQ[9]} {rom_fir_connect_inst/ROM_Control_inst/SQ[10]} {rom_fir_connect_inst/ROM_Control_inst/SQ[11]} {rom_fir_connect_inst/ROM_Control_inst/SQ[12]} {rom_fir_connect_inst/ROM_Control_inst/SQ[13]} {rom_fir_connect_inst/ROM_Control_inst/SQ[14]} {rom_fir_connect_inst/ROM_Control_inst/SQ[15]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe6]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe6]
+connect_debug_port u_ila_0/probe6 [get_nets [list {m_axis_data_tdata_sqhq[0]} {m_axis_data_tdata_sqhq[1]} {m_axis_data_tdata_sqhq[2]} {m_axis_data_tdata_sqhq[3]} {m_axis_data_tdata_sqhq[4]} {m_axis_data_tdata_sqhq[5]} {m_axis_data_tdata_sqhq[6]} {m_axis_data_tdata_sqhq[7]} {m_axis_data_tdata_sqhq[8]} {m_axis_data_tdata_sqhq[9]} {m_axis_data_tdata_sqhq[10]} {m_axis_data_tdata_sqhq[11]} {m_axis_data_tdata_sqhq[12]} {m_axis_data_tdata_sqhq[13]} {m_axis_data_tdata_sqhq[14]} {m_axis_data_tdata_sqhq[15]} {m_axis_data_tdata_sqhq[16]} {m_axis_data_tdata_sqhq[17]} {m_axis_data_tdata_sqhq[18]} {m_axis_data_tdata_sqhq[19]} {m_axis_data_tdata_sqhq[20]} {m_axis_data_tdata_sqhq[21]} {m_axis_data_tdata_sqhq[22]} {m_axis_data_tdata_sqhq[23]} {m_axis_data_tdata_sqhq[24]} {m_axis_data_tdata_sqhq[25]} {m_axis_data_tdata_sqhq[26]} {m_axis_data_tdata_sqhq[27]} {m_axis_data_tdata_sqhq[28]} {m_axis_data_tdata_sqhq[29]} {m_axis_data_tdata_sqhq[30]} {m_axis_data_tdata_sqhq[31]} {m_axis_data_tdata_sqhq[32]} {m_axis_data_tdata_sqhq[33]} {m_axis_data_tdata_sqhq[34]} {m_axis_data_tdata_sqhq[35]} {m_axis_data_tdata_sqhq[36]} {m_axis_data_tdata_sqhq[37]} {m_axis_data_tdata_sqhq[38]} {m_axis_data_tdata_sqhq[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe7]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe7]
+connect_debug_port u_ila_0/probe7 [get_nets [list {result_compress_i[0]} {result_compress_i[1]} {result_compress_i[2]} {result_compress_i[3]} {result_compress_i[4]} {result_compress_i[5]} {result_compress_i[6]} {result_compress_i[7]} {result_compress_i[8]} {result_compress_i[9]} {result_compress_i[10]} {result_compress_i[11]} {result_compress_i[12]} {result_compress_i[13]} {result_compress_i[14]} {result_compress_i[15]} {result_compress_i[16]} {result_compress_i[17]} {result_compress_i[18]} {result_compress_i[19]} {result_compress_i[20]} {result_compress_i[21]} {result_compress_i[22]} {result_compress_i[23]} {result_compress_i[24]} {result_compress_i[25]} {result_compress_i[26]} {result_compress_i[27]} {result_compress_i[28]} {result_compress_i[29]} {result_compress_i[30]} {result_compress_i[31]} {result_compress_i[32]} {result_compress_i[33]} {result_compress_i[34]} {result_compress_i[35]} {result_compress_i[36]} {result_compress_i[37]} {result_compress_i[38]} {result_compress_i[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe8]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe8]
+connect_debug_port u_ila_0/probe8 [get_nets [list {result_compress_q[0]} {result_compress_q[1]} {result_compress_q[2]} {result_compress_q[3]} {result_compress_q[4]} {result_compress_q[5]} {result_compress_q[6]} {result_compress_q[7]} {result_compress_q[8]} {result_compress_q[9]} {result_compress_q[10]} {result_compress_q[11]} {result_compress_q[12]} {result_compress_q[13]} {result_compress_q[14]} {result_compress_q[15]} {result_compress_q[16]} {result_compress_q[17]} {result_compress_q[18]} {result_compress_q[19]} {result_compress_q[20]} {result_compress_q[21]} {result_compress_q[22]} {result_compress_q[23]} {result_compress_q[24]} {result_compress_q[25]} {result_compress_q[26]} {result_compress_q[27]} {result_compress_q[28]} {result_compress_q[29]} {result_compress_q[30]} {result_compress_q[31]} {result_compress_q[32]} {result_compress_q[33]} {result_compress_q[34]} {result_compress_q[35]} {result_compress_q[36]} {result_compress_q[37]} {result_compress_q[38]} {result_compress_q[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe9]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe9]
+connect_debug_port u_ila_0/probe9 [get_nets [list sys_clk_IBUF_BUFG ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe10]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe10]
+connect_debug_port u_ila_0/probe10 [get_nets [list sys_rst_n_IBUF ]]
+refresh_design
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+(*mark_debug = "true"*) set_param general.maxThreads 32
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.runs/impl_1/compress_result_top.bit} [get_hw_devices xc7k325t_0]
+current_hw_device [get_hw_devices xc7k325t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k325t_0] 0]
+create_hw_cfgmem -hw_device [get_hw_devices xc7k325t_0] -mem_dev [lindex [get_cfgmem_parts {mt25ql256-spi-x1_x2_x4}] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.runs/impl_1/compress_result_top.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+set_param general.maxThreads 32
+set_property PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.runs/impl_1/compress_result_top.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+startgroup 
+set_property C_EN_STRG_QUAL true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU_CNT 2 [get_debug_cores u_ila_0 ]
+endgroup
+set_property port_width 1 [get_debug_ports u_ila_0/clk]
+connect_debug_port u_ila_0/clk [get_nets [list sys_clk_IBUF_BUFG ]]
+set_property port_width 16 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {rom_fir_connect_inst/ROM_Control_inst/SI[0]} {rom_fir_connect_inst/ROM_Control_inst/SI[1]} {rom_fir_connect_inst/ROM_Control_inst/SI[2]} {rom_fir_connect_inst/ROM_Control_inst/SI[3]} {rom_fir_connect_inst/ROM_Control_inst/SI[4]} {rom_fir_connect_inst/ROM_Control_inst/SI[5]} {rom_fir_connect_inst/ROM_Control_inst/SI[6]} {rom_fir_connect_inst/ROM_Control_inst/SI[7]} {rom_fir_connect_inst/ROM_Control_inst/SI[8]} {rom_fir_connect_inst/ROM_Control_inst/SI[9]} {rom_fir_connect_inst/ROM_Control_inst/SI[10]} {rom_fir_connect_inst/ROM_Control_inst/SI[11]} {rom_fir_connect_inst/ROM_Control_inst/SI[12]} {rom_fir_connect_inst/ROM_Control_inst/SI[13]} {rom_fir_connect_inst/ROM_Control_inst/SI[14]} {rom_fir_connect_inst/ROM_Control_inst/SI[15]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 16 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {rom_fir_connect_inst/ROM_Control_inst/SQ[0]} {rom_fir_connect_inst/ROM_Control_inst/SQ[1]} {rom_fir_connect_inst/ROM_Control_inst/SQ[2]} {rom_fir_connect_inst/ROM_Control_inst/SQ[3]} {rom_fir_connect_inst/ROM_Control_inst/SQ[4]} {rom_fir_connect_inst/ROM_Control_inst/SQ[5]} {rom_fir_connect_inst/ROM_Control_inst/SQ[6]} {rom_fir_connect_inst/ROM_Control_inst/SQ[7]} {rom_fir_connect_inst/ROM_Control_inst/SQ[8]} {rom_fir_connect_inst/ROM_Control_inst/SQ[9]} {rom_fir_connect_inst/ROM_Control_inst/SQ[10]} {rom_fir_connect_inst/ROM_Control_inst/SQ[11]} {rom_fir_connect_inst/ROM_Control_inst/SQ[12]} {rom_fir_connect_inst/ROM_Control_inst/SQ[13]} {rom_fir_connect_inst/ROM_Control_inst/SQ[14]} {rom_fir_connect_inst/ROM_Control_inst/SQ[15]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {compress_result_OBUF[0]} {compress_result_OBUF[1]} {compress_result_OBUF[2]} {compress_result_OBUF[3]} {compress_result_OBUF[4]} {compress_result_OBUF[5]} {compress_result_OBUF[6]} {compress_result_OBUF[7]} {compress_result_OBUF[8]} {compress_result_OBUF[9]} {compress_result_OBUF[10]} {compress_result_OBUF[11]} {compress_result_OBUF[12]} {compress_result_OBUF[13]} {compress_result_OBUF[14]} {compress_result_OBUF[15]} {compress_result_OBUF[16]} {compress_result_OBUF[17]} {compress_result_OBUF[18]} {compress_result_OBUF[19]} {compress_result_OBUF[20]} {compress_result_OBUF[21]} {compress_result_OBUF[22]} {compress_result_OBUF[23]} {compress_result_OBUF[24]} {compress_result_OBUF[25]} {compress_result_OBUF[26]} {compress_result_OBUF[27]} {compress_result_OBUF[28]} {compress_result_OBUF[29]} {compress_result_OBUF[30]} {compress_result_OBUF[31]} {compress_result_OBUF[32]} {compress_result_OBUF[33]} {compress_result_OBUF[34]} {compress_result_OBUF[35]} {compress_result_OBUF[36]} {compress_result_OBUF[37]} {compress_result_OBUF[38]} {compress_result_OBUF[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list {m_axis_data_tdata_sihi[0]} {m_axis_data_tdata_sihi[1]} {m_axis_data_tdata_sihi[2]} {m_axis_data_tdata_sihi[3]} {m_axis_data_tdata_sihi[4]} {m_axis_data_tdata_sihi[5]} {m_axis_data_tdata_sihi[6]} {m_axis_data_tdata_sihi[7]} {m_axis_data_tdata_sihi[8]} {m_axis_data_tdata_sihi[9]} {m_axis_data_tdata_sihi[10]} {m_axis_data_tdata_sihi[11]} {m_axis_data_tdata_sihi[12]} {m_axis_data_tdata_sihi[13]} {m_axis_data_tdata_sihi[14]} {m_axis_data_tdata_sihi[15]} {m_axis_data_tdata_sihi[16]} {m_axis_data_tdata_sihi[17]} {m_axis_data_tdata_sihi[18]} {m_axis_data_tdata_sihi[19]} {m_axis_data_tdata_sihi[20]} {m_axis_data_tdata_sihi[21]} {m_axis_data_tdata_sihi[22]} {m_axis_data_tdata_sihi[23]} {m_axis_data_tdata_sihi[24]} {m_axis_data_tdata_sihi[25]} {m_axis_data_tdata_sihi[26]} {m_axis_data_tdata_sihi[27]} {m_axis_data_tdata_sihi[28]} {m_axis_data_tdata_sihi[29]} {m_axis_data_tdata_sihi[30]} {m_axis_data_tdata_sihi[31]} {m_axis_data_tdata_sihi[32]} {m_axis_data_tdata_sihi[33]} {m_axis_data_tdata_sihi[34]} {m_axis_data_tdata_sihi[35]} {m_axis_data_tdata_sihi[36]} {m_axis_data_tdata_sihi[37]} {m_axis_data_tdata_sihi[38]} {m_axis_data_tdata_sihi[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list {m_axis_data_tdata_sihq[0]} {m_axis_data_tdata_sihq[1]} {m_axis_data_tdata_sihq[2]} {m_axis_data_tdata_sihq[3]} {m_axis_data_tdata_sihq[4]} {m_axis_data_tdata_sihq[5]} {m_axis_data_tdata_sihq[6]} {m_axis_data_tdata_sihq[7]} {m_axis_data_tdata_sihq[8]} {m_axis_data_tdata_sihq[9]} {m_axis_data_tdata_sihq[10]} {m_axis_data_tdata_sihq[11]} {m_axis_data_tdata_sihq[12]} {m_axis_data_tdata_sihq[13]} {m_axis_data_tdata_sihq[14]} {m_axis_data_tdata_sihq[15]} {m_axis_data_tdata_sihq[16]} {m_axis_data_tdata_sihq[17]} {m_axis_data_tdata_sihq[18]} {m_axis_data_tdata_sihq[19]} {m_axis_data_tdata_sihq[20]} {m_axis_data_tdata_sihq[21]} {m_axis_data_tdata_sihq[22]} {m_axis_data_tdata_sihq[23]} {m_axis_data_tdata_sihq[24]} {m_axis_data_tdata_sihq[25]} {m_axis_data_tdata_sihq[26]} {m_axis_data_tdata_sihq[27]} {m_axis_data_tdata_sihq[28]} {m_axis_data_tdata_sihq[29]} {m_axis_data_tdata_sihq[30]} {m_axis_data_tdata_sihq[31]} {m_axis_data_tdata_sihq[32]} {m_axis_data_tdata_sihq[33]} {m_axis_data_tdata_sihq[34]} {m_axis_data_tdata_sihq[35]} {m_axis_data_tdata_sihq[36]} {m_axis_data_tdata_sihq[37]} {m_axis_data_tdata_sihq[38]} {m_axis_data_tdata_sihq[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe5]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list {m_axis_data_tdata_sqhi[0]} {m_axis_data_tdata_sqhi[1]} {m_axis_data_tdata_sqhi[2]} {m_axis_data_tdata_sqhi[3]} {m_axis_data_tdata_sqhi[4]} {m_axis_data_tdata_sqhi[5]} {m_axis_data_tdata_sqhi[6]} {m_axis_data_tdata_sqhi[7]} {m_axis_data_tdata_sqhi[8]} {m_axis_data_tdata_sqhi[9]} {m_axis_data_tdata_sqhi[10]} {m_axis_data_tdata_sqhi[11]} {m_axis_data_tdata_sqhi[12]} {m_axis_data_tdata_sqhi[13]} {m_axis_data_tdata_sqhi[14]} {m_axis_data_tdata_sqhi[15]} {m_axis_data_tdata_sqhi[16]} {m_axis_data_tdata_sqhi[17]} {m_axis_data_tdata_sqhi[18]} {m_axis_data_tdata_sqhi[19]} {m_axis_data_tdata_sqhi[20]} {m_axis_data_tdata_sqhi[21]} {m_axis_data_tdata_sqhi[22]} {m_axis_data_tdata_sqhi[23]} {m_axis_data_tdata_sqhi[24]} {m_axis_data_tdata_sqhi[25]} {m_axis_data_tdata_sqhi[26]} {m_axis_data_tdata_sqhi[27]} {m_axis_data_tdata_sqhi[28]} {m_axis_data_tdata_sqhi[29]} {m_axis_data_tdata_sqhi[30]} {m_axis_data_tdata_sqhi[31]} {m_axis_data_tdata_sqhi[32]} {m_axis_data_tdata_sqhi[33]} {m_axis_data_tdata_sqhi[34]} {m_axis_data_tdata_sqhi[35]} {m_axis_data_tdata_sqhi[36]} {m_axis_data_tdata_sqhi[37]} {m_axis_data_tdata_sqhi[38]} {m_axis_data_tdata_sqhi[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe6]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe6]
+connect_debug_port u_ila_0/probe6 [get_nets [list {m_axis_data_tdata_sqhq[0]} {m_axis_data_tdata_sqhq[1]} {m_axis_data_tdata_sqhq[2]} {m_axis_data_tdata_sqhq[3]} {m_axis_data_tdata_sqhq[4]} {m_axis_data_tdata_sqhq[5]} {m_axis_data_tdata_sqhq[6]} {m_axis_data_tdata_sqhq[7]} {m_axis_data_tdata_sqhq[8]} {m_axis_data_tdata_sqhq[9]} {m_axis_data_tdata_sqhq[10]} {m_axis_data_tdata_sqhq[11]} {m_axis_data_tdata_sqhq[12]} {m_axis_data_tdata_sqhq[13]} {m_axis_data_tdata_sqhq[14]} {m_axis_data_tdata_sqhq[15]} {m_axis_data_tdata_sqhq[16]} {m_axis_data_tdata_sqhq[17]} {m_axis_data_tdata_sqhq[18]} {m_axis_data_tdata_sqhq[19]} {m_axis_data_tdata_sqhq[20]} {m_axis_data_tdata_sqhq[21]} {m_axis_data_tdata_sqhq[22]} {m_axis_data_tdata_sqhq[23]} {m_axis_data_tdata_sqhq[24]} {m_axis_data_tdata_sqhq[25]} {m_axis_data_tdata_sqhq[26]} {m_axis_data_tdata_sqhq[27]} {m_axis_data_tdata_sqhq[28]} {m_axis_data_tdata_sqhq[29]} {m_axis_data_tdata_sqhq[30]} {m_axis_data_tdata_sqhq[31]} {m_axis_data_tdata_sqhq[32]} {m_axis_data_tdata_sqhq[33]} {m_axis_data_tdata_sqhq[34]} {m_axis_data_tdata_sqhq[35]} {m_axis_data_tdata_sqhq[36]} {m_axis_data_tdata_sqhq[37]} {m_axis_data_tdata_sqhq[38]} {m_axis_data_tdata_sqhq[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe7]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe7]
+connect_debug_port u_ila_0/probe7 [get_nets [list {result_compress_i[0]} {result_compress_i[1]} {result_compress_i[2]} {result_compress_i[3]} {result_compress_i[4]} {result_compress_i[5]} {result_compress_i[6]} {result_compress_i[7]} {result_compress_i[8]} {result_compress_i[9]} {result_compress_i[10]} {result_compress_i[11]} {result_compress_i[12]} {result_compress_i[13]} {result_compress_i[14]} {result_compress_i[15]} {result_compress_i[16]} {result_compress_i[17]} {result_compress_i[18]} {result_compress_i[19]} {result_compress_i[20]} {result_compress_i[21]} {result_compress_i[22]} {result_compress_i[23]} {result_compress_i[24]} {result_compress_i[25]} {result_compress_i[26]} {result_compress_i[27]} {result_compress_i[28]} {result_compress_i[29]} {result_compress_i[30]} {result_compress_i[31]} {result_compress_i[32]} {result_compress_i[33]} {result_compress_i[34]} {result_compress_i[35]} {result_compress_i[36]} {result_compress_i[37]} {result_compress_i[38]} {result_compress_i[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe8]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe8]
+connect_debug_port u_ila_0/probe8 [get_nets [list {result_compress_q[0]} {result_compress_q[1]} {result_compress_q[2]} {result_compress_q[3]} {result_compress_q[4]} {result_compress_q[5]} {result_compress_q[6]} {result_compress_q[7]} {result_compress_q[8]} {result_compress_q[9]} {result_compress_q[10]} {result_compress_q[11]} {result_compress_q[12]} {result_compress_q[13]} {result_compress_q[14]} {result_compress_q[15]} {result_compress_q[16]} {result_compress_q[17]} {result_compress_q[18]} {result_compress_q[19]} {result_compress_q[20]} {result_compress_q[21]} {result_compress_q[22]} {result_compress_q[23]} {result_compress_q[24]} {result_compress_q[25]} {result_compress_q[26]} {result_compress_q[27]} {result_compress_q[28]} {result_compress_q[29]} {result_compress_q[30]} {result_compress_q[31]} {result_compress_q[32]} {result_compress_q[33]} {result_compress_q[34]} {result_compress_q[35]} {result_compress_q[36]} {result_compress_q[37]} {result_compress_q[38]} {result_compress_q[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe9]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe9]
+connect_debug_port u_ila_0/probe9 [get_nets [list sys_clk_IBUF_BUFG ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe10]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe10]
+connect_debug_port u_ila_0/probe10 [get_nets [list sys_rst_n_IBUF ]]
+delete_debug_core [get_debug_cores {u_ila_0 }]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+startgroup 
+set_property C_EN_STRG_QUAL true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU_CNT 2 [get_debug_cores u_ila_0 ]
+endgroup
+set_property port_width 1 [get_debug_ports u_ila_0/clk]
+connect_debug_port u_ila_0/clk [get_nets [list sys_clk_IBUF_BUFG ]]
+set_property port_width 16 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {rom_fir_connect_inst/ROM_Control_inst/SI[0]} {rom_fir_connect_inst/ROM_Control_inst/SI[1]} {rom_fir_connect_inst/ROM_Control_inst/SI[2]} {rom_fir_connect_inst/ROM_Control_inst/SI[3]} {rom_fir_connect_inst/ROM_Control_inst/SI[4]} {rom_fir_connect_inst/ROM_Control_inst/SI[5]} {rom_fir_connect_inst/ROM_Control_inst/SI[6]} {rom_fir_connect_inst/ROM_Control_inst/SI[7]} {rom_fir_connect_inst/ROM_Control_inst/SI[8]} {rom_fir_connect_inst/ROM_Control_inst/SI[9]} {rom_fir_connect_inst/ROM_Control_inst/SI[10]} {rom_fir_connect_inst/ROM_Control_inst/SI[11]} {rom_fir_connect_inst/ROM_Control_inst/SI[12]} {rom_fir_connect_inst/ROM_Control_inst/SI[13]} {rom_fir_connect_inst/ROM_Control_inst/SI[14]} {rom_fir_connect_inst/ROM_Control_inst/SI[15]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 16 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {rom_fir_connect_inst/ROM_Control_inst/SQ[0]} {rom_fir_connect_inst/ROM_Control_inst/SQ[1]} {rom_fir_connect_inst/ROM_Control_inst/SQ[2]} {rom_fir_connect_inst/ROM_Control_inst/SQ[3]} {rom_fir_connect_inst/ROM_Control_inst/SQ[4]} {rom_fir_connect_inst/ROM_Control_inst/SQ[5]} {rom_fir_connect_inst/ROM_Control_inst/SQ[6]} {rom_fir_connect_inst/ROM_Control_inst/SQ[7]} {rom_fir_connect_inst/ROM_Control_inst/SQ[8]} {rom_fir_connect_inst/ROM_Control_inst/SQ[9]} {rom_fir_connect_inst/ROM_Control_inst/SQ[10]} {rom_fir_connect_inst/ROM_Control_inst/SQ[11]} {rom_fir_connect_inst/ROM_Control_inst/SQ[12]} {rom_fir_connect_inst/ROM_Control_inst/SQ[13]} {rom_fir_connect_inst/ROM_Control_inst/SQ[14]} {rom_fir_connect_inst/ROM_Control_inst/SQ[15]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {compress_result_OBUF[0]} {compress_result_OBUF[1]} {compress_result_OBUF[2]} {compress_result_OBUF[3]} {compress_result_OBUF[4]} {compress_result_OBUF[5]} {compress_result_OBUF[6]} {compress_result_OBUF[7]} {compress_result_OBUF[8]} {compress_result_OBUF[9]} {compress_result_OBUF[10]} {compress_result_OBUF[11]} {compress_result_OBUF[12]} {compress_result_OBUF[13]} {compress_result_OBUF[14]} {compress_result_OBUF[15]} {compress_result_OBUF[16]} {compress_result_OBUF[17]} {compress_result_OBUF[18]} {compress_result_OBUF[19]} {compress_result_OBUF[20]} {compress_result_OBUF[21]} {compress_result_OBUF[22]} {compress_result_OBUF[23]} {compress_result_OBUF[24]} {compress_result_OBUF[25]} {compress_result_OBUF[26]} {compress_result_OBUF[27]} {compress_result_OBUF[28]} {compress_result_OBUF[29]} {compress_result_OBUF[30]} {compress_result_OBUF[31]} {compress_result_OBUF[32]} {compress_result_OBUF[33]} {compress_result_OBUF[34]} {compress_result_OBUF[35]} {compress_result_OBUF[36]} {compress_result_OBUF[37]} {compress_result_OBUF[38]} {compress_result_OBUF[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list {m_axis_data_tdata_sihi[0]} {m_axis_data_tdata_sihi[1]} {m_axis_data_tdata_sihi[2]} {m_axis_data_tdata_sihi[3]} {m_axis_data_tdata_sihi[4]} {m_axis_data_tdata_sihi[5]} {m_axis_data_tdata_sihi[6]} {m_axis_data_tdata_sihi[7]} {m_axis_data_tdata_sihi[8]} {m_axis_data_tdata_sihi[9]} {m_axis_data_tdata_sihi[10]} {m_axis_data_tdata_sihi[11]} {m_axis_data_tdata_sihi[12]} {m_axis_data_tdata_sihi[13]} {m_axis_data_tdata_sihi[14]} {m_axis_data_tdata_sihi[15]} {m_axis_data_tdata_sihi[16]} {m_axis_data_tdata_sihi[17]} {m_axis_data_tdata_sihi[18]} {m_axis_data_tdata_sihi[19]} {m_axis_data_tdata_sihi[20]} {m_axis_data_tdata_sihi[21]} {m_axis_data_tdata_sihi[22]} {m_axis_data_tdata_sihi[23]} {m_axis_data_tdata_sihi[24]} {m_axis_data_tdata_sihi[25]} {m_axis_data_tdata_sihi[26]} {m_axis_data_tdata_sihi[27]} {m_axis_data_tdata_sihi[28]} {m_axis_data_tdata_sihi[29]} {m_axis_data_tdata_sihi[30]} {m_axis_data_tdata_sihi[31]} {m_axis_data_tdata_sihi[32]} {m_axis_data_tdata_sihi[33]} {m_axis_data_tdata_sihi[34]} {m_axis_data_tdata_sihi[35]} {m_axis_data_tdata_sihi[36]} {m_axis_data_tdata_sihi[37]} {m_axis_data_tdata_sihi[38]} {m_axis_data_tdata_sihi[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list {m_axis_data_tdata_sihq[0]} {m_axis_data_tdata_sihq[1]} {m_axis_data_tdata_sihq[2]} {m_axis_data_tdata_sihq[3]} {m_axis_data_tdata_sihq[4]} {m_axis_data_tdata_sihq[5]} {m_axis_data_tdata_sihq[6]} {m_axis_data_tdata_sihq[7]} {m_axis_data_tdata_sihq[8]} {m_axis_data_tdata_sihq[9]} {m_axis_data_tdata_sihq[10]} {m_axis_data_tdata_sihq[11]} {m_axis_data_tdata_sihq[12]} {m_axis_data_tdata_sihq[13]} {m_axis_data_tdata_sihq[14]} {m_axis_data_tdata_sihq[15]} {m_axis_data_tdata_sihq[16]} {m_axis_data_tdata_sihq[17]} {m_axis_data_tdata_sihq[18]} {m_axis_data_tdata_sihq[19]} {m_axis_data_tdata_sihq[20]} {m_axis_data_tdata_sihq[21]} {m_axis_data_tdata_sihq[22]} {m_axis_data_tdata_sihq[23]} {m_axis_data_tdata_sihq[24]} {m_axis_data_tdata_sihq[25]} {m_axis_data_tdata_sihq[26]} {m_axis_data_tdata_sihq[27]} {m_axis_data_tdata_sihq[28]} {m_axis_data_tdata_sihq[29]} {m_axis_data_tdata_sihq[30]} {m_axis_data_tdata_sihq[31]} {m_axis_data_tdata_sihq[32]} {m_axis_data_tdata_sihq[33]} {m_axis_data_tdata_sihq[34]} {m_axis_data_tdata_sihq[35]} {m_axis_data_tdata_sihq[36]} {m_axis_data_tdata_sihq[37]} {m_axis_data_tdata_sihq[38]} {m_axis_data_tdata_sihq[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe5]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list {m_axis_data_tdata_sqhi[0]} {m_axis_data_tdata_sqhi[1]} {m_axis_data_tdata_sqhi[2]} {m_axis_data_tdata_sqhi[3]} {m_axis_data_tdata_sqhi[4]} {m_axis_data_tdata_sqhi[5]} {m_axis_data_tdata_sqhi[6]} {m_axis_data_tdata_sqhi[7]} {m_axis_data_tdata_sqhi[8]} {m_axis_data_tdata_sqhi[9]} {m_axis_data_tdata_sqhi[10]} {m_axis_data_tdata_sqhi[11]} {m_axis_data_tdata_sqhi[12]} {m_axis_data_tdata_sqhi[13]} {m_axis_data_tdata_sqhi[14]} {m_axis_data_tdata_sqhi[15]} {m_axis_data_tdata_sqhi[16]} {m_axis_data_tdata_sqhi[17]} {m_axis_data_tdata_sqhi[18]} {m_axis_data_tdata_sqhi[19]} {m_axis_data_tdata_sqhi[20]} {m_axis_data_tdata_sqhi[21]} {m_axis_data_tdata_sqhi[22]} {m_axis_data_tdata_sqhi[23]} {m_axis_data_tdata_sqhi[24]} {m_axis_data_tdata_sqhi[25]} {m_axis_data_tdata_sqhi[26]} {m_axis_data_tdata_sqhi[27]} {m_axis_data_tdata_sqhi[28]} {m_axis_data_tdata_sqhi[29]} {m_axis_data_tdata_sqhi[30]} {m_axis_data_tdata_sqhi[31]} {m_axis_data_tdata_sqhi[32]} {m_axis_data_tdata_sqhi[33]} {m_axis_data_tdata_sqhi[34]} {m_axis_data_tdata_sqhi[35]} {m_axis_data_tdata_sqhi[36]} {m_axis_data_tdata_sqhi[37]} {m_axis_data_tdata_sqhi[38]} {m_axis_data_tdata_sqhi[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe6]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe6]
+connect_debug_port u_ila_0/probe6 [get_nets [list {m_axis_data_tdata_sqhq[0]} {m_axis_data_tdata_sqhq[1]} {m_axis_data_tdata_sqhq[2]} {m_axis_data_tdata_sqhq[3]} {m_axis_data_tdata_sqhq[4]} {m_axis_data_tdata_sqhq[5]} {m_axis_data_tdata_sqhq[6]} {m_axis_data_tdata_sqhq[7]} {m_axis_data_tdata_sqhq[8]} {m_axis_data_tdata_sqhq[9]} {m_axis_data_tdata_sqhq[10]} {m_axis_data_tdata_sqhq[11]} {m_axis_data_tdata_sqhq[12]} {m_axis_data_tdata_sqhq[13]} {m_axis_data_tdata_sqhq[14]} {m_axis_data_tdata_sqhq[15]} {m_axis_data_tdata_sqhq[16]} {m_axis_data_tdata_sqhq[17]} {m_axis_data_tdata_sqhq[18]} {m_axis_data_tdata_sqhq[19]} {m_axis_data_tdata_sqhq[20]} {m_axis_data_tdata_sqhq[21]} {m_axis_data_tdata_sqhq[22]} {m_axis_data_tdata_sqhq[23]} {m_axis_data_tdata_sqhq[24]} {m_axis_data_tdata_sqhq[25]} {m_axis_data_tdata_sqhq[26]} {m_axis_data_tdata_sqhq[27]} {m_axis_data_tdata_sqhq[28]} {m_axis_data_tdata_sqhq[29]} {m_axis_data_tdata_sqhq[30]} {m_axis_data_tdata_sqhq[31]} {m_axis_data_tdata_sqhq[32]} {m_axis_data_tdata_sqhq[33]} {m_axis_data_tdata_sqhq[34]} {m_axis_data_tdata_sqhq[35]} {m_axis_data_tdata_sqhq[36]} {m_axis_data_tdata_sqhq[37]} {m_axis_data_tdata_sqhq[38]} {m_axis_data_tdata_sqhq[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe7]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe7]
+connect_debug_port u_ila_0/probe7 [get_nets [list {result_compress_i[0]} {result_compress_i[1]} {result_compress_i[2]} {result_compress_i[3]} {result_compress_i[4]} {result_compress_i[5]} {result_compress_i[6]} {result_compress_i[7]} {result_compress_i[8]} {result_compress_i[9]} {result_compress_i[10]} {result_compress_i[11]} {result_compress_i[12]} {result_compress_i[13]} {result_compress_i[14]} {result_compress_i[15]} {result_compress_i[16]} {result_compress_i[17]} {result_compress_i[18]} {result_compress_i[19]} {result_compress_i[20]} {result_compress_i[21]} {result_compress_i[22]} {result_compress_i[23]} {result_compress_i[24]} {result_compress_i[25]} {result_compress_i[26]} {result_compress_i[27]} {result_compress_i[28]} {result_compress_i[29]} {result_compress_i[30]} {result_compress_i[31]} {result_compress_i[32]} {result_compress_i[33]} {result_compress_i[34]} {result_compress_i[35]} {result_compress_i[36]} {result_compress_i[37]} {result_compress_i[38]} {result_compress_i[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe8]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe8]
+connect_debug_port u_ila_0/probe8 [get_nets [list {result_compress_q[0]} {result_compress_q[1]} {result_compress_q[2]} {result_compress_q[3]} {result_compress_q[4]} {result_compress_q[5]} {result_compress_q[6]} {result_compress_q[7]} {result_compress_q[8]} {result_compress_q[9]} {result_compress_q[10]} {result_compress_q[11]} {result_compress_q[12]} {result_compress_q[13]} {result_compress_q[14]} {result_compress_q[15]} {result_compress_q[16]} {result_compress_q[17]} {result_compress_q[18]} {result_compress_q[19]} {result_compress_q[20]} {result_compress_q[21]} {result_compress_q[22]} {result_compress_q[23]} {result_compress_q[24]} {result_compress_q[25]} {result_compress_q[26]} {result_compress_q[27]} {result_compress_q[28]} {result_compress_q[29]} {result_compress_q[30]} {result_compress_q[31]} {result_compress_q[32]} {result_compress_q[33]} {result_compress_q[34]} {result_compress_q[35]} {result_compress_q[36]} {result_compress_q[37]} {result_compress_q[38]} {result_compress_q[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe9]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe9]
+connect_debug_port u_ila_0/probe9 [get_nets [list sys_clk_IBUF_BUFG ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe10]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe10]
+connect_debug_port u_ila_0/probe10 [get_nets [list sys_rst_n_IBUF ]]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+set_property PROBES.FILE {C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.runs/impl_1/compress_result_top.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.runs/impl_1/compress_result_top.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.runs/impl_1/compress_result_top.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+set_property PROBES.FILE {C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.runs/impl_1/compress_result_top.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.runs/impl_1/compress_result_top.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.runs/impl_1/compress_result_top.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+save_wave_config {C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw_target {localhost:3121/xilinx_tcf/Digilent/210299492397}
+delete_debug_core [get_debug_cores {u_ila_0 }]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 131072 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+startgroup 
+set_property C_EN_STRG_QUAL true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU_CNT 2 [get_debug_cores u_ila_0 ]
+endgroup
+set_property port_width 1 [get_debug_ports u_ila_0/clk]
+connect_debug_port u_ila_0/clk [get_nets [list sys_clk_IBUF_BUFG ]]
+set_property port_width 16 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {rom_fir_connect_inst/ROM_Control_inst/SI[0]} {rom_fir_connect_inst/ROM_Control_inst/SI[1]} {rom_fir_connect_inst/ROM_Control_inst/SI[2]} {rom_fir_connect_inst/ROM_Control_inst/SI[3]} {rom_fir_connect_inst/ROM_Control_inst/SI[4]} {rom_fir_connect_inst/ROM_Control_inst/SI[5]} {rom_fir_connect_inst/ROM_Control_inst/SI[6]} {rom_fir_connect_inst/ROM_Control_inst/SI[7]} {rom_fir_connect_inst/ROM_Control_inst/SI[8]} {rom_fir_connect_inst/ROM_Control_inst/SI[9]} {rom_fir_connect_inst/ROM_Control_inst/SI[10]} {rom_fir_connect_inst/ROM_Control_inst/SI[11]} {rom_fir_connect_inst/ROM_Control_inst/SI[12]} {rom_fir_connect_inst/ROM_Control_inst/SI[13]} {rom_fir_connect_inst/ROM_Control_inst/SI[14]} {rom_fir_connect_inst/ROM_Control_inst/SI[15]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 16 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {rom_fir_connect_inst/ROM_Control_inst/SQ[0]} {rom_fir_connect_inst/ROM_Control_inst/SQ[1]} {rom_fir_connect_inst/ROM_Control_inst/SQ[2]} {rom_fir_connect_inst/ROM_Control_inst/SQ[3]} {rom_fir_connect_inst/ROM_Control_inst/SQ[4]} {rom_fir_connect_inst/ROM_Control_inst/SQ[5]} {rom_fir_connect_inst/ROM_Control_inst/SQ[6]} {rom_fir_connect_inst/ROM_Control_inst/SQ[7]} {rom_fir_connect_inst/ROM_Control_inst/SQ[8]} {rom_fir_connect_inst/ROM_Control_inst/SQ[9]} {rom_fir_connect_inst/ROM_Control_inst/SQ[10]} {rom_fir_connect_inst/ROM_Control_inst/SQ[11]} {rom_fir_connect_inst/ROM_Control_inst/SQ[12]} {rom_fir_connect_inst/ROM_Control_inst/SQ[13]} {rom_fir_connect_inst/ROM_Control_inst/SQ[14]} {rom_fir_connect_inst/ROM_Control_inst/SQ[15]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {compress_result_OBUF[0]} {compress_result_OBUF[1]} {compress_result_OBUF[2]} {compress_result_OBUF[3]} {compress_result_OBUF[4]} {compress_result_OBUF[5]} {compress_result_OBUF[6]} {compress_result_OBUF[7]} {compress_result_OBUF[8]} {compress_result_OBUF[9]} {compress_result_OBUF[10]} {compress_result_OBUF[11]} {compress_result_OBUF[12]} {compress_result_OBUF[13]} {compress_result_OBUF[14]} {compress_result_OBUF[15]} {compress_result_OBUF[16]} {compress_result_OBUF[17]} {compress_result_OBUF[18]} {compress_result_OBUF[19]} {compress_result_OBUF[20]} {compress_result_OBUF[21]} {compress_result_OBUF[22]} {compress_result_OBUF[23]} {compress_result_OBUF[24]} {compress_result_OBUF[25]} {compress_result_OBUF[26]} {compress_result_OBUF[27]} {compress_result_OBUF[28]} {compress_result_OBUF[29]} {compress_result_OBUF[30]} {compress_result_OBUF[31]} {compress_result_OBUF[32]} {compress_result_OBUF[33]} {compress_result_OBUF[34]} {compress_result_OBUF[35]} {compress_result_OBUF[36]} {compress_result_OBUF[37]} {compress_result_OBUF[38]} {compress_result_OBUF[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list {m_axis_data_tdata_sihi[0]} {m_axis_data_tdata_sihi[1]} {m_axis_data_tdata_sihi[2]} {m_axis_data_tdata_sihi[3]} {m_axis_data_tdata_sihi[4]} {m_axis_data_tdata_sihi[5]} {m_axis_data_tdata_sihi[6]} {m_axis_data_tdata_sihi[7]} {m_axis_data_tdata_sihi[8]} {m_axis_data_tdata_sihi[9]} {m_axis_data_tdata_sihi[10]} {m_axis_data_tdata_sihi[11]} {m_axis_data_tdata_sihi[12]} {m_axis_data_tdata_sihi[13]} {m_axis_data_tdata_sihi[14]} {m_axis_data_tdata_sihi[15]} {m_axis_data_tdata_sihi[16]} {m_axis_data_tdata_sihi[17]} {m_axis_data_tdata_sihi[18]} {m_axis_data_tdata_sihi[19]} {m_axis_data_tdata_sihi[20]} {m_axis_data_tdata_sihi[21]} {m_axis_data_tdata_sihi[22]} {m_axis_data_tdata_sihi[23]} {m_axis_data_tdata_sihi[24]} {m_axis_data_tdata_sihi[25]} {m_axis_data_tdata_sihi[26]} {m_axis_data_tdata_sihi[27]} {m_axis_data_tdata_sihi[28]} {m_axis_data_tdata_sihi[29]} {m_axis_data_tdata_sihi[30]} {m_axis_data_tdata_sihi[31]} {m_axis_data_tdata_sihi[32]} {m_axis_data_tdata_sihi[33]} {m_axis_data_tdata_sihi[34]} {m_axis_data_tdata_sihi[35]} {m_axis_data_tdata_sihi[36]} {m_axis_data_tdata_sihi[37]} {m_axis_data_tdata_sihi[38]} {m_axis_data_tdata_sihi[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list {m_axis_data_tdata_sihq[0]} {m_axis_data_tdata_sihq[1]} {m_axis_data_tdata_sihq[2]} {m_axis_data_tdata_sihq[3]} {m_axis_data_tdata_sihq[4]} {m_axis_data_tdata_sihq[5]} {m_axis_data_tdata_sihq[6]} {m_axis_data_tdata_sihq[7]} {m_axis_data_tdata_sihq[8]} {m_axis_data_tdata_sihq[9]} {m_axis_data_tdata_sihq[10]} {m_axis_data_tdata_sihq[11]} {m_axis_data_tdata_sihq[12]} {m_axis_data_tdata_sihq[13]} {m_axis_data_tdata_sihq[14]} {m_axis_data_tdata_sihq[15]} {m_axis_data_tdata_sihq[16]} {m_axis_data_tdata_sihq[17]} {m_axis_data_tdata_sihq[18]} {m_axis_data_tdata_sihq[19]} {m_axis_data_tdata_sihq[20]} {m_axis_data_tdata_sihq[21]} {m_axis_data_tdata_sihq[22]} {m_axis_data_tdata_sihq[23]} {m_axis_data_tdata_sihq[24]} {m_axis_data_tdata_sihq[25]} {m_axis_data_tdata_sihq[26]} {m_axis_data_tdata_sihq[27]} {m_axis_data_tdata_sihq[28]} {m_axis_data_tdata_sihq[29]} {m_axis_data_tdata_sihq[30]} {m_axis_data_tdata_sihq[31]} {m_axis_data_tdata_sihq[32]} {m_axis_data_tdata_sihq[33]} {m_axis_data_tdata_sihq[34]} {m_axis_data_tdata_sihq[35]} {m_axis_data_tdata_sihq[36]} {m_axis_data_tdata_sihq[37]} {m_axis_data_tdata_sihq[38]} {m_axis_data_tdata_sihq[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe5]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list {m_axis_data_tdata_sqhi[0]} {m_axis_data_tdata_sqhi[1]} {m_axis_data_tdata_sqhi[2]} {m_axis_data_tdata_sqhi[3]} {m_axis_data_tdata_sqhi[4]} {m_axis_data_tdata_sqhi[5]} {m_axis_data_tdata_sqhi[6]} {m_axis_data_tdata_sqhi[7]} {m_axis_data_tdata_sqhi[8]} {m_axis_data_tdata_sqhi[9]} {m_axis_data_tdata_sqhi[10]} {m_axis_data_tdata_sqhi[11]} {m_axis_data_tdata_sqhi[12]} {m_axis_data_tdata_sqhi[13]} {m_axis_data_tdata_sqhi[14]} {m_axis_data_tdata_sqhi[15]} {m_axis_data_tdata_sqhi[16]} {m_axis_data_tdata_sqhi[17]} {m_axis_data_tdata_sqhi[18]} {m_axis_data_tdata_sqhi[19]} {m_axis_data_tdata_sqhi[20]} {m_axis_data_tdata_sqhi[21]} {m_axis_data_tdata_sqhi[22]} {m_axis_data_tdata_sqhi[23]} {m_axis_data_tdata_sqhi[24]} {m_axis_data_tdata_sqhi[25]} {m_axis_data_tdata_sqhi[26]} {m_axis_data_tdata_sqhi[27]} {m_axis_data_tdata_sqhi[28]} {m_axis_data_tdata_sqhi[29]} {m_axis_data_tdata_sqhi[30]} {m_axis_data_tdata_sqhi[31]} {m_axis_data_tdata_sqhi[32]} {m_axis_data_tdata_sqhi[33]} {m_axis_data_tdata_sqhi[34]} {m_axis_data_tdata_sqhi[35]} {m_axis_data_tdata_sqhi[36]} {m_axis_data_tdata_sqhi[37]} {m_axis_data_tdata_sqhi[38]} {m_axis_data_tdata_sqhi[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe6]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe6]
+connect_debug_port u_ila_0/probe6 [get_nets [list {m_axis_data_tdata_sqhq[0]} {m_axis_data_tdata_sqhq[1]} {m_axis_data_tdata_sqhq[2]} {m_axis_data_tdata_sqhq[3]} {m_axis_data_tdata_sqhq[4]} {m_axis_data_tdata_sqhq[5]} {m_axis_data_tdata_sqhq[6]} {m_axis_data_tdata_sqhq[7]} {m_axis_data_tdata_sqhq[8]} {m_axis_data_tdata_sqhq[9]} {m_axis_data_tdata_sqhq[10]} {m_axis_data_tdata_sqhq[11]} {m_axis_data_tdata_sqhq[12]} {m_axis_data_tdata_sqhq[13]} {m_axis_data_tdata_sqhq[14]} {m_axis_data_tdata_sqhq[15]} {m_axis_data_tdata_sqhq[16]} {m_axis_data_tdata_sqhq[17]} {m_axis_data_tdata_sqhq[18]} {m_axis_data_tdata_sqhq[19]} {m_axis_data_tdata_sqhq[20]} {m_axis_data_tdata_sqhq[21]} {m_axis_data_tdata_sqhq[22]} {m_axis_data_tdata_sqhq[23]} {m_axis_data_tdata_sqhq[24]} {m_axis_data_tdata_sqhq[25]} {m_axis_data_tdata_sqhq[26]} {m_axis_data_tdata_sqhq[27]} {m_axis_data_tdata_sqhq[28]} {m_axis_data_tdata_sqhq[29]} {m_axis_data_tdata_sqhq[30]} {m_axis_data_tdata_sqhq[31]} {m_axis_data_tdata_sqhq[32]} {m_axis_data_tdata_sqhq[33]} {m_axis_data_tdata_sqhq[34]} {m_axis_data_tdata_sqhq[35]} {m_axis_data_tdata_sqhq[36]} {m_axis_data_tdata_sqhq[37]} {m_axis_data_tdata_sqhq[38]} {m_axis_data_tdata_sqhq[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe7]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe7]
+connect_debug_port u_ila_0/probe7 [get_nets [list {result_compress_i[0]} {result_compress_i[1]} {result_compress_i[2]} {result_compress_i[3]} {result_compress_i[4]} {result_compress_i[5]} {result_compress_i[6]} {result_compress_i[7]} {result_compress_i[8]} {result_compress_i[9]} {result_compress_i[10]} {result_compress_i[11]} {result_compress_i[12]} {result_compress_i[13]} {result_compress_i[14]} {result_compress_i[15]} {result_compress_i[16]} {result_compress_i[17]} {result_compress_i[18]} {result_compress_i[19]} {result_compress_i[20]} {result_compress_i[21]} {result_compress_i[22]} {result_compress_i[23]} {result_compress_i[24]} {result_compress_i[25]} {result_compress_i[26]} {result_compress_i[27]} {result_compress_i[28]} {result_compress_i[29]} {result_compress_i[30]} {result_compress_i[31]} {result_compress_i[32]} {result_compress_i[33]} {result_compress_i[34]} {result_compress_i[35]} {result_compress_i[36]} {result_compress_i[37]} {result_compress_i[38]} {result_compress_i[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe8]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe8]
+connect_debug_port u_ila_0/probe8 [get_nets [list {result_compress_q[0]} {result_compress_q[1]} {result_compress_q[2]} {result_compress_q[3]} {result_compress_q[4]} {result_compress_q[5]} {result_compress_q[6]} {result_compress_q[7]} {result_compress_q[8]} {result_compress_q[9]} {result_compress_q[10]} {result_compress_q[11]} {result_compress_q[12]} {result_compress_q[13]} {result_compress_q[14]} {result_compress_q[15]} {result_compress_q[16]} {result_compress_q[17]} {result_compress_q[18]} {result_compress_q[19]} {result_compress_q[20]} {result_compress_q[21]} {result_compress_q[22]} {result_compress_q[23]} {result_compress_q[24]} {result_compress_q[25]} {result_compress_q[26]} {result_compress_q[27]} {result_compress_q[28]} {result_compress_q[29]} {result_compress_q[30]} {result_compress_q[31]} {result_compress_q[32]} {result_compress_q[33]} {result_compress_q[34]} {result_compress_q[35]} {result_compress_q[36]} {result_compress_q[37]} {result_compress_q[38]} {result_compress_q[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe9]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe9]
+connect_debug_port u_ila_0/probe9 [get_nets [list sys_clk_IBUF_BUFG ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe10]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe10]
+connect_debug_port u_ila_0/probe10 [get_nets [list sys_rst_n_IBUF ]]
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+report_utilization -name utilization_1
+delete_debug_core [get_debug_cores {u_ila_0 }]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 4096 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+startgroup 
+set_property C_EN_STRG_QUAL true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU_CNT 2 [get_debug_cores u_ila_0 ]
+endgroup
+set_property port_width 1 [get_debug_ports u_ila_0/clk]
+connect_debug_port u_ila_0/clk [get_nets [list sys_clk_IBUF_BUFG ]]
+set_property port_width 16 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {rom_fir_connect_inst/ROM_Control_inst/SI[0]} {rom_fir_connect_inst/ROM_Control_inst/SI[1]} {rom_fir_connect_inst/ROM_Control_inst/SI[2]} {rom_fir_connect_inst/ROM_Control_inst/SI[3]} {rom_fir_connect_inst/ROM_Control_inst/SI[4]} {rom_fir_connect_inst/ROM_Control_inst/SI[5]} {rom_fir_connect_inst/ROM_Control_inst/SI[6]} {rom_fir_connect_inst/ROM_Control_inst/SI[7]} {rom_fir_connect_inst/ROM_Control_inst/SI[8]} {rom_fir_connect_inst/ROM_Control_inst/SI[9]} {rom_fir_connect_inst/ROM_Control_inst/SI[10]} {rom_fir_connect_inst/ROM_Control_inst/SI[11]} {rom_fir_connect_inst/ROM_Control_inst/SI[12]} {rom_fir_connect_inst/ROM_Control_inst/SI[13]} {rom_fir_connect_inst/ROM_Control_inst/SI[14]} {rom_fir_connect_inst/ROM_Control_inst/SI[15]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 16 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {rom_fir_connect_inst/ROM_Control_inst/SQ[0]} {rom_fir_connect_inst/ROM_Control_inst/SQ[1]} {rom_fir_connect_inst/ROM_Control_inst/SQ[2]} {rom_fir_connect_inst/ROM_Control_inst/SQ[3]} {rom_fir_connect_inst/ROM_Control_inst/SQ[4]} {rom_fir_connect_inst/ROM_Control_inst/SQ[5]} {rom_fir_connect_inst/ROM_Control_inst/SQ[6]} {rom_fir_connect_inst/ROM_Control_inst/SQ[7]} {rom_fir_connect_inst/ROM_Control_inst/SQ[8]} {rom_fir_connect_inst/ROM_Control_inst/SQ[9]} {rom_fir_connect_inst/ROM_Control_inst/SQ[10]} {rom_fir_connect_inst/ROM_Control_inst/SQ[11]} {rom_fir_connect_inst/ROM_Control_inst/SQ[12]} {rom_fir_connect_inst/ROM_Control_inst/SQ[13]} {rom_fir_connect_inst/ROM_Control_inst/SQ[14]} {rom_fir_connect_inst/ROM_Control_inst/SQ[15]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {compress_result_OBUF[0]} {compress_result_OBUF[1]} {compress_result_OBUF[2]} {compress_result_OBUF[3]} {compress_result_OBUF[4]} {compress_result_OBUF[5]} {compress_result_OBUF[6]} {compress_result_OBUF[7]} {compress_result_OBUF[8]} {compress_result_OBUF[9]} {compress_result_OBUF[10]} {compress_result_OBUF[11]} {compress_result_OBUF[12]} {compress_result_OBUF[13]} {compress_result_OBUF[14]} {compress_result_OBUF[15]} {compress_result_OBUF[16]} {compress_result_OBUF[17]} {compress_result_OBUF[18]} {compress_result_OBUF[19]} {compress_result_OBUF[20]} {compress_result_OBUF[21]} {compress_result_OBUF[22]} {compress_result_OBUF[23]} {compress_result_OBUF[24]} {compress_result_OBUF[25]} {compress_result_OBUF[26]} {compress_result_OBUF[27]} {compress_result_OBUF[28]} {compress_result_OBUF[29]} {compress_result_OBUF[30]} {compress_result_OBUF[31]} {compress_result_OBUF[32]} {compress_result_OBUF[33]} {compress_result_OBUF[34]} {compress_result_OBUF[35]} {compress_result_OBUF[36]} {compress_result_OBUF[37]} {compress_result_OBUF[38]} {compress_result_OBUF[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list {m_axis_data_tdata_sihi[0]} {m_axis_data_tdata_sihi[1]} {m_axis_data_tdata_sihi[2]} {m_axis_data_tdata_sihi[3]} {m_axis_data_tdata_sihi[4]} {m_axis_data_tdata_sihi[5]} {m_axis_data_tdata_sihi[6]} {m_axis_data_tdata_sihi[7]} {m_axis_data_tdata_sihi[8]} {m_axis_data_tdata_sihi[9]} {m_axis_data_tdata_sihi[10]} {m_axis_data_tdata_sihi[11]} {m_axis_data_tdata_sihi[12]} {m_axis_data_tdata_sihi[13]} {m_axis_data_tdata_sihi[14]} {m_axis_data_tdata_sihi[15]} {m_axis_data_tdata_sihi[16]} {m_axis_data_tdata_sihi[17]} {m_axis_data_tdata_sihi[18]} {m_axis_data_tdata_sihi[19]} {m_axis_data_tdata_sihi[20]} {m_axis_data_tdata_sihi[21]} {m_axis_data_tdata_sihi[22]} {m_axis_data_tdata_sihi[23]} {m_axis_data_tdata_sihi[24]} {m_axis_data_tdata_sihi[25]} {m_axis_data_tdata_sihi[26]} {m_axis_data_tdata_sihi[27]} {m_axis_data_tdata_sihi[28]} {m_axis_data_tdata_sihi[29]} {m_axis_data_tdata_sihi[30]} {m_axis_data_tdata_sihi[31]} {m_axis_data_tdata_sihi[32]} {m_axis_data_tdata_sihi[33]} {m_axis_data_tdata_sihi[34]} {m_axis_data_tdata_sihi[35]} {m_axis_data_tdata_sihi[36]} {m_axis_data_tdata_sihi[37]} {m_axis_data_tdata_sihi[38]} {m_axis_data_tdata_sihi[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list {m_axis_data_tdata_sihq[0]} {m_axis_data_tdata_sihq[1]} {m_axis_data_tdata_sihq[2]} {m_axis_data_tdata_sihq[3]} {m_axis_data_tdata_sihq[4]} {m_axis_data_tdata_sihq[5]} {m_axis_data_tdata_sihq[6]} {m_axis_data_tdata_sihq[7]} {m_axis_data_tdata_sihq[8]} {m_axis_data_tdata_sihq[9]} {m_axis_data_tdata_sihq[10]} {m_axis_data_tdata_sihq[11]} {m_axis_data_tdata_sihq[12]} {m_axis_data_tdata_sihq[13]} {m_axis_data_tdata_sihq[14]} {m_axis_data_tdata_sihq[15]} {m_axis_data_tdata_sihq[16]} {m_axis_data_tdata_sihq[17]} {m_axis_data_tdata_sihq[18]} {m_axis_data_tdata_sihq[19]} {m_axis_data_tdata_sihq[20]} {m_axis_data_tdata_sihq[21]} {m_axis_data_tdata_sihq[22]} {m_axis_data_tdata_sihq[23]} {m_axis_data_tdata_sihq[24]} {m_axis_data_tdata_sihq[25]} {m_axis_data_tdata_sihq[26]} {m_axis_data_tdata_sihq[27]} {m_axis_data_tdata_sihq[28]} {m_axis_data_tdata_sihq[29]} {m_axis_data_tdata_sihq[30]} {m_axis_data_tdata_sihq[31]} {m_axis_data_tdata_sihq[32]} {m_axis_data_tdata_sihq[33]} {m_axis_data_tdata_sihq[34]} {m_axis_data_tdata_sihq[35]} {m_axis_data_tdata_sihq[36]} {m_axis_data_tdata_sihq[37]} {m_axis_data_tdata_sihq[38]} {m_axis_data_tdata_sihq[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe5]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list {m_axis_data_tdata_sqhi[0]} {m_axis_data_tdata_sqhi[1]} {m_axis_data_tdata_sqhi[2]} {m_axis_data_tdata_sqhi[3]} {m_axis_data_tdata_sqhi[4]} {m_axis_data_tdata_sqhi[5]} {m_axis_data_tdata_sqhi[6]} {m_axis_data_tdata_sqhi[7]} {m_axis_data_tdata_sqhi[8]} {m_axis_data_tdata_sqhi[9]} {m_axis_data_tdata_sqhi[10]} {m_axis_data_tdata_sqhi[11]} {m_axis_data_tdata_sqhi[12]} {m_axis_data_tdata_sqhi[13]} {m_axis_data_tdata_sqhi[14]} {m_axis_data_tdata_sqhi[15]} {m_axis_data_tdata_sqhi[16]} {m_axis_data_tdata_sqhi[17]} {m_axis_data_tdata_sqhi[18]} {m_axis_data_tdata_sqhi[19]} {m_axis_data_tdata_sqhi[20]} {m_axis_data_tdata_sqhi[21]} {m_axis_data_tdata_sqhi[22]} {m_axis_data_tdata_sqhi[23]} {m_axis_data_tdata_sqhi[24]} {m_axis_data_tdata_sqhi[25]} {m_axis_data_tdata_sqhi[26]} {m_axis_data_tdata_sqhi[27]} {m_axis_data_tdata_sqhi[28]} {m_axis_data_tdata_sqhi[29]} {m_axis_data_tdata_sqhi[30]} {m_axis_data_tdata_sqhi[31]} {m_axis_data_tdata_sqhi[32]} {m_axis_data_tdata_sqhi[33]} {m_axis_data_tdata_sqhi[34]} {m_axis_data_tdata_sqhi[35]} {m_axis_data_tdata_sqhi[36]} {m_axis_data_tdata_sqhi[37]} {m_axis_data_tdata_sqhi[38]} {m_axis_data_tdata_sqhi[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe6]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe6]
+connect_debug_port u_ila_0/probe6 [get_nets [list {m_axis_data_tdata_sqhq[0]} {m_axis_data_tdata_sqhq[1]} {m_axis_data_tdata_sqhq[2]} {m_axis_data_tdata_sqhq[3]} {m_axis_data_tdata_sqhq[4]} {m_axis_data_tdata_sqhq[5]} {m_axis_data_tdata_sqhq[6]} {m_axis_data_tdata_sqhq[7]} {m_axis_data_tdata_sqhq[8]} {m_axis_data_tdata_sqhq[9]} {m_axis_data_tdata_sqhq[10]} {m_axis_data_tdata_sqhq[11]} {m_axis_data_tdata_sqhq[12]} {m_axis_data_tdata_sqhq[13]} {m_axis_data_tdata_sqhq[14]} {m_axis_data_tdata_sqhq[15]} {m_axis_data_tdata_sqhq[16]} {m_axis_data_tdata_sqhq[17]} {m_axis_data_tdata_sqhq[18]} {m_axis_data_tdata_sqhq[19]} {m_axis_data_tdata_sqhq[20]} {m_axis_data_tdata_sqhq[21]} {m_axis_data_tdata_sqhq[22]} {m_axis_data_tdata_sqhq[23]} {m_axis_data_tdata_sqhq[24]} {m_axis_data_tdata_sqhq[25]} {m_axis_data_tdata_sqhq[26]} {m_axis_data_tdata_sqhq[27]} {m_axis_data_tdata_sqhq[28]} {m_axis_data_tdata_sqhq[29]} {m_axis_data_tdata_sqhq[30]} {m_axis_data_tdata_sqhq[31]} {m_axis_data_tdata_sqhq[32]} {m_axis_data_tdata_sqhq[33]} {m_axis_data_tdata_sqhq[34]} {m_axis_data_tdata_sqhq[35]} {m_axis_data_tdata_sqhq[36]} {m_axis_data_tdata_sqhq[37]} {m_axis_data_tdata_sqhq[38]} {m_axis_data_tdata_sqhq[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe7]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe7]
+connect_debug_port u_ila_0/probe7 [get_nets [list {result_compress_i[0]} {result_compress_i[1]} {result_compress_i[2]} {result_compress_i[3]} {result_compress_i[4]} {result_compress_i[5]} {result_compress_i[6]} {result_compress_i[7]} {result_compress_i[8]} {result_compress_i[9]} {result_compress_i[10]} {result_compress_i[11]} {result_compress_i[12]} {result_compress_i[13]} {result_compress_i[14]} {result_compress_i[15]} {result_compress_i[16]} {result_compress_i[17]} {result_compress_i[18]} {result_compress_i[19]} {result_compress_i[20]} {result_compress_i[21]} {result_compress_i[22]} {result_compress_i[23]} {result_compress_i[24]} {result_compress_i[25]} {result_compress_i[26]} {result_compress_i[27]} {result_compress_i[28]} {result_compress_i[29]} {result_compress_i[30]} {result_compress_i[31]} {result_compress_i[32]} {result_compress_i[33]} {result_compress_i[34]} {result_compress_i[35]} {result_compress_i[36]} {result_compress_i[37]} {result_compress_i[38]} {result_compress_i[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 40 [get_debug_ports u_ila_0/probe8]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe8]
+connect_debug_port u_ila_0/probe8 [get_nets [list {result_compress_q[0]} {result_compress_q[1]} {result_compress_q[2]} {result_compress_q[3]} {result_compress_q[4]} {result_compress_q[5]} {result_compress_q[6]} {result_compress_q[7]} {result_compress_q[8]} {result_compress_q[9]} {result_compress_q[10]} {result_compress_q[11]} {result_compress_q[12]} {result_compress_q[13]} {result_compress_q[14]} {result_compress_q[15]} {result_compress_q[16]} {result_compress_q[17]} {result_compress_q[18]} {result_compress_q[19]} {result_compress_q[20]} {result_compress_q[21]} {result_compress_q[22]} {result_compress_q[23]} {result_compress_q[24]} {result_compress_q[25]} {result_compress_q[26]} {result_compress_q[27]} {result_compress_q[28]} {result_compress_q[29]} {result_compress_q[30]} {result_compress_q[31]} {result_compress_q[32]} {result_compress_q[33]} {result_compress_q[34]} {result_compress_q[35]} {result_compress_q[36]} {result_compress_q[37]} {result_compress_q[38]} {result_compress_q[39]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe9]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe9]
+connect_debug_port u_ila_0/probe9 [get_nets [list sys_clk_IBUF_BUFG ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe10]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe10]
+connect_debug_port u_ila_0/probe10 [get_nets [list sys_rst_n_IBUF ]]
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_run impl_1
+synth_design -rtl -name rtl_1
+current_design synth_1
+report_utilization -name utilization_1
+report_utilization -name utilization_2
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.runs/impl_1/compress_result_top.bit} [get_hw_devices xc7k325t_0]
+set_property PROBES.FILE {C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.runs/impl_1/compress_result_top.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.runs/impl_1/compress_result_top.ltx} [get_hw_devices xc7k325t_0]
+current_hw_device [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+create_hw_cfgmem -hw_device [get_hw_devices xc7k325t_0] -mem_dev [lindex [get_cfgmem_parts {mt25ql256-spi-x1_x2_x4}] 0]
+set_property PROBES.FILE {C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.runs/impl_1/compress_result_top.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.runs/impl_1/compress_result_top.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.runs/impl_1/compress_result_top.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]

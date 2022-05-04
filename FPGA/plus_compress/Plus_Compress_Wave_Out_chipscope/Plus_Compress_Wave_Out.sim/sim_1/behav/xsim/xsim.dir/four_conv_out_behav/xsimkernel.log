@@ -1,0 +1,7 @@
+Running: xsim.dir/four_conv_out_behav/xsimk.exe -simmode gui -wdb four_conv_out_behav.wdb -simrunnum 0 -socket 61285
+Design successfully loaded
+Design Loading Memory Usage: 118412 KB (Peak: 118412 KB)
+Design Loading CPU Usage: 296 ms
+Simulation completed
+Simulation Memory Usage: 126992 KB (Peak: 126992 KB)
+Simulation CPU Usage: 107405 ms

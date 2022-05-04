@@ -1,0 +1,176 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Apr  7 22:10:39 2022
+# Process ID: 3240
+# Current directory: C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3596 C:\Users\WYHAIRCAS\Desktop\plus_compress\Plus_Compress_Wave_Out_tb\Plus_Compress_Wave_Out.xpr
+# Log file: C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/vivado.log
+# Journal file: C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/Plus_Compress_Wave_Out.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/install_location/vivado18_3/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 803.312 ; gain = 151.844
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/Plus_Compress_Wave_Out.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/install_location/vivado18_3/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/Plus_Compress_Wave_Out.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'four_conv_out' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/Plus_Compress_Wave_Out.sim/sim_1/behav/xsim/Conv_Si_Hi.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/Plus_Compress_Wave_Out.sim/sim_1/behav/xsim/hi.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/Plus_Compress_Wave_Out.sim/sim_1/behav/xsim/Conv_Si_Hq.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/Plus_Compress_Wave_Out.sim/sim_1/behav/xsim/hq.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/Plus_Compress_Wave_Out.sim/sim_1/behav/xsim/Conv_Sq_Hi.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/Plus_Compress_Wave_Out.sim/sim_1/behav/xsim/Conv_Sq_Hq.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/Plus_Compress_Wave_Out.sim/sim_1/behav/xsim/ROM_320x16_S_I.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/Plus_Compress_Wave_Out.sim/sim_1/behav/xsim/si.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/Plus_Compress_Wave_Out.sim/sim_1/behav/xsim/ROM_320x16_S_Q.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/Plus_Compress_Wave_Out.sim/sim_1/behav/xsim/sq.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/Plus_Compress_Wave_Out.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj four_conv_out_vlog.prj"
+"xvhdl --incr --relax -prj four_conv_out_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/Plus_Compress_Wave_Out.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/install_location/vivado18_3/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 31f80bbe232349b998b8b6f3d5a4e5f2 --incr --debug typical --relax --mt 2 -L xbip_utils_v3_0_9 -L c_reg_fd_v12_0_5 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_pipe_v3_0_5 -L xbip_dsp48_addsub_v3_0_5 -L xbip_addsub_v3_0_5 -L c_addsub_v12_0_12 -L xbip_bram18k_v3_0_5 -L mult_gen_v12_0_14 -L axi_utils_v2_0_5 -L cordic_v6_0_14 -L xil_defaultlib -L blk_mem_gen_v8_4_2 -L fir_compiler_v7_2_11 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot four_conv_out_behav xil_defaultlib.four_conv_out xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2056]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2057]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2058]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2059]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2045]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2046]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2047]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2048]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2049]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2056]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2057]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2058]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2059]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2045]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2046]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2047]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2048]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2049]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2056]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2057]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2058]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2059]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2045]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2046]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2047]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2048]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2049]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2056]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2057]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2058]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2059]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2045]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2046]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2047]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2048]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2049]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2056]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2057]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2058]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2059]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2045]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2046]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2047]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2048]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2049]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2056]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2057]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2058]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2059]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2045]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2046]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2047]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2048]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2049]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2056]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2057]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2058]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2059]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2045]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2046]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2047]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2048]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2049]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:01:05 . Memory (MB): peak = 1191.734 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '65' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/Plus_Compress_Wave_Out.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "four_conv_out_behav -key {Behavioral:sim_1:Functional:four_conv_out} -tclbatch {four_conv_out.tcl} -view {C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/result_compress_I_Q.wcfg} -view {C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/compress_result_finifsh.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/result_compress_I_Q.wcfg
+open_wave_config C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/compress_result_finifsh.wcfg
+source four_conv_out.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module four_conv_out.rom_fir_connect_inst.ROM_Control_inst.ROM_320x16_S_I_inst.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module four_conv_out.rom_fir_connect_inst.ROM_Control_inst.ROM_320x16_S_Q_inst.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1191.734 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'four_conv_out_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:01:21 . Memory (MB): peak = 1191.734 ; gain = 0.000
+set_param general.maxThreads 32
+32
+run 1 ms
+blk_mem_gen_v8_4_2 WARNING: Address 140 is outside range for A Read
+blk_mem_gen_v8_4_2 WARNING: Address 140 is outside range for A Read
+WARNING: [Simulator 45-29] Cannot open source file /wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v: file does not exist.
+run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 1191.734 ; gain = 0.000
+run 1 ms
+blk_mem_gen_v8_4_2 WARNING: Address 140 is outside range for A Read
+blk_mem_gen_v8_4_2 WARNING: Address 140 is outside range for A Read
+run: Time (s): cpu = 00:00:08 ; elapsed = 00:00:29 . Memory (MB): peak = 1191.734 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/Plus_Compress_Wave_Out.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hq/Conv_Sq_Hq.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hi/Conv_Sq_Hi.xci' is already up-to-date
+[Thu Apr  7 22:19:02 2022] Launched synth_1...
+Run output will be captured here: C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/Plus_Compress_Wave_Out.runs/synth_1/runme.log
+[Thu Apr  7 22:19:02 2022] Launched impl_1...
+Run output will be captured here: C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_tb/Plus_Compress_Wave_Out.runs/impl_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1191.734 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Apr  7 22:23:23 2022...

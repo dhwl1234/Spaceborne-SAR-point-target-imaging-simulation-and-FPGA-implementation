@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Plus_Compress_Wave_Out.srcs/sources_1/ip/cordic_0/sim/cordic_0.vhd" \
+"../../../../Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hq/sim/Conv_Sq_Hq.vhd" \
+"../../../../Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Sq_Hi/sim/Conv_Sq_Hi.vhd" \
+"../../../../Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Si_Hq/sim/Conv_Si_Hq.vhd" \
+"../../../../Plus_Compress_Wave_Out.srcs/sources_1/ip/Conv_Si_Hi/sim/Conv_Si_Hi.vhd" \
+
+# Do not sort compile order
+nosort

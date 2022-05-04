@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/WYHAIRCAS/Desktop/plus_compress/Plus_Compress_Wave_Out_chipscope/Plus_Compress_Wave_Out.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="5052001fs"></ZoomEndTime>
+      <Cursor1Time time="214000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="305"></NameColumnWidth>
+      <ValueColumnWidth column_width="196"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="10" />
+   <wave_markers>
+   </wave_markers>
+   <wvobject fp_name="rom_fir_connect_inst/ROM_Control_inst/SI" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">rom_fir_connect_inst/ROM_Control_inst/SI[15:0]</obj_property>
+      <obj_property name="ObjectShortName">SI[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject fp_name="rom_fir_connect_inst/ROM_Control_inst/SQ" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">rom_fir_connect_inst/ROM_Control_inst/SQ[15:0]</obj_property>
+      <obj_property name="ObjectShortName">SQ[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject fp_name="compress_result_OBUF" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">compress_result_OBUF[39:0]</obj_property>
+      <obj_property name="ObjectShortName">compress_result_OBUF[39:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_axis_data_tdata_sihi" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_axis_data_tdata_sihi[39:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tdata_sihi[39:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_axis_data_tdata_sihq" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_axis_data_tdata_sihq[39:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tdata_sihq[39:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_axis_data_tdata_sqhi" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_axis_data_tdata_sqhi[39:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tdata_sqhi[39:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_axis_data_tdata_sqhq" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_axis_data_tdata_sqhq[39:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tdata_sqhq[39:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject fp_name="result_compress_i" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">result_compress_i[39:0]</obj_property>
+      <obj_property name="ObjectShortName">result_compress_i[39:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject fp_name="result_compress_q" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">result_compress_q[39:0]</obj_property>
+      <obj_property name="ObjectShortName">result_compress_q[39:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_AUTO</obj_property>
+      <obj_property name="AnalogYRangeMin">0.000000</obj_property>
+      <obj_property name="AnalogYRRangeMax">0.000000</obj_property>
+      <obj_property name="AnalogInterpolation">ANALOG_INTERPOLATION_LINEAR</obj_property>
+      <obj_property name="AnalogOffscale">ANALOG_OFFSCALE_HIDE</obj_property>
+      <obj_property name="AnalogHorizLine">0.000000</obj_property>
+   </wvobject>
+   <wvobject fp_name="sys_clk_IBUF_BUFG" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">sys_clk_IBUF_BUFG</obj_property>
+      <obj_property name="ObjectShortName">sys_clk_IBUF_BUFG</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+</wave_config>

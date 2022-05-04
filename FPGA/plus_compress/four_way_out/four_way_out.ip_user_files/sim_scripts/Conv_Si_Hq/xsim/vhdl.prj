@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../four_way_out.srcs/sources_1/ip/Conv_Si_Hq/sim/Conv_Si_Hq.vhd" \
+
+nosort

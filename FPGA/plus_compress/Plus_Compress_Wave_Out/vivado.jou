@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Apr 23 11:39:18 2022
+# Process ID: 22660
+# Current directory: E:/Project/plus_compress/Plus_Compress_Wave_Out
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent36940 E:\Project\plus_compress\Plus_Compress_Wave_Out\Plus_Compress_Wave_Out.xpr
+# Log file: E:/Project/plus_compress/Plus_Compress_Wave_Out/vivado.log
+# Journal file: E:/Project/plus_compress/Plus_Compress_Wave_Out\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Project/plus_compress/Plus_Compress_Wave_Out/Plus_Compress_Wave_Out.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config E:/Project/plus_compress/Plus_Compress_Wave_Out/result_compress_I_Q.wcfg
+open_wave_config E:/Project/plus_compress/Plus_Compress_Wave_Out/compress_result_finifsh.wcfg
+source four_conv_out.tcl
+close_sim

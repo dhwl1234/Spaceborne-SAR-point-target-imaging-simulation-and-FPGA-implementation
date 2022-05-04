@@ -1,0 +1,15 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Users/WYHAIRCAS/Desktop/plus_compress/four_way_out/four_way_out.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+C:/Users/WYHAIRCAS/Desktop/plus_compress/four_way_out/four_way_out.srcs/sim_1/new/four_conv_out.v,1648643324,verilog,,,,four_conv_out,,,,,,,,
+C:/Users/WYHAIRCAS/Desktop/plus_compress/four_way_out/four_way_out.srcs/sources_1/ip/Conv_Si_Hi/sim/Conv_Si_Hi.vhd,1648636890,vhdl,,,,conv_si_hi,,,,,,,,
+C:/Users/WYHAIRCAS/Desktop/plus_compress/four_way_out/four_way_out.srcs/sources_1/ip/Conv_Si_Hq/sim/Conv_Si_Hq.vhd,1648637260,vhdl,,,,conv_si_hq,,,,,,,,
+C:/Users/WYHAIRCAS/Desktop/plus_compress/four_way_out/four_way_out.srcs/sources_1/ip/Conv_Sq_Hi/sim/Conv_Sq_Hi.vhd,1648637442,vhdl,,,,conv_sq_hi,,,,,,,,
+C:/Users/WYHAIRCAS/Desktop/plus_compress/four_way_out/four_way_out.srcs/sources_1/ip/Conv_Sq_Hq/sim/Conv_Sq_Hq.vhd,1648637193,vhdl,,,,conv_sq_hq,,,,,,,,
+C:/Users/WYHAIRCAS/Desktop/plus_compress/four_way_out/four_way_out.srcs/sources_1/ip/ROM_320x16_S_I/sim/ROM_320x16_S_I.v,1648633324,verilog,,C:/Users/WYHAIRCAS/Desktop/plus_compress/four_way_out/four_way_out.srcs/sources_1/new/ROM_Control.v,,ROM_320x16_S_I,,,,,,,,
+C:/Users/WYHAIRCAS/Desktop/plus_compress/four_way_out/four_way_out.srcs/sources_1/ip/ROM_320x16_S_Q/sim/ROM_320x16_S_Q.v,1648631040,verilog,,C:/Users/WYHAIRCAS/Desktop/plus_compress/four_way_out/four_way_out.srcs/sources_1/ip/ROM_320x16_S_I/sim/ROM_320x16_S_I.v,,ROM_320x16_S_Q,,,,,,,,
+C:/Users/WYHAIRCAS/Desktop/plus_compress/four_way_out/four_way_out.srcs/sources_1/new/ROM_Control.v,1648634602,verilog,,C:/Users/WYHAIRCAS/Desktop/plus_compress/four_way_out/four_way_out.srcs/sources_1/new/four_way_out.v,,ROM_Control,,,,,,,,
+C:/Users/WYHAIRCAS/Desktop/plus_compress/four_way_out/four_way_out.srcs/sources_1/new/four_way_out.v,1648641400,verilog,,C:/Users/WYHAIRCAS/Desktop/plus_compress/four_way_out/four_way_out.srcs/sources_1/new/rom_fir_connect.v,,four_way_out,,,,,,,,
+C:/Users/WYHAIRCAS/Desktop/plus_compress/four_way_out/four_way_out.srcs/sources_1/new/rom_fir_connect.v,1648642063,verilog,,C:/Users/WYHAIRCAS/Desktop/plus_compress/four_way_out/four_way_out.srcs/sim_1/new/four_conv_out.v,,rom_fir_connect,,,,,,,,
